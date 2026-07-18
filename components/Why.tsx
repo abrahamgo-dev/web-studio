@@ -1,0 +1,57 @@
+import { CheckCircle2 } from "lucide-react";
+
+const REASONS = [
+  {
+    title: "Built for clarity",
+    description:
+      "Product-first websites, landing pages, and tools with crystal-clear messaging, fast load time, and intuitive product hierarchy.",
+  },
+  {
+    title: "Launch-ready systems",
+    description:
+      "Next.js architecture, CMS workflows, and polished handoff materials that make launch and scale feel easy.",
+  },
+  {
+    title: "Long-term support",
+    description:
+      "Ongoing maintenance, analytics reviews, and iterative improvements so your digital product stays modern and reliable.",
+  },
+];
+
+export default function Why() {
+  return (
+    <section id="why" className="relative border-t border-white/10">
+      <div className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm uppercase tracking-[0.28em] text-accent-bright">
+            Why Fen Studio
+          </p>
+          <h2 className="mt-4 font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-ink md:text-4xl">
+            Design, engineering, and growth working together.
+          </h2>
+          <p className="mx-auto mt-5 text-base leading-8 text-ink-dim md:max-w-2xl">
+            We build websites, dashboards, and tools that move faster than the
+            market, keep teams aligned, and help founders launch with
+            confidence.
+          </p>
+        </div>
+
+        <div className="mt-16 grid gap-5 md:grid-cols-3">
+          {REASONS.map((reason) => (
+            <div key={reason.title} className="card-surface rounded-[2rem] p-8">
+              <div className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-accent/15 text-accent-bright">
+                <CheckCircle2 className="h-5 w-5" />
+              </div>
+              <h3 className="mt-6 text-xl font-semibold text-ink">
+                {reason.title}
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-ink-dim">
+                {reason.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
