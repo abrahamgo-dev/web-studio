@@ -1,40 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0f1115;
-  --bg-raised: rgba(28, 31, 38, 0.84);
-  --accent: #a89c8d;
-  --accent-bright: #f1e7d8;
-  --lavender: #c8baa9;
-  --ink: #f8f4eb;
-  --ink-dim: #cfc7bb;
+  --bg: #0e1115;
+  --bg-raised: rgba(22, 25, 31, 0.84);
+  --accent: #b9b8c6;
+  --accent-bright: #eceaf2;
+  --lavender: #cfcdd8;
+  --ink: #f5f3f0;
+  --ink-dim: #cfc9c0;
   --line: rgba(255, 255, 255, 0.16);
-  --aurora-one: rgba(168, 156, 141, 0.24);
+  --aurora-one: rgba(185, 184, 198, 0.22);
   --aurora-two: rgba(255, 255, 255, 0.08);
   --body-gradient: linear-gradient(
     135deg,
-    #0c0e12 0%,
-    #16181d 45%,
-    #1d2027 100%
+    #0b0d11 0%,
+    #151821 45%,
+    #1c2029 100%
   );
 }
 
 [data-theme="light"] {
-  --bg: #f5f1ea;
-  --bg-raised: rgba(255, 255, 255, 0.9);
-  --accent: #8c8374;
-  --accent-bright: #6d655a;
-  --lavender: #b7a995;
-  --ink: #1d1d1b;
-  --ink-dim: #5e5950;
-  --line: rgba(29, 29, 27, 0.14);
-  --aurora-one: rgba(140, 131, 116, 0.14);
-  --aurora-two: rgba(183, 169, 149, 0.1);
+  --bg: #f4f4f6;
+  --bg-raised: rgba(255, 255, 255, 0.92);
+  --accent: #8c8d99;
+  --accent-bright: #5d6272;
+  --lavender: #b6bac4;
+  --ink: #17181c;
+  --ink-dim: #5f6470;
+  --line: rgba(23, 24, 28, 0.12);
+  --aurora-one: rgba(140, 141, 153, 0.16);
+  --aurora-two: rgba(182, 186, 196, 0.12);
   --body-gradient: linear-gradient(
     135deg,
-    #faf7f1 0%,
-    #efe8dc 45%,
-    #f7f2ea 100%
+    #f7f7f9 0%,
+    #ececf1 45%,
+    #f6f6f8 100%
   );
 }
 
@@ -94,7 +94,7 @@ body {
       rgba(255, 255, 255, 0.25),
       rgba(255, 255, 255, 0.03)
     ),
-    linear-gradient(120deg, #d9cdb9 0%, #b0a496 35%, #7d756d 70%, #f3e8d8 100%);
+    linear-gradient(120deg, #dfe2e8 0%, #aeb2bd 35%, #70757f 70%, #f3f3f5 100%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
     inset 0 -20px 40px rgba(0, 0, 0, 0.16),
@@ -105,58 +105,27 @@ body {
   position: relative;
   display: inline-block;
   color: var(--ink);
+  background-image: url("/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-shadow:
     0 0 0 rgba(255, 255, 255, 0.15),
     0 1px 0 rgba(0, 0, 0, 0.18);
 }
 
-.hero-image-text::before {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  background-image: url("/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  filter: saturate(0.95) contrast(1.02);
-  opacity: 0.9;
-  transform: translateY(0.3px);
-  pointer-events: none;
-}
-
-.hero-image-text::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.02)
-  );
-  border-radius: inherit;
-  opacity: 0.16;
-  mix-blend-mode: screen;
-  pointer-events: none;
-}
-
 [data-theme="dark"] .hero-image-text {
   color: #fff;
+  background-image: none;
+  -webkit-text-fill-color: currentColor;
   text-shadow: none;
-}
-
-[data-theme="dark"] .hero-image-text::before,
-[data-theme="dark"] .hero-image-text::after {
-  display: none;
 }
 
 [data-theme="light"] .hero-image-text {
   text-shadow: 0 0 0 rgba(255, 255, 255, 0.08);
-}
-
-[data-theme="light"] .hero-image-text::before {
-  opacity: 0.88;
 }
 
 ::selection {

@@ -15,8 +15,33 @@ type Language = "en" | "es";
 type ThemeMode = "dark" | "light";
 
 export default function Home() {
-  const [language, setLanguage] = useState<Language>("en");
-  const [theme, setTheme] = useState<ThemeMode>("dark");
+  const [language, setLanguage] = useState<Language>(() => {
+    if (typeof window === "undefined") {
+      return "es";
+    }
+
+    const savedLanguage = window.localStorage.getItem("language");
+    return savedLanguage === "en" || savedLanguage === "es"
+      ? savedLanguage
+      : "es";
+  });
+  const [theme, setTheme] = useState<ThemeMode>(() => {
+    if (typeof window === "undefined") {
+      return "dark";
+    }
+
+    const savedTheme = window.localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+
+    return savedTheme === "dark" || savedTheme === "light"
+      ? savedTheme
+      : prefersDark
+        ? "dark"
+        : "light";
+  });
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem("theme");
@@ -34,6 +59,8 @@ export default function Home() {
     if (savedLanguage === "en" || savedLanguage === "es") {
       setLanguage(savedLanguage);
     }
+
+    setMounted(true);
   }, []);
 
   useEffect(() => {
@@ -53,6 +80,10 @@ export default function Home() {
   const toggleLanguage = () => {
     setLanguage((current) => (current === "en" ? "es" : "en"));
   };
+
+  if (!mounted) {
+    return <div className="min-h-screen bg-bg" />;
+  }
 
   return (
     <div className="min-h-screen bg-bg">

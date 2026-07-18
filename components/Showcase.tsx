@@ -111,9 +111,10 @@ export default function Showcase({ language }: ShowcaseProps) {
             <div className="card-surface overflow-hidden rounded-[2rem] border-white/10">
               <div className="group relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg"
+                  src="/egor-litvinov-Epjx67LMVqY-unsplash.jpg"
                   alt="Abstract premium product concept"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
                   priority
                 />
@@ -136,7 +137,7 @@ export default function Showcase({ language }: ShowcaseProps) {
               <div className="card-surface rounded-[2rem] p-6">
                 <div className="group aspect-[4/3] overflow-hidden rounded-[1.2rem] border border-white/10">
                   <Image
-                    src="/egor-litvinov-Epjx67LMVqY-unsplash.jpg"
+                    src="/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg"
                     alt="Premium editorial composition"
                     width={600}
                     height={450}
