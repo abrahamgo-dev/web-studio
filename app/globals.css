@@ -1,14 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #07080f;
-  --bg-raised: rgba(15, 23, 42, 0.88);
-  --accent: #6f8cff;
-  --accent-bright: #a8c3ff;
-  --lavender: #8b92ff;
-  --ink: #f8fafc;
-  --ink-dim: #c7d0e0;
-  --line: rgba(255, 255, 255, 0.14);
+  --bg: #0f1115;
+  --bg-raised: rgba(28, 31, 38, 0.84);
+  --accent: #a89c8d;
+  --accent-bright: #f1e7d8;
+  --lavender: #c8baa9;
+  --ink: #f8f4eb;
+  --ink-dim: #cfc7bb;
+  --line: rgba(255, 255, 255, 0.16);
+  --aurora-one: rgba(168, 156, 141, 0.24);
+  --aurora-two: rgba(255, 255, 255, 0.08);
+  --body-gradient: linear-gradient(
+    135deg,
+    #0c0e12 0%,
+    #16181d 45%,
+    #1d2027 100%
+  );
+}
+
+[data-theme="light"] {
+  --bg: #f5f1ea;
+  --bg-raised: rgba(255, 255, 255, 0.9);
+  --accent: #8c8374;
+  --accent-bright: #6d655a;
+  --lavender: #b7a995;
+  --ink: #1d1d1b;
+  --ink-dim: #5e5950;
+  --line: rgba(29, 29, 27, 0.14);
+  --aurora-one: rgba(140, 131, 116, 0.14);
+  --aurora-two: rgba(183, 169, 149, 0.1);
+  --body-gradient: linear-gradient(
+    135deg,
+    #faf7f1 0%,
+    #efe8dc 45%,
+    #f7f2ea 100%
+  );
 }
 
 @theme inline {
@@ -30,7 +57,6 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -50,23 +76,87 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(
-      circle at top right,
-      rgba(111, 140, 255, 0.24),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 15% 10%,
-      rgba(255, 255, 255, 0.08),
-      transparent 18%
-    ),
-    linear-gradient(180deg, #06070c 0%, #090c14 100%);
+    radial-gradient(circle at top right, var(--aurora-one), transparent 28%),
+    radial-gradient(circle at 15% 10%, var(--aurora-two), transparent 18%),
+    var(--body-gradient);
   background-attachment: fixed;
   color: var(--ink);
   font-family: var(--font-body);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.metallic-gradient {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.03)
+    ),
+    linear-gradient(120deg, #d9cdb9 0%, #b0a496 35%, #7d756d 70%, #f3e8d8 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -20px 40px rgba(0, 0, 0, 0.16),
+    0 30px 70px rgba(15, 23, 42, 0.2);
+}
+
+.hero-image-text {
+  position: relative;
+  display: inline-block;
+  color: var(--ink);
+  text-shadow:
+    0 0 0 rgba(255, 255, 255, 0.15),
+    0 1px 0 rgba(0, 0, 0, 0.18);
+}
+
+.hero-image-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  background-image: url("/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: saturate(0.95) contrast(1.02);
+  opacity: 0.9;
+  transform: translateY(0.3px);
+  pointer-events: none;
+}
+
+.hero-image-text::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02)
+  );
+  border-radius: inherit;
+  opacity: 0.16;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+[data-theme="dark"] .hero-image-text {
+  color: #fff;
+  text-shadow: none;
+}
+
+[data-theme="dark"] .hero-image-text::before,
+[data-theme="dark"] .hero-image-text::after {
+  display: none;
+}
+
+[data-theme="light"] .hero-image-text {
+  text-shadow: 0 0 0 rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] .hero-image-text::before {
+  opacity: 0.88;
 }
 
 ::selection {
@@ -90,8 +180,8 @@ a {
 }
 
 .card-surface {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  border: 1px solid var(--line);
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(20px);
   transition:
@@ -102,13 +192,13 @@ a {
 }
 .card-surface:hover {
   transform: translateY(-4px);
-  border-color: rgba(111, 140, 255, 0.45);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
 }
 
 .section-surface {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--ink) 3%, transparent);
+  border: 1px solid var(--line);
 }
 
 /* Signature element: breathing aura */
