@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight, Menu, MoonStar, SunMedium, X } from "lucide-react";
 
 type Language = "en" | "es";
@@ -24,16 +26,16 @@ export default function Nav({
   const links =
     language === "es"
       ? [
-          { label: "Trabajo", href: "#work" },
-          { label: "Servicios", href: "#services" },
-          { label: "Proceso", href: "#process" },
-          { label: "Contacto", href: "#contact" },
+          { label: "Trabajo", href: "/#work" },
+          { label: "Servicios", href: "/#services" },
+          { label: "Proceso", href: "/#process" },
+          { label: "Contacto", href: "/#contact" },
         ]
       : [
-          { label: "Work", href: "#work" },
-          { label: "Services", href: "#services" },
-          { label: "Process", href: "#process" },
-          { label: "Contact", href: "#contact" },
+          { label: "Work", href: "/#work" },
+          { label: "Services", href: "/#services" },
+          { label: "Process", href: "/#process" },
+          { label: "Contact", href: "/#contact" },
         ];
 
   const ctaLabel =
@@ -42,22 +44,29 @@ export default function Nav({
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-bg/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-        <a
-          href="#top"
-          className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-ink"
+        <Link
+          href="/#top"
+          className="flex items-center gap-2.5 font-[family-name:var(--font-display)] text-lg font-extrabold tracking-tight text-ink"
         >
-          Fen<span className="text-accent-bright">.</span>
-        </a>
+          <Image
+            src="/icon.svg"
+            alt=""
+            width={28}
+            height={28}
+            className="rounded-[7px]"
+          />
+          fenwebstudio
+        </Link>
 
         <nav className="hidden items-center gap-9 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-sm text-ink-dim transition hover:text-ink"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -104,13 +113,13 @@ export default function Nav({
             )}
           </button>
 
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="hidden items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-ink transition hover:border-accent-bright/60 hover:bg-white/10 hover:text-accent-bright md:inline-flex"
           >
             {ctaLabel}
             <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
+          </Link>
         </div>
 
         <button
@@ -165,22 +174,22 @@ export default function Nav({
             </button>
           </div>
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
               className="rounded-xl px-4 py-3 text-sm text-ink-dim transition hover:bg-white/5 hover:text-ink"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="mt-1 rounded-xl bg-accent px-4 py-3 text-center text-sm font-medium text-white"
           >
             {ctaLabel}
-          </a>
+          </Link>
         </div>
       )}
     </header>

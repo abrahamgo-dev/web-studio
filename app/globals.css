@@ -1,40 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0e1115;
-  --bg-raised: rgba(22, 25, 31, 0.84);
-  --accent: #b9b8c6;
-  --accent-bright: #eceaf2;
-  --lavender: #cfcdd8;
+  --bg: #0f0d0c;
+  --bg-raised: rgba(26, 22, 19, 0.86);
+  --accent: #ff6a2e;
+  --accent-bright: #ffb238;
+  --lavender: #ffc94d;
   --ink: #f5f3f0;
   --ink-dim: #cfc9c0;
   --line: rgba(255, 255, 255, 0.16);
-  --aurora-one: rgba(185, 184, 198, 0.22);
-  --aurora-two: rgba(255, 255, 255, 0.08);
+  --aurora-one: rgba(255, 106, 46, 0.22);
+  --aurora-two: rgba(255, 178, 56, 0.1);
   --body-gradient: linear-gradient(
     135deg,
-    #0b0d11 0%,
-    #151821 45%,
-    #1c2029 100%
+    #0a0a0a 0%,
+    #14100d 45%,
+    #1c1512 100%
   );
 }
 
 [data-theme="light"] {
-  --bg: #f4f4f6;
+  --bg: #faf8f5;
   --bg-raised: rgba(255, 255, 255, 0.92);
-  --accent: #8c8d99;
-  --accent-bright: #5d6272;
-  --lavender: #b6bac4;
-  --ink: #17181c;
-  --ink-dim: #5f6470;
+  --accent: #e8540f;
+  --accent-bright: #b4560a;
+  --lavender: #f5a623;
+  --ink: #1a1712;
+  --ink-dim: #6b6255;
   --line: rgba(23, 24, 28, 0.12);
-  --aurora-one: rgba(140, 141, 153, 0.16);
-  --aurora-two: rgba(182, 186, 196, 0.12);
+  --aurora-one: rgba(232, 84, 15, 0.14);
+  --aurora-two: rgba(180, 86, 10, 0.1);
   --body-gradient: linear-gradient(
     135deg,
-    #f7f7f9 0%,
-    #ececf1 45%,
-    #f6f6f8 100%
+    #fdfbf8 0%,
+    #f7f1ea 45%,
+    #fbf7f2 100%
   );
 }
 
@@ -99,33 +99,6 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
     inset 0 -20px 40px rgba(0, 0, 0, 0.16),
     0 30px 70px rgba(15, 23, 42, 0.2);
-}
-
-.hero-image-text {
-  position: relative;
-  display: inline-block;
-  color: var(--ink);
-  background-image: url("/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow:
-    0 0 0 rgba(255, 255, 255, 0.15),
-    0 1px 0 rgba(0, 0, 0, 0.18);
-}
-
-[data-theme="dark"] .hero-image-text {
-  color: #fff;
-  background-image: none;
-  -webkit-text-fill-color: currentColor;
-  text-shadow: none;
-}
-
-[data-theme="light"] .hero-image-text {
-  text-shadow: 0 0 0 rgba(255, 255, 255, 0.08);
 }
 
 ::selection {

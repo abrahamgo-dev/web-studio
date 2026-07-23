@@ -1,16 +1,11 @@
-{"timestamp":"00:00:05.891","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:01:00.314","source":"Browser","level":"WARN","message":"Image with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
-{"timestamp":"00:01:00.317","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\""}
-{"timestamp":"00:01:00.317","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
-{"timestamp":"00:01:07.841","source":"Browser","level":"WARN","message":"Image with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
-{"timestamp":"00:01:07.842","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\""}
-{"timestamp":"00:01:07.842","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
-{"timestamp":"00:01:13.904","source":"Browser","level":"WARN","message":"Image with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
-{"timestamp":"00:01:13.905","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\""}
-{"timestamp":"00:01:13.905","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
-{"timestamp":"00:02:42.640","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\""}
-{"timestamp":"00:02:42.640","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
-{"timestamp":"00:02:42.642","source":"Browser","level":"WARN","message":"Image with src \"/conrad-crawford-EcWBgAdRqrQ-unsplash.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
-{"timestamp":"00:04:36.321","source":"Server","level":"LOG","message":"✓ Compiled in 1987ms"}
-{"timestamp":"00:06:47.502","source":"Server","level":"LOG","message":"✓ Compiled in 940ms"}
-{"timestamp":"00:06:53.303","source":"Server","level":"LOG","message":"✓ Compiled in 1346ms"}
+{"timestamp":"00:00:02.418","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:04:23.302","source":"Server","level":"LOG","message":"✓ Compiled in 37ms"}
+{"timestamp":"00:04:30.105","source":"Server","level":"LOG","message":"✓ Compiled in 46ms"}
+{"timestamp":"00:04:36.355","source":"Server","level":"LOG","message":"✓ Compiled in 36ms"}
+{"timestamp":"00:04:46.231","source":"Server","level":"LOG","message":"✓ Compiled in 40ms"}
+{"timestamp":"00:05:27.390","source":"Server","level":"LOG","message":"✓ Compiled in 745ms"}
+{"timestamp":"00:12:28.224","source":"Server","level":"LOG","message":"✓ Compiled in 504ms"}
+{"timestamp":"00:12:46.069","source":"Server","level":"LOG","message":"✓ Compiled in 49ms"}
+{"timestamp":"00:12:53.017","source":"Server","level":"LOG","message":"✓ Compiled in 275ms"}
+{"timestamp":"00:13:00.917","source":"Server","level":"LOG","message":"✓ Compiled in 111ms"}
+{"timestamp":"00:13:07.554","source":"Server","level":"LOG","message":"✓ Compiled in 144ms"}

@@ -1,72 +1,68 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { PROJECTS } from "@/lib/projects";
+import Reveal from "@/components/Reveal";
+
 type Language = "en" | "es";
 
 interface WorkProps {
   language: Language;
 }
 
-const PROJECTS = [
-  {
-    name: "Northbeam Finance",
-    kind: "Fintech dashboard",
-    kindEs: "Dashboard fintech",
-    year: "2026",
-  },
-  {
-    name: "Loom & Co.",
-    kind: "E-commerce rebuild",
-    kindEs: "Reconstrucción e-commerce",
-    year: "2025",
-  },
-  {
-    name: "Halcyon Health",
-    kind: "Marketing site + booking",
-    kindEs: "Sitio marketing + reservas",
-    year: "2025",
-  },
-  {
-    name: "Ferrous Logistics",
-    kind: "Internal ops tool",
-    kindEs: "Herramienta interna de operaciones",
-    year: "2025",
-  },
-];
-
 export default function Work({ language }: WorkProps) {
   const heading = language === "es" ? "Trabajo seleccionado" : "Selected work";
   const intro =
     language === "es"
-      ? "Casos de ejemplo — reemplázalos por tus propios proyectos o úsalos como plantilla mientras construyes tu primera historia."
-      : "Placeholder case studies — swap these for your own projects, or leave them as a template while you build your first case study.";
+      ? "Ejemplos de plantilla mientras sumamos proyectos reales — cada uno tiene su propia página de caso."
+      : "Template examples while real projects get added — each one has its own case study page.";
 
   return (
     <section id="work" className="relative border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
-        <div className="mb-14 md:mb-20">
-          <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-ink md:text-4xl">
-            {heading}
-          </h2>
-          <p className="mt-3 max-w-md text-sm text-ink-dim">{intro}</p>
-        </div>
+        <Reveal>
+          <div className="mb-14 md:mb-20">
+            <h2 className="font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-6xl">
+              {heading}
+            </h2>
+            <p className="mt-3 max-w-md text-sm text-ink-dim">{intro}</p>
+          </div>
+        </Reveal>
 
-        <div className="space-y-4 rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl md:p-8">
-          {PROJECTS.map((project) => (
-            <a
-              key={project.name}
-              href="#contact"
-              className="group flex flex-col items-start justify-between gap-3 rounded-3xl border border-white/5 bg-black/15 p-6 transition hover:border-accent-bright/50 hover:bg-white/5 sm:flex-row sm:items-center"
-            >
-              <div className="flex flex-col gap-1">
-                <span className="font-[family-name:var(--font-display)] text-2xl font-semibold text-ink transition group-hover:text-accent-bright">
-                  {project.name}
-                </span>
-                <span className="text-sm text-ink-dim">
-                  {language === "es" ? project.kindEs : project.kind}
-                </span>
-              </div>
-              <span className="text-sm text-ink-dim">{project.year}</span>
-            </a>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {PROJECTS.map((project, index) => (
+            <Reveal key={project.slug} delayMs={index * 100}>
+              <Link
+                href={`/work/${project.slug}`}
+                className="group relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-white/10"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6">
+                  <div className="flex flex-col gap-1">
+                    <span className="font-[family-name:var(--font-display)] text-2xl font-extrabold tracking-tight text-white">
+                      {project.name}
+                    </span>
+                    <span className="text-sm text-white/70">
+                      {language === "es" ? project.kindEs : project.kind} ·{" "}
+                      {project.year}
+                    </span>
+                  </div>
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-white transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                    <ArrowUpRight className="h-4 w-4" />
+                  </span>
+                </div>
+              </Link>
+            </Reveal>
           ))}
         </div>
       </div>

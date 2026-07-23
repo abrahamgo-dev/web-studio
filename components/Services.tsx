@@ -1,6 +1,7 @@
 "use client";
 
 import { Layers, Code2, GaugeCircle, LifeBuoy } from "lucide-react";
+import Reveal from "@/components/Reveal";
 
 type Language = "en" | "es";
 
@@ -11,42 +12,42 @@ interface ServicesProps {
 const SERVICES = [
   {
     icon: Layers,
-    title: "Web design",
-    titleEs: "Diseño web",
+    title: "Design",
+    titleEs: "Diseño",
     description:
-      "Identity, layout, and interaction design for marketing sites and product front-ends — built to hold your brand's voice, not a template's.",
+      "Clean, elegant layouts built around your brand — the kind of site that makes a small business look established the moment it loads.",
     descriptionEs:
-      "Diseño de identidad, layout e interacción para sitios de marketing y productos digitales, pensado para reflejar la voz de tu marca y no un template.",
+      "Layouts limpios y elegantes construidos alrededor de tu marca — el tipo de sitio que hace que un negocio se vea establecido desde el primer segundo.",
     span: "md:col-span-3",
   },
   {
     icon: Code2,
-    title: "Development",
-    titleEs: "Desarrollo",
+    title: "Build",
+    titleEs: "Construcción",
     description:
-      "Next.js builds that ship fast and stay maintainable — no page-builder debt to inherit later.",
+      "Fast, lightweight Next.js builds — no page-builder bloat, no plugins to keep updated.",
     descriptionEs:
-      "Proyectos en Next.js que se lanzan rápido y son fáciles de mantener, sin deuda técnica de constructores visuales.",
+      "Sitios en Next.js rápidos y livianos, sin constructores visuales pesados ni plugins que mantener.",
     span: "md:col-span-2",
   },
   {
     icon: GaugeCircle,
-    title: "Digital solutions",
-    titleEs: "Soluciones digitales",
+    title: "Just what you need",
+    titleEs: "Solo lo necesario",
     description:
-      "Dashboards, client portals, and internal tools — the software layer behind the website that most agencies skip.",
+      "Contact forms, booking links, maps, reviews — the functionality small businesses actually use, nothing extra to maintain.",
     descriptionEs:
-      "Dashboards, portales y herramientas internas: la capa de software que muchas agencias dejan atrás.",
+      "Formularios de contacto, reservas, mapas, reseñas — la funcionalidad que un negocio realmente usa, sin nada extra que mantener.",
     span: "md:col-span-2",
   },
   {
     icon: LifeBuoy,
-    title: "Care & growth",
-    titleEs: "Cuidado y crecimiento",
+    title: "Ongoing care",
+    titleEs: "Cuidado continuo",
     description:
-      "Ongoing edits, monitoring, and iteration after launch, billed monthly instead of quoted per request.",
+      "A monthly plan covers edits, small updates, and fixes — so the site stays current without a redesign invoice every couple of years.",
     descriptionEs:
-      "Ediciones, seguimiento e iteración continua tras el lanzamiento, con un plan mensual en lugar de cotizaciones por pedido.",
+      "Un plan mensual cubre ediciones, pequeños cambios y arreglos, para que el sitio se mantenga al día sin una factura de rediseño cada par de años.",
     span: "md:col-span-3",
   },
 ];
@@ -54,48 +55,45 @@ const SERVICES = [
 export default function Services({ language }: ServicesProps) {
   const heading =
     language === "es"
-      ? "Un estudio, toda la pila."
-      : "One studio, the whole stack.";
+      ? "Todo lo que un sitio necesita. Nada de más."
+      : "Everything a small business site needs. Nothing it doesn't.";
   const intro =
     language === "es"
-      ? "La mayoría de agencias se detiene en la landing page. Nosotros seguimos con el sistema completo."
-      : "Most agencies stop at the homepage. We stay for the system underneath it.";
+      ? "La mayoría de estudios vende un proyecto de una sola vez. Nosotros construimos algo que puedes conservar por años — pulido en el lanzamiento y cuidado cada mes después."
+      : "Most studios sell you a one-time project. We build something you keep for years — polished at launch, cared for every month after.";
 
   return (
     <section id="services" className="relative border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
-        <div className="mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between">
-          <h2 className="max-w-md font-[family-name:var(--font-display)] text-3xl font-semibold tracking-tight text-ink md:text-4xl">
-            {heading}
-          </h2>
-          <p className="max-w-sm text-sm text-ink-dim md:text-right">{intro}</p>
-        </div>
+        <Reveal>
+          <div className="mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between">
+            <h2 className="max-w-md font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
+              {heading}
+            </h2>
+            <p className="max-w-sm text-sm text-ink-dim md:text-right">{intro}</p>
+          </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-5">
           {SERVICES.map(
-            ({
-              icon: Icon,
-              title,
-              titleEs,
-              description,
-              descriptionEs,
-              span,
-            }) => (
-              <div
-                key={title}
-                className={`card-surface group rounded-[2rem] p-8 ${span}`}
-              >
-                <Icon
-                  className="h-7 w-7 text-accent-bright"
-                  strokeWidth={1.75}
-                />
-                <h3 className="mt-6 font-[family-name:var(--font-display)] text-2xl font-semibold text-ink">
-                  {language === "es" ? titleEs : title}
-                </h3>
-                <p className="mt-4 text-sm leading-7 text-ink-dim">
-                  {language === "es" ? descriptionEs : description}
-                </p>
-              </div>
+            (
+              { icon: Icon, title, titleEs, description, descriptionEs, span },
+              index,
+            ) => (
+              <Reveal key={title} delayMs={index * 90} className={span}>
+                <div className="card-surface group h-full rounded-[2rem] p-8">
+                  <Icon
+                    className="h-7 w-7 text-accent-bright"
+                    strokeWidth={1.75}
+                  />
+                  <h3 className="mt-6 font-[family-name:var(--font-display)] text-2xl font-semibold text-ink">
+                    {language === "es" ? titleEs : title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-ink-dim">
+                    {language === "es" ? descriptionEs : description}
+                  </p>
+                </div>
+              </Reveal>
             ),
           )}
         </div>

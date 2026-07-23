@@ -17,10 +17,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 ;
+;
+const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
+const SITE_DESCRIPTION = "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses, then keeps them polished with a monthly care plan.";
 const metadata = {
-    title: "Fen Studio — Web Design & Digital Solutions",
-    description: "Fen Studio builds fast, distinctive websites, dashboards, and digital tools for founders who refuse to look like a template.",
-    metadataBase: new URL("https://fenstudio.com"),
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    metadataBase: new URL("https://fenwebstudio.com"),
     alternates: {
         canonical: "/",
         languages: {
@@ -28,16 +31,16 @@ const metadata = {
         }
     },
     openGraph: {
-        title: "Fen Studio — Web Design & Digital Solutions",
-        description: "Fen Studio builds fast, distinctive websites, dashboards, and digital tools for founders who refuse to look like a template.",
+        title: SITE_TITLE,
+        description: SITE_DESCRIPTION,
         type: "website",
         url: "/",
-        siteName: "Fen Studio"
+        siteName: "Fen Web Studio"
     },
     twitter: {
         card: "summary_large_image",
-        title: "Fen Studio — Web Design & Digital Solutions",
-        description: "Fen Studio builds fast, distinctive websites, dashboards, and digital tools for founders who refuse to look like a template."
+        title: SITE_TITLE,
+        description: SITE_DESCRIPTION
     },
     robots: {
         index: true,
@@ -52,12 +55,12 @@ function RootLayout({ children }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 48,
+            lineNumber: 50,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 47,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
