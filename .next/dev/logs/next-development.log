@@ -1,11 +1,4 @@
-{"timestamp":"00:00:02.418","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:04:23.302","source":"Server","level":"LOG","message":"✓ Compiled in 37ms"}
-{"timestamp":"00:04:30.105","source":"Server","level":"LOG","message":"✓ Compiled in 46ms"}
-{"timestamp":"00:04:36.355","source":"Server","level":"LOG","message":"✓ Compiled in 36ms"}
-{"timestamp":"00:04:46.231","source":"Server","level":"LOG","message":"✓ Compiled in 40ms"}
-{"timestamp":"00:05:27.390","source":"Server","level":"LOG","message":"✓ Compiled in 745ms"}
-{"timestamp":"00:12:28.224","source":"Server","level":"LOG","message":"✓ Compiled in 504ms"}
-{"timestamp":"00:12:46.069","source":"Server","level":"LOG","message":"✓ Compiled in 49ms"}
-{"timestamp":"00:12:53.017","source":"Server","level":"LOG","message":"✓ Compiled in 275ms"}
-{"timestamp":"00:13:00.917","source":"Server","level":"LOG","message":"✓ Compiled in 111ms"}
-{"timestamp":"00:13:07.554","source":"Server","level":"LOG","message":"✓ Compiled in 144ms"}
+{"timestamp":"00:00:01.091","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:02:13.969","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:06.255","source":"Server","level":"LOG","message":"✓ Compiled in 2.1s"}
+{"timestamp":"00:05:09.150","source":"Server","level":"LOG","message":"✓ Compiled in 187ms"}
