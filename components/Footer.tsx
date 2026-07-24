@@ -23,6 +23,7 @@ export default function Footer({ language }: FooterProps) {
             { label: "Trabajo", href: "/#work" },
             { label: "Servicios", href: "/#services" },
             { label: "Proceso", href: "/#process" },
+            { label: "Notas", href: "/blog" },
             { label: "Contacto", href: "/#contact" },
           ],
           studio: [
@@ -41,6 +42,7 @@ export default function Footer({ language }: FooterProps) {
             { label: "Work", href: "/#work" },
             { label: "Services", href: "/#services" },
             { label: "Process", href: "/#process" },
+            { label: "Notes", href: "/blog" },
             { label: "Contact", href: "/#contact" },
           ],
           studio: [
