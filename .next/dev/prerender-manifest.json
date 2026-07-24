@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "9b589b9d010ebad944450e697c13799b",
-    "previewModeSigningKey": "5f2b96da104214eab5fcdfa0d82462dfa6e62932a6396d2a42ba8c3713329f41",
-    "previewModeEncryptionKey": "2976c08744b22a88d0dc03d02951a261d980e8577095c9a86589626f3ed84b4b"
-  }
-}
+{"version":4,"routes":{"/blog/what-a-care-plan-actually-covers":{},"/blog/fewer-pages-more-credible":{},"/work/loom-and-co":{},"/work/halcyon-health":{},"/work/marlow-and-row":{},"/work/rosewood-table":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/work/[slug]","routeRegex":"^\\/work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"d2cd9b19c2d5cd63451ba4faec21e01d","previewModeSigningKey":"ad26719148c1af19d2c0dcb9c6c21aaf9fb57cf83d9f1bf0146e8bdb393863a0","previewModeEncryptionKey":"92aa73713de06091313c31391a77185bc847ba244418dc1352def63ce7ba47d8"}}

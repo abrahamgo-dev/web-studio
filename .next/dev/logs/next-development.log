@@ -1,1 +1,10 @@
-{"timestamp":"00:00:03.032","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:06.623","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:11:50.121","source":"Server","level":"LOG","message":"✓ Compiled in 579ms"}
+{"timestamp":"00:11:54.938","source":"Server","level":"LOG","message":"✓ Compiled in 647ms"}
+{"timestamp":"00:12:10.584","source":"Server","level":"LOG","message":"✓ Compiled in 386ms"}
+{"timestamp":"00:12:26.901","source":"Server","level":"LOG","message":"✓ Compiled in 993ms"}
+{"timestamp":"00:12:45.174","source":"Server","level":"LOG","message":"✓ Compiled in 1047ms"}
+{"timestamp":"00:17:32.541","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:17:32.558","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:17:32.558","source":"Browser","level":"WARN","message":"\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\u001b[39m"}
+{"timestamp":"00:18:42.763","source":"Server","level":"LOG","message":"○ Compiling /work/[slug] ..."}

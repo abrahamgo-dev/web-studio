@@ -18,7 +18,7 @@ export default function Hero({ language }: HeroProps) {
             <span className="block">
               Un sitio web tan
               <br />
-              confiable como
+              <span className="text-accent-bright">confiable</span> como
               <br />
               tu negocio.
             </span>
@@ -34,7 +34,7 @@ export default function Hero({ language }: HeroProps) {
             <span className="block">
               A website as
               <br />
-              trustworthy as
+              <span className="text-accent-bright">trustworthy</span> as
               <br />
               your business.
             </span>
@@ -51,8 +51,8 @@ export default function Hero({ language }: HeroProps) {
       className="relative overflow-hidden border-b border-white/10"
     >
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/arch-geometric-bw.jpg')] bg-cover bg-center opacity-75" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/60 to-bg" />
+        <div className="aura absolute -top-32 right-[-12%] h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-[130px]" />
+        <div className="noise absolute inset-0" />
       </div>
 
       <div className="relative mx-auto max-w-5xl px-6 pt-16 pb-28 text-center md:px-10 md:pt-24 md:pb-36">
@@ -64,13 +64,13 @@ export default function Hero({ language }: HeroProps) {
         </Reveal>
 
         <Reveal delayMs={100}>
-          <h1 className="text-balance font-[family-name:var(--font-display)] text-[clamp(4rem,9vw,7.5rem)] font-extrabold leading-[0.92] tracking-tight text-white">
+          <h1 className="text-balance font-[family-name:var(--font-display)] text-[clamp(4rem,9vw,7.5rem)] font-extrabold leading-[0.92] tracking-tight text-ink">
             {content.heading}
           </h1>
         </Reveal>
 
         <Reveal delayMs={220}>
-          <p className="mx-auto mt-8 max-w-3xl text-balance text-base text-white/70 md:text-lg">
+          <p className="mx-auto mt-8 max-w-3xl text-balance text-base text-ink-dim md:text-lg">
             {content.paragraph}
           </p>
         </Reveal>
@@ -79,13 +79,13 @@ export default function Hero({ language }: HeroProps) {
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#work"
-              className="w-full rounded-full border border-white/20 bg-transparent px-7 py-4 text-sm font-medium text-white transition hover:bg-white/10 sm:w-auto"
+              className="w-full rounded-full border border-[color:var(--line)] bg-transparent px-7 py-4 text-sm font-medium text-ink transition hover:bg-white/5 sm:w-auto"
             >
               {content.primary}
             </a>
             <a
               href="#contact"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-sm font-bold text-white shadow-[0_18px_55px_rgba(255,106,46,0.35)] transition hover:bg-accent/90 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-sm font-bold text-white shadow-[0_18px_55px_rgba(255,106,46,0.3)] transition hover:bg-accent/90 sm:w-auto"
             >
               {content.secondary}
               <ArrowUpRight className="h-4 w-4" />
