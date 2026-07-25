@@ -13,7 +13,9 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION =
   "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses, then keeps them polished with a monthly care plan.";
-const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const googleSiteVerification =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+  "htOn55zWJcchNLEr-_PPlBy7cwraqVKwWN4jpfylCxQ";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
