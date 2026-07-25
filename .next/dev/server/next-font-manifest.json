@@ -1,6 +1,7 @@
 {
   "app": {
-    "[project]/app/page": []
+    "[project]/app/page": [],
+    "[project]/app/website-design-for-professional-services/page": []
   },
   "appUsingSizeAdjust": true,
   "pages": {},

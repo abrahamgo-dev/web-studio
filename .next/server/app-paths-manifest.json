@@ -6,5 +6,11 @@
   "/blog/page": "app/blog/page.js",
   "/icon.svg/route": "app/icon.svg/route.js",
   "/page": "app/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/website-design-for-boutiques/page": "app/website-design-for-boutiques/page.js",
+  "/website-design-for-professional-services/page": "app/website-design-for-professional-services/page.js",
+  "/website-design-for-restaurants/page": "app/website-design-for-restaurants/page.js",
+  "/website-design-for-wellness-studios/page": "app/website-design-for-wellness-studios/page.js",
   "/work/[slug]/page": "app/work/[slug]/page.js"
 }

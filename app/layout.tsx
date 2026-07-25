@@ -7,6 +7,8 @@ import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { SITE_URL, SITE_NAME } from "@/lib/site";
 
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION =
@@ -15,7 +17,7 @@ const SITE_DESCRIPTION =
 export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
-  metadataBase: new URL("https://fenwebstudio.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
     languages: {
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     type: "website",
     url: "/",
-    siteName: "Fen Web Studio",
+    siteName: SITE_NAME,
   },
   twitter: {
     card: "summary_large_image",
@@ -40,14 +42,31 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  image: `${SITE_URL}/icon.svg`,
+  priceRange: "$$",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">{children}</body>
+    <html lang="en" data-scroll-behavior="smooth">
+      <body className="antialiased">
+        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }

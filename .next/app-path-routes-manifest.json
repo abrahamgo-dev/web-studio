@@ -6,5 +6,11 @@
   "/blog/page": "/blog",
   "/icon.svg/route": "/icon.svg",
   "/page": "/",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/website-design-for-boutiques/page": "/website-design-for-boutiques",
+  "/website-design-for-professional-services/page": "/website-design-for-professional-services",
+  "/website-design-for-restaurants/page": "/website-design-for-restaurants",
+  "/website-design-for-wellness-studios/page": "/website-design-for-wellness-studios",
   "/work/[slug]/page": "/work/[slug]"
 }

@@ -4,6 +4,10 @@
     "[project]/app/blog/[slug]/page": [],
     "[project]/app/blog/page": [],
     "[project]/app/page": [],
+    "[project]/app/website-design-for-boutiques/page": [],
+    "[project]/app/website-design-for-professional-services/page": [],
+    "[project]/app/website-design-for-restaurants/page": [],
+    "[project]/app/website-design-for-wellness-studios/page": [],
     "[project]/app/work/[slug]/page": []
   },
   "appUsingSizeAdjust": true,

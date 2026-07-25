@@ -7,6 +7,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { useSiteChrome } from "@/lib/useSiteChrome";
 import type { Project } from "@/lib/projects";
+import { getLandingPageByProject } from "@/lib/landingPages";
 
 interface CaseStudyProps {
   project: Project;
@@ -20,6 +21,8 @@ export default function CaseStudy({ project }: CaseStudyProps) {
     return <div className="min-h-screen bg-bg" />;
   }
 
+  const landingPage = getLandingPageByProject(project.slug);
+
   const copy =
     language === "es"
       ? {
@@ -29,6 +32,7 @@ export default function CaseStudy({ project }: CaseStudyProps) {
           approach: "El enfoque",
           result: "El resultado",
           services: "Incluido",
+          learnMore: "Ver más para",
           ctaTitle: "¿Tu negocio necesita algo así?",
           ctaText: "Cuéntanos qué tienes hoy y hacia dónde quieres llegar.",
           ctaButton: "Empezar un proyecto",
@@ -40,6 +44,7 @@ export default function CaseStudy({ project }: CaseStudyProps) {
           approach: "The approach",
           result: "The result",
           services: "Included",
+          learnMore: "See more for",
           ctaTitle: "Need something like this?",
           ctaText: "Tell us what you have today and where you want to end up.",
           ctaButton: "Start a project",
@@ -151,6 +156,18 @@ export default function CaseStudy({ project }: CaseStudyProps) {
                   ),
                 )}
               </ul>
+              {landingPage && (
+                <Link
+                  href={`/${landingPage.slug}`}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent-bright transition hover:text-accent"
+                >
+                  {copy.learnMore}{" "}
+                  {language === "es"
+                    ? landingPage.industryEs
+                    : landingPage.industry}
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </Link>
+              )}
             </div>
           </div>
         </section>

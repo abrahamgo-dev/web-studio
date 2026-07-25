@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import Reveal from "@/components/Reveal";
+import { LANDING_PAGES } from "@/lib/landingPages";
 
 type Language = "en" | "es";
 
@@ -18,6 +19,7 @@ export default function Footer({ language }: FooterProps) {
           tagline:
             "Sitios elegantes para negocios pequeños y medianos, diseñados una vez y cuidados siempre.",
           sectionsLabel: "Secciones",
+          solutionsLabel: "Soluciones",
           studioLabel: "Estudio",
           sections: [
             { label: "Trabajo", href: "/#work" },
@@ -37,6 +39,7 @@ export default function Footer({ language }: FooterProps) {
           tagline:
             "Elegant websites for small and medium businesses, designed once and cared for always.",
           sectionsLabel: "Sections",
+          solutionsLabel: "Solutions",
           studioLabel: "Studio",
           sections: [
             { label: "Work", href: "/#work" },
@@ -57,7 +60,7 @@ export default function Footer({ language }: FooterProps) {
     <footer className="border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20">
         <Reveal>
-          <div className="grid gap-12 md:grid-cols-[1.3fr_1fr_1fr]">
+          <div className="grid gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
             <div>
               <Link
                 href="/#top"
@@ -89,6 +92,24 @@ export default function Footer({ language }: FooterProps) {
                       className="text-sm text-ink transition hover:text-accent"
                     >
                       {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-ink-dim">
+                {content.solutionsLabel}
+              </p>
+              <ul className="mt-5 flex flex-col gap-3">
+                {LANDING_PAGES.map((page) => (
+                  <li key={page.slug}>
+                    <Link
+                      href={`/${page.slug}`}
+                      className="text-sm text-ink transition hover:text-accent"
+                    >
+                      {language === "es" ? page.industryEs : page.industry}
                     </Link>
                   </li>
                 ))}

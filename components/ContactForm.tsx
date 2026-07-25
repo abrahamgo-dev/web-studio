@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, CheckCircle2, Loader2 } from "lucide-react";
+import { gtagEvent } from "@/lib/gtag";
 
 type Language = "en" | "es";
 
@@ -70,6 +71,7 @@ export default function ContactForm({ language }: ContactFormProps) {
       setName("");
       setEmail("");
       setMessage("");
+      gtagEvent({ action: "generate_lead", category: "contact_form" });
     } catch {
       setStatus("error");
     }

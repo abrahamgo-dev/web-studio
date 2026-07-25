@@ -1442,6 +1442,10 @@
     padding-right: calc(var(--spacing) * 2);
   }
 
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
@@ -1528,6 +1532,10 @@
 
   .text-\[clamp\(2\.5rem\,6vw\,4rem\)\] {
     font-size: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .text-\[clamp\(2\.25rem\,5\.5vw\,3\.75rem\)\] {
+    font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   }
 
   .text-\[clamp\(2\.25rem\,5vw\,3\.5rem\)\] {
@@ -1649,6 +1657,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-white\/70 {
       color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+
+  .text-white\/75 {
+    color: #ffffffbf;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-white\/75 {
+      color: color-mix(in oklab, var(--color-white) 75%, transparent);
     }
   }
 
@@ -1812,6 +1830,16 @@
       }
     }
 
+    .hover\:border-white\/20:hover {
+      border-color: #fff3;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-white\/20:hover {
+        border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+      }
+    }
+
     .hover\:bg-accent\/90:hover {
       background-color: var(--accent);
     }
@@ -1946,6 +1974,10 @@
       display: inline-flex;
     }
 
+    .md\:w-80 {
+      width: calc(var(--spacing) * 80);
+    }
+
     .md\:max-w-2xl {
       max-width: var(--container-2xl);
     }
@@ -1970,8 +2002,8 @@
       grid-template-columns: .95fr 1.05fr;
     }
 
-    .md\:grid-cols-\[1\.3fr_1fr_1fr\] {
-      grid-template-columns: 1.3fr 1fr 1fr;
+    .md\:grid-cols-\[1\.2fr_1fr_1fr_1fr\] {
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
     }
 
     .md\:grid-cols-\[4rem_12rem_1fr\] {
@@ -1984,6 +2016,10 @@
 
     .md\:items-baseline {
       align-items: baseline;
+    }
+
+    .md\:items-center {
+      align-items: center;
     }
 
     .md\:items-end {
@@ -2014,6 +2050,10 @@
       padding: calc(var(--spacing) * 10);
     }
 
+    .md\:px-2 {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+
     .md\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
     }
@@ -2040,6 +2080,14 @@
 
     .md\:pt-28 {
       padding-top: calc(var(--spacing) * 28);
+    }
+
+    .md\:pr-8 {
+      padding-right: calc(var(--spacing) * 8);
+    }
+
+    .md\:pb-2 {
+      padding-bottom: calc(var(--spacing) * 2);
     }
 
     .md\:pb-8 {

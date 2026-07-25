@@ -74,6 +74,42 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../app/website-design-for-boutiques/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/website-design-for-boutiques">> = Specific
+  const handler = {} as typeof import("../../app/website-design-for-boutiques/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/website-design-for-professional-services/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/website-design-for-professional-services">> = Specific
+  const handler = {} as typeof import("../../app/website-design-for-professional-services/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/website-design-for-restaurants/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/website-design-for-restaurants">> = Specific
+  const handler = {} as typeof import("../../app/website-design-for-restaurants/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/website-design-for-wellness-studios/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/website-design-for-wellness-studios">> = Specific
+  const handler = {} as typeof import("../../app/website-design-for-wellness-studios/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/work/[slug]/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/work/[slug]">> = Specific
