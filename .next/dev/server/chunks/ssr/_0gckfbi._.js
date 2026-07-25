@@ -160,6 +160,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2
 ;
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION = "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses, then keeps them polished with a monthly care plan.";
+const googleSiteVerification = ("TURBOPACK compile-time value", "htOn55zWJcchNLEr-_PPlBy7cwraqVKwWN4jpfylCxQ");
 const metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
@@ -185,7 +186,12 @@ const metadata = {
     robots: {
         index: true,
         follow: true
-    }
+    },
+    ...("TURBOPACK compile-time truthy", 1) ? {
+        verification: {
+            google: googleSiteVerification
+        }
+    } : "TURBOPACK unreachable"
 };
 const organizationJsonLd = {
     "@context": "https://schema.org",
@@ -211,23 +217,23 @@ function RootLayout({ children }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 64,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$GoogleAnalytics$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 68,
+                    lineNumber: 78,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 62,
+            lineNumber: 70,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 61,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }

@@ -13,6 +13,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/site";
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION =
   "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses, then keeps them polished with a monthly care plan.";
+const googleSiteVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -40,6 +41,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  ...(googleSiteVerification
+    ? {
+        verification: {
+          google: googleSiteVerification,
+        },
+      }
+    : {}),
 };
 
 const organizationJsonLd = {
@@ -63,7 +71,9 @@ export default function RootLayout({
         {children}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
         />
         <GoogleAnalytics />
       </body>
