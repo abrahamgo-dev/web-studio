@@ -1,0 +1,4337 @@
+(globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/components/Nav.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Nav
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.mjs [app-client] (ecmascript) <export default as Menu>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2d$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoonStar$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/moon-star.mjs [app-client] (ecmascript) <export default as MoonStar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2d$medium$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SunMedium$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sun-medium.mjs [app-client] (ecmascript) <export default as SunMedium>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-client] (ecmascript) <export default as X>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+function Nav({ language, onToggleLanguage, theme, onToggleTheme }) {
+    _s();
+    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const links = language === "es" ? [
+        {
+            label: "Trabajo",
+            href: "/#work"
+        },
+        {
+            label: "Servicios",
+            href: "/#services"
+        },
+        {
+            label: "Proceso",
+            href: "/#process"
+        },
+        {
+            label: "Notas",
+            href: "/blog"
+        },
+        {
+            label: "Contacto",
+            href: "/#contact"
+        }
+    ] : [
+        {
+            label: "Work",
+            href: "/#work"
+        },
+        {
+            label: "Services",
+            href: "/#services"
+        },
+        {
+            label: "Process",
+            href: "/#process"
+        },
+        {
+            label: "Notes",
+            href: "/blog"
+        },
+        {
+            label: "Contact",
+            href: "/#contact"
+        }
+    ];
+    const ctaLabel = language === "es" ? "Empezar un proyecto" : "Start a project";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+        className: "sticky top-0 z-40 border-b border-white/10 bg-bg/70 backdrop-blur-xl",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/#top",
+                        className: "flex items-center gap-2.5 font-[family-name:var(--font-display)] text-lg font-extrabold tracking-tight text-ink",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/icon.svg",
+                                alt: "",
+                                width: 28,
+                                height: 28,
+                                className: "rounded-[7px]"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 53,
+                                columnNumber: 11
+                            }, this),
+                            "fenwebstudio"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        className: "hidden items-center gap-9 md:flex",
+                        children: links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: link.href,
+                                className: "text-sm text-ink-dim transition hover:text-ink",
+                                children: link.label
+                            }, link.href, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 65,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "hidden items-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 p-1 shadow-sm md:inline-flex",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: onToggleLanguage,
+                                        className: `rounded-full px-3 py-1.5 text-sm font-medium ${language === "en" ? "bg-accent text-white" : "text-ink-dim hover:text-ink"}`,
+                                        children: "EN"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Nav.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: onToggleLanguage,
+                                        className: `rounded-full px-3 py-1.5 text-sm font-medium ${language === "es" ? "bg-accent text-white" : "text-ink-dim hover:text-ink"}`,
+                                        children: "ES"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Nav.tsx",
+                                        lineNumber: 88,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 76,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                "aria-label": theme === "dark" ? "Switch to light theme" : "Switch to dark theme",
+                                onClick: onToggleTheme,
+                                className: "hidden h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 text-ink shadow-sm transition hover:bg-white/10 md:inline-flex",
+                                children: theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2d$medium$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SunMedium$3e$__["SunMedium"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Nav.tsx",
+                                    lineNumber: 112,
+                                    columnNumber: 15
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2d$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoonStar$3e$__["MoonStar"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Nav.tsx",
+                                    lineNumber: 114,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 101,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/#contact",
+                                className: "hidden items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-ink transition hover:border-accent-bright/60 hover:bg-white/10 hover:text-accent-bright md:inline-flex",
+                                children: [
+                                    ctaLabel,
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                        className: "h-3.5 w-3.5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Nav.tsx",
+                                        lineNumber: 123,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 118,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        "aria-label": open ? "Close menu" : "Open menu",
+                        "aria-expanded": open,
+                        onClick: ()=>setOpen((v)=>!v),
+                        className: "inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-ink shadow-sm transition hover:bg-white/10 md:hidden",
+                        children: open ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                            className: "h-4.5 w-4.5"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Nav.tsx",
+                            lineNumber: 134,
+                            columnNumber: 13
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+                            className: "h-4.5 w-4.5"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Nav.tsx",
+                            lineNumber: 136,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 127,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Nav.tsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, this),
+            open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-6 mb-6 flex flex-col gap-2 rounded-2xl border border-white/10 bg-bg-raised/95 p-3 backdrop-blur-xl md:hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: onToggleLanguage,
+                                className: `flex-1 rounded-xl px-3 py-2 text-sm font-medium ${language === "en" ? "bg-accent text-white" : "bg-white/10 text-ink"}`,
+                                children: "EN"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 144,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: onToggleLanguage,
+                                className: `flex-1 rounded-xl px-3 py-2 text-sm font-medium ${language === "es" ? "bg-accent text-white" : "bg-white/10 text-ink"}`,
+                                children: "ES"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 155,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                onClick: onToggleTheme,
+                                className: "rounded-xl border border-[color:var(--line)] bg-white/10 p-2 text-ink",
+                                children: theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2d$medium$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__SunMedium$3e$__["SunMedium"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Nav.tsx",
+                                    lineNumber: 172,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2d$star$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoonStar$3e$__["MoonStar"], {
+                                    className: "h-4 w-4"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Nav.tsx",
+                                    lineNumber: 174,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Nav.tsx",
+                                lineNumber: 166,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 143,
+                        columnNumber: 11
+                    }, this),
+                    links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: link.href,
+                            onClick: ()=>setOpen(false),
+                            className: "rounded-xl px-4 py-3 text-sm text-ink-dim transition hover:bg-white/5 hover:text-ink",
+                            children: link.label
+                        }, link.href, false, {
+                            fileName: "[project]/components/Nav.tsx",
+                            lineNumber: 179,
+                            columnNumber: 13
+                        }, this)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/#contact",
+                        onClick: ()=>setOpen(false),
+                        className: "mt-1 rounded-xl bg-accent px-4 py-3 text-center text-sm font-medium text-white",
+                        children: ctaLabel
+                    }, void 0, false, {
+                        fileName: "[project]/components/Nav.tsx",
+                        lineNumber: 188,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Nav.tsx",
+                lineNumber: 142,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Nav.tsx",
+        lineNumber: 47,
+        columnNumber: 5
+    }, this);
+}
+_s(Nav, "xG1TONbKtDWtdOTrXaTAsNhPg/Q=");
+_c = Nav;
+var _c;
+__turbopack_context__.k.register(_c, "Nav");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/MarqueeStrip.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>MarqueeStrip
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+function MarqueeStrip({ language }) {
+    const items = language === "es" ? [
+        "Sitios que convierten",
+        "Diseño premium y claro",
+        "Optimizado para móvil",
+        "Mensajes que venden",
+        "Crecimiento sin fricción"
+    ] : [
+        "Websites that convert",
+        "Premium, clear design",
+        "Mobile optimized",
+        "Copy that sells",
+        "Growth without friction"
+    ];
+    const repeatedItems = [
+        ...items,
+        ...items
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "border-b border-white/10 bg-black text-white",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "marquee-fade overflow-hidden",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "marquee-track flex items-center gap-4 px-6 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.28em] md:text-[0.78rem]",
+                children: repeatedItems.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "flex items-center gap-4 whitespace-nowrap",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: item
+                            }, void 0, false, {
+                                fileName: "[project]/components/MarqueeStrip.tsx",
+                                lineNumber: 38,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "h-1.5 w-1.5 rounded-full bg-white/70"
+                            }, void 0, false, {
+                                fileName: "[project]/components/MarqueeStrip.tsx",
+                                lineNumber: 39,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, `${item}-${index}`, true, {
+                        fileName: "[project]/components/MarqueeStrip.tsx",
+                        lineNumber: 34,
+                        columnNumber: 13
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/components/MarqueeStrip.tsx",
+                lineNumber: 32,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/MarqueeStrip.tsx",
+            lineNumber: 31,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/MarqueeStrip.tsx",
+        lineNumber: 30,
+        columnNumber: 5
+    }, this);
+}
+_c = MarqueeStrip;
+var _c;
+__turbopack_context__.k.register(_c, "MarqueeStrip");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Reveal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Reveal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+function Reveal({ children, className, delayMs = 0 }) {
+    _s();
+    const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [visible, setVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Reveal.useEffect": ()=>{
+            const node = ref.current;
+            if (!node) return;
+            const observer = new IntersectionObserver({
+                "Reveal.useEffect": ([entry])=>{
+                    if (entry.isIntersecting) {
+                        setVisible(true);
+                        observer.disconnect();
+                    }
+                }
+            }["Reveal.useEffect"], {
+                threshold: 0.15,
+                rootMargin: "0px 0px -10% 0px"
+            });
+            observer.observe(node);
+            return ({
+                "Reveal.useEffect": ()=>observer.disconnect()
+            })["Reveal.useEffect"];
+        }
+    }["Reveal.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        ref: ref,
+        className: className,
+        style: {
+            transitionProperty: "opacity, transform",
+            transitionDuration: "700ms",
+            transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+            transitionDelay: `${delayMs}ms`,
+            opacity: visible ? 1 : 0,
+            transform: visible ? "translateY(0)" : "translateY(28px)"
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/components/Reveal.tsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, this);
+}
+_s(Reveal, "F7BtIAxVh3vOWU1Jr24RYsj9CHc=");
+_c = Reveal;
+var _c;
+__turbopack_context__.k.register(_c, "Reveal");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Hero.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Hero
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkle.mjs [app-client] (ecmascript) <export default as Sparkle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+function Hero({ language }) {
+    const content = language === "es" ? {
+        badge: "Diseño premium para negocios que venden",
+        heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "block",
+            children: [
+                "Tu sitio debe",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 20,
+                    columnNumber: 15
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-accent-bright",
+                    children: "convertir"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 21,
+                    columnNumber: 15
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 22,
+                    columnNumber: 15
+                }, this),
+                "desde el primer clic."
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Hero.tsx",
+            lineNumber: 18,
+            columnNumber: 13
+        }, this),
+        paragraph: "Creamos páginas web elegantes, rápidas y enfocadas en resultados para negocios que quieren captar clientes, ganar confianza y cerrar más oportunidades sin complicaciones.",
+        primary: "Ver proyectos",
+        secondary: "Reservar una llamada",
+        bullets: [
+            "Diseño premium y claro",
+            "Optimizado para móvil",
+            "Mantenimiento continuo"
+        ]
+    } : {
+        badge: "Premium web design for businesses that sell",
+        heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "block",
+            children: [
+                "Your website should",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 41,
+                    columnNumber: 15
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "text-accent-bright",
+                    children: "convert"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 42,
+                    columnNumber: 15
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                    fileName: "[project]/components/Hero.tsx",
+                    lineNumber: 43,
+                    columnNumber: 15
+                }, this),
+                "from the first click."
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Hero.tsx",
+            lineNumber: 39,
+            columnNumber: 13
+        }, this),
+        paragraph: "We create elegant, fast, conversion-focused websites for businesses that want to attract clients, build trust, and close more opportunities without the usual complexity.",
+        primary: "See projects",
+        secondary: "Book a call",
+        bullets: [
+            "Premium, clear design",
+            "Mobile optimized",
+            "Ongoing care"
+        ]
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "top",
+        className: "relative overflow-hidden border-b border-white/10",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "pointer-events-none absolute inset-0 overflow-hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "aura absolute -top-32 right-[-12%] h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-[130px]"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 64,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "noise absolute inset-0"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 65,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.tsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative mx-auto max-w-6xl px-6 pt-16 pb-20 text-center md:px-10 md:pt-24 md:pb-28",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mb-8 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-2 text-xs font-semibold tracking-wide text-accent-bright backdrop-blur-sm",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkle$3e$__["Sparkle"], {
+                                    className: "h-3.5 w-3.5 text-accent-bright"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Hero.tsx",
+                                    lineNumber: 71,
+                                    columnNumber: 13
+                                }, this),
+                                content.badge
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 70,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 100,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-balance font-[family-name:var(--font-display)] text-[clamp(3.8rem,8vw,6.8rem)] font-extrabold leading-[0.92] tracking-tight text-ink",
+                            children: content.heading
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 77,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 220,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "mx-auto mt-8 max-w-3xl text-balance text-base text-ink-dim md:text-lg",
+                            children: content.paragraph
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 83,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 82,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 340,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#work",
+                                    className: "w-full rounded-full border border-[color:var(--line)] bg-transparent px-7 py-4 text-sm font-medium text-ink transition hover:bg-white/5 sm:w-auto",
+                                    children: content.primary
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Hero.tsx",
+                                    lineNumber: 90,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#contact",
+                                    className: "inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-sm font-bold text-white shadow-[0_18px_55px_rgba(255,106,46,0.3)] transition hover:bg-accent/90 sm:w-auto",
+                                    children: [
+                                        content.secondary,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                            className: "h-4 w-4"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.tsx",
+                                            lineNumber: 101,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Hero.tsx",
+                                    lineNumber: 96,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 89,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 88,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 460,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-ink-dim",
+                            children: content.bullets.map((bullet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "rounded-full border border-white/10 bg-white/6 px-4 py-2 backdrop-blur-sm",
+                                    children: bullet
+                                }, bullet, false, {
+                                    fileName: "[project]/components/Hero.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 107,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 106,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.tsx",
+                lineNumber: 68,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/Hero.tsx",
+        lineNumber: 59,
+        columnNumber: 5
+    }, this);
+}
+_c = Hero;
+var _c;
+__turbopack_context__.k.register(_c, "Hero");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/TrustStrip.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>TrustStrip
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/clock.mjs [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/message-circle.mjs [app-client] (ecmascript) <export default as MessageCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/refresh-cw.mjs [app-client] (ecmascript) <export default as RefreshCw>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield-check.mjs [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+const ITEMS = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"],
+        label: "Fixed-price projects",
+        labelEs: "Proyectos a precio fijo"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"],
+        label: "Direct line to your builder",
+        labelEs: "Línea directa con quien construye tu sitio"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"],
+        label: "Care plan included after launch",
+        labelEs: "Plan de cuidado incluido tras el lanzamiento"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"],
+        label: "Reply within 1 business day",
+        labelEs: "Respuesta en 1 día hábil"
+    }
+];
+function TrustStrip({ language }) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "section-surface border-b border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-8 md:px-10",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4",
+                    children: ITEMS.map(({ icon: Icon, label, labelEs })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-3 text-sm text-ink-dim",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                    className: "h-4.5 w-4.5 shrink-0 text-accent-bright",
+                                    strokeWidth: 1.75
+                                }, void 0, false, {
+                                    fileName: "[project]/components/TrustStrip.tsx",
+                                    lineNumber: 46,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    children: language === "es" ? labelEs : label
+                                }, void 0, false, {
+                                    fileName: "[project]/components/TrustStrip.tsx",
+                                    lineNumber: 50,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, label, true, {
+                            fileName: "[project]/components/TrustStrip.tsx",
+                            lineNumber: 42,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/TrustStrip.tsx",
+                    lineNumber: 40,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/TrustStrip.tsx",
+                lineNumber: 39,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/TrustStrip.tsx",
+            lineNumber: 38,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/TrustStrip.tsx",
+        lineNumber: 37,
+        columnNumber: 5
+    }, this);
+}
+_c = TrustStrip;
+var _c;
+__turbopack_context__.k.register(_c, "TrustStrip");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Services.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Services
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layers.mjs [app-client] (ecmascript) <export default as Layers>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2d$xml$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/code-xml.mjs [app-client] (ecmascript) <export default as Code2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$gauge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GaugeCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-gauge.mjs [app-client] (ecmascript) <export default as GaugeCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$life$2d$buoy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LifeBuoy$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/life-buoy.mjs [app-client] (ecmascript) <export default as LifeBuoy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+const SERVICES = [
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers$3e$__["Layers"],
+        title: "Design",
+        titleEs: "Diseño",
+        description: "Clean, elegant layouts built around your brand — the kind of site that makes a small business look established the moment it loads.",
+        descriptionEs: "Layouts limpios y elegantes construidos alrededor de tu marca — el tipo de sitio que hace que un negocio se vea establecido desde el primer segundo.",
+        span: "md:col-span-3"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$code$2d$xml$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Code2$3e$__["Code2"],
+        title: "Build",
+        titleEs: "Construcción",
+        description: "Fast, lightweight Next.js builds — no page-builder bloat, no plugins to keep updated.",
+        descriptionEs: "Sitios en Next.js rápidos y livianos, sin constructores visuales pesados ni plugins que mantener.",
+        span: "md:col-span-2"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$gauge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GaugeCircle$3e$__["GaugeCircle"],
+        title: "Just what you need",
+        titleEs: "Solo lo necesario",
+        description: "Contact forms, booking links, maps, reviews — the functionality small businesses actually use, nothing extra to maintain.",
+        descriptionEs: "Formularios de contacto, reservas, mapas, reseñas — la funcionalidad que un negocio realmente usa, sin nada extra que mantener.",
+        span: "md:col-span-2"
+    },
+    {
+        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$life$2d$buoy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__LifeBuoy$3e$__["LifeBuoy"],
+        title: "Ongoing care",
+        titleEs: "Cuidado continuo",
+        description: "A monthly plan covers edits, small updates, and fixes — so the site stays current without a redesign invoice every couple of years.",
+        descriptionEs: "Un plan mensual cubre ediciones, pequeños cambios y arreglos, para que el sitio se mantenga al día sin una factura de rediseño cada par de años.",
+        span: "md:col-span-3"
+    }
+];
+function Services({ language }) {
+    const heading = language === "es" ? "Todo lo que un sitio necesita. Nada de más." : "Everything a small business site needs. Nothing it doesn't.";
+    const intro = language === "es" ? "La mayoría de estudios vende un proyecto de una sola vez. Nosotros construimos algo que puedes conservar por años — pulido en el lanzamiento y cuidado cada mes después." : "Most studios sell you a one-time project. We build something you keep for years — polished at launch, cared for every month after.";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "services",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "max-w-md font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                                children: heading
+                            }, void 0, false, {
+                                fileName: "[project]/components/Services.tsx",
+                                lineNumber: 70,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "max-w-sm text-sm text-ink-dim md:text-right",
+                                children: intro
+                            }, void 0, false, {
+                                fileName: "[project]/components/Services.tsx",
+                                lineNumber: 73,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Services.tsx",
+                        lineNumber: 69,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Services.tsx",
+                    lineNumber: 68,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 gap-5 md:grid-cols-5",
+                    children: SERVICES.map(({ icon: Icon, title, titleEs, description, descriptionEs, span }, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 90,
+                            className: span,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "card-surface group h-full rounded-[2rem] p-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                                        className: "h-7 w-7 text-accent-bright",
+                                        strokeWidth: 1.75
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Services.tsx",
+                                        lineNumber: 85,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "mt-6 font-[family-name:var(--font-display)] text-2xl font-semibold text-ink",
+                                        children: language === "es" ? titleEs : title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Services.tsx",
+                                        lineNumber: 89,
+                                        columnNumber: 19
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-4 text-sm leading-7 text-ink-dim",
+                                        children: language === "es" ? descriptionEs : description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Services.tsx",
+                                        lineNumber: 92,
+                                        columnNumber: 19
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Services.tsx",
+                                lineNumber: 84,
+                                columnNumber: 17
+                            }, this)
+                        }, title, false, {
+                            fileName: "[project]/components/Services.tsx",
+                            lineNumber: 83,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Services.tsx",
+                    lineNumber: 77,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Services.tsx",
+            lineNumber: 67,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Services.tsx",
+        lineNumber: 66,
+        columnNumber: 5
+    }, this);
+}
+_c = Services;
+var _c;
+__turbopack_context__.k.register(_c, "Services");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Why.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Why
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.mjs [app-client] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+const REASONS = [
+    {
+        title: "Built to earn trust",
+        titleEs: "Hecho para generar confianza",
+        description: "Clean design, fast load times, and a clear message — a site that makes a small business look established, not homemade.",
+        descriptionEs: "Diseño limpio, carga rápida y un mensaje claro — un sitio que hace ver a un negocio establecido, no improvisado."
+    },
+    {
+        title: "Right-sized, on purpose",
+        titleEs: "Del tamaño justo, a propósito",
+        description: "Only the functionality your business actually uses. Less to break, less to explain, less to pay to maintain.",
+        descriptionEs: "Solo la funcionalidad que tu negocio realmente usa. Menos cosas que se rompan, menos que explicar, menos que pagar por mantener."
+    },
+    {
+        title: "Never goes stale",
+        titleEs: "Nunca se queda desactualizado",
+        description: "A monthly care plan covers edits, small updates, and fixes — included, not billed as a surprise invoice.",
+        descriptionEs: "Un plan de cuidado mensual cubre ediciones, cambios pequeños y arreglos — incluido, no como una factura sorpresa."
+    }
+];
+function Why({ language }) {
+    const eyebrow = language === "es" ? "Por qué Fen Web Studio" : "Why Fen Web Studio";
+    const heading = language === "es" ? "Elegante por diseño. Cuidado por defecto." : "Elegant by design. Maintained by default.";
+    const intro = language === "es" ? "Diseñamos y construimos sitios web para negocios pequeños y medianos que quieren verse establecidos en internet — y luego los mantenemos frescos con un plan de cuidado continuo, no con una factura de una sola vez." : "We design and build websites for small and medium businesses who want to look established online — then keep them fresh with an ongoing care plan, not a one-off invoice.";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "why",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mx-auto max-w-3xl text-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm uppercase tracking-[0.28em] text-accent-bright",
+                                children: eyebrow
+                            }, void 0, false, {
+                                fileName: "[project]/components/Why.tsx",
+                                lineNumber: 55,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "mt-4 font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                                children: heading
+                            }, void 0, false, {
+                                fileName: "[project]/components/Why.tsx",
+                                lineNumber: 58,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mx-auto mt-5 text-base leading-8 text-ink-dim md:max-w-2xl",
+                                children: intro
+                            }, void 0, false, {
+                                fileName: "[project]/components/Why.tsx",
+                                lineNumber: 61,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Why.tsx",
+                        lineNumber: 54,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Why.tsx",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mt-16 grid gap-5 md:grid-cols-3",
+                    children: REASONS.map((reason, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 100,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "card-surface h-full rounded-[2rem] p-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-accent/15 text-accent-bright",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                                            className: "h-5 w-5"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Why.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Why.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "mt-6 text-xl font-semibold text-ink",
+                                        children: language === "es" ? reason.titleEs : reason.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Why.tsx",
+                                        lineNumber: 74,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-4 text-sm leading-7 text-ink-dim",
+                                        children: language === "es" ? reason.descriptionEs : reason.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Why.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Why.tsx",
+                                lineNumber: 70,
+                                columnNumber: 15
+                            }, this)
+                        }, reason.title, false, {
+                            fileName: "[project]/components/Why.tsx",
+                            lineNumber: 69,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Why.tsx",
+                    lineNumber: 67,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Why.tsx",
+            lineNumber: 52,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Why.tsx",
+        lineNumber: 51,
+        columnNumber: 5
+    }, this);
+}
+_c = Why;
+var _c;
+__turbopack_context__.k.register(_c, "Why");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/lib/projects.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PROJECTS",
+    ()=>PROJECTS,
+    "getProject",
+    ()=>getProject
+]);
+const PROJECTS = [
+    {
+        slug: "loom-and-co",
+        name: "Loom & Co.",
+        year: "2026",
+        kind: "Boutique retail",
+        kindEs: "Retail boutique",
+        summary: "A single-page lookbook site that replaced a cluttered store template.",
+        summaryEs: "Un sitio de una sola página que reemplazó un template de tienda saturado.",
+        problem: "The old site was a generic e-commerce template with more navigation than products, and customers couldn't tell what the shop actually sold from the homepage.",
+        problemEs: "El sitio anterior era un template de e-commerce genérico con más navegación que productos, y los clientes no podían saber qué vendía la tienda desde el inicio.",
+        approach: "Cut the site down to one elegant scroll: a handful of collections, real product photography, and a single clear way to get in touch — no account creation, no cart abandoned mid-checkout.",
+        approachEs: "Reducimos el sitio a un solo scroll elegante: unas pocas colecciones, fotografía real de producto y una sola forma clara de contactar — sin crear cuenta, sin carritos abandonados.",
+        result: "A site that reads as a lookbook first and a store second, matching how the brand actually wants to be seen.",
+        resultEs: "Un sitio que se lee primero como lookbook y después como tienda, alineado con cómo la marca quiere presentarse.",
+        services: [
+            "Design",
+            "Build",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Plan de cuidado"
+        ],
+        image: "/arch-geometric-lines.jpg",
+        isExample: true
+    },
+    {
+        slug: "halcyon-health",
+        name: "Halcyon Health",
+        year: "2026",
+        kind: "Wellness studio",
+        kindEs: "Estudio de bienestar",
+        summary: "A marketing site with booking built in, so calls stopped happening.",
+        summaryEs: "Un sitio de marketing con reservas integradas, para dejar de recibir llamadas.",
+        problem: "New clients were calling to book sessions because the old site only linked out to a third-party scheduler that didn't match the brand.",
+        problemEs: "Los clientes nuevos llamaban para reservar sesiones porque el sitio anterior solo enlazaba a un sistema de citas externo que no encajaba con la marca.",
+        approach: "Built the booking flow directly into the site's own design language, alongside a calmer, more editorial homepage that matches the in-studio experience.",
+        approachEs: "Integramos el flujo de reservas directamente en el diseño del sitio, junto a una página de inicio más calmada y editorial que refleja la experiencia en el estudio.",
+        result: "Bookings now happen without a phone call, and the site feels like a continuation of the studio instead of a separate tool bolted on.",
+        resultEs: "Las reservas ahora ocurren sin llamada, y el sitio se siente como una continuación del estudio en vez de una herramienta aparte.",
+        services: [
+            "Design",
+            "Build",
+            "Booking integration",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Integración de reservas",
+            "Plan de cuidado"
+        ],
+        image: "/arch-skyline-silhouette.jpg",
+        isExample: true
+    },
+    {
+        slug: "marlow-and-row",
+        name: "Marlow & Row",
+        year: "2025",
+        kind: "Professional services",
+        kindEs: "Servicios profesionales",
+        summary: "A quiet, credible site for a two-partner consulting practice.",
+        summaryEs: "Un sitio sobrio y creíble para una práctica de consultoría de dos socios.",
+        problem: "Prospective clients were googling the firm before a first call and finding nothing — no site at all, just a LinkedIn page.",
+        problemEs: "Los clientes potenciales buscaban la firma en Google antes de una primera llamada y no encontraban nada — ningún sitio, solo una página de LinkedIn.",
+        approach: "Kept it to four sections: what the firm does, who's behind it, how engagements work, and how to reach them — nothing that needed a CMS to maintain.",
+        approachEs: "Lo redujimos a cuatro secciones: qué hace la firma, quién está detrás, cómo funcionan los proyectos y cómo contactarlos — nada que requiriera un CMS para mantener.",
+        result: "A site that answers 'are these people legitimate' in the first five seconds, which was the entire brief.",
+        resultEs: "Un sitio que responde '¿es gente seria?' en los primeros cinco segundos, que era exactamente el encargo.",
+        services: [
+            "Design",
+            "Build",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Plan de cuidado"
+        ],
+        image: "/arch-geometric-bw.jpg",
+        isExample: true
+    },
+    {
+        slug: "rosewood-table",
+        name: "Rosewood Table",
+        year: "2025",
+        kind: "Restaurant",
+        kindEs: "Restaurante",
+        summary: "A menu-first site that finally matched the room.",
+        summaryEs: "Un sitio centrado en el menú que finalmente estuvo a la altura del lugar.",
+        problem: "The restaurant's site was a PDF menu linked from a single splash page, and it hadn't been updated in over a year.",
+        problemEs: "El sitio del restaurante era un menú en PDF enlazado desde una sola página, y no se había actualizado en más de un año.",
+        approach: "Built a site the owner can update seasonally without calling anyone, with the menu as an actual page instead of a downloadable file, and reservations one tap away.",
+        approachEs: "Construimos un sitio que el dueño puede actualizar por temporada sin llamar a nadie, con el menú como página real en vez de un archivo descargable, y reservas a un toque de distancia.",
+        result: "The site now gets updated the same week the menu changes, instead of months later.",
+        resultEs: "El sitio ahora se actualiza la misma semana que cambia el menú, en vez de meses después.",
+        services: [
+            "Design",
+            "Build",
+            "Booking integration",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Integración de reservas",
+            "Plan de cuidado"
+        ],
+        image: "/arch-skyline-dusk.jpg",
+        isExample: true
+    }
+];
+function getProject(slug) {
+    return PROJECTS.find((project)=>project.slug === slug);
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Work.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Work
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/projects.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+function Work({ language }) {
+    const heading = language === "es" ? "Trabajo seleccionado" : "Selected work";
+    const intro = language === "es" ? "Ejemplos de plantilla mientras sumamos proyectos reales — cada uno tiene su propia página de caso." : "Template examples while real projects get added — each one has its own case study page.";
+    const cta = language === "es" ? "Ver caso" : "View case";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "work",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-12 flex flex-col gap-3 md:mb-16 md:flex-row md:items-end md:justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "max-w-2xl",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-6xl",
+                                        children: heading
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Work.tsx",
+                                        lineNumber: 29,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-3 text-sm leading-7 text-ink-dim",
+                                        children: intro
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Work.tsx",
+                                        lineNumber: 32,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Work.tsx",
+                                lineNumber: 28,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-ink-dim",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "h-2 w-2 rounded-full bg-accent"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Work.tsx",
+                                        lineNumber: 35,
+                                        columnNumber: 15
+                                    }, this),
+                                    language === "es" ? "Casos presentados" : "Featured examples"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Work.tsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Work.tsx",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Work.tsx",
+                    lineNumber: 26,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid gap-6 md:grid-cols-2",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$projects$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PROJECTS"].map((project, index)=>{
+                        const services = language === "es" ? project.servicesEs : project.services;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 100,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: `/work/${project.slug}`,
+                                className: "group block",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                                    className: "card-surface overflow-hidden rounded-[2rem] p-0",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "relative aspect-[4/3] overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: project.image,
+                                                    alt: project.name,
+                                                    fill: true,
+                                                    sizes: "(max-width: 768px) 100vw, 50vw",
+                                                    className: "object-cover transition duration-500 group-hover:scale-105"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 51,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 58,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute left-5 top-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-3 py-1.5 text-[0.7rem] font-medium uppercase tracking-[0.28em] text-white/80 backdrop-blur",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "h-2 w-2 rounded-full bg-accent-bright"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Work.tsx",
+                                                            lineNumber: 60,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        language === "es" ? "Caso" : "Case"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 md:p-8",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "max-w-[80%]",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-sm uppercase tracking-[0.28em] text-white/70",
+                                                                    children: language === "es" ? project.kindEs : project.kind
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Work.tsx",
+                                                                    lineNumber: 66,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "mt-2 font-[family-name:var(--font-display)] text-2xl font-extrabold tracking-tight text-white md:text-[1.7rem]",
+                                                                    children: project.name
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Work.tsx",
+                                                                    lineNumber: 69,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/components/Work.tsx",
+                                                            lineNumber: 65,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                                className: "h-4 w-4"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Work.tsx",
+                                                                lineNumber: 74,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Work.tsx",
+                                                            lineNumber: 73,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 64,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Work.tsx",
+                                            lineNumber: 50,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-wrap items-center justify-between gap-4 border-t border-white/10 px-6 py-5 md:px-8",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex flex-wrap gap-2",
+                                                    children: services.slice(0, 2).map((service)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.24em] text-ink-dim",
+                                                            children: service
+                                                        }, service, false, {
+                                                            fileName: "[project]/components/Work.tsx",
+                                                            lineNumber: 82,
+                                                            columnNumber: 27
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 80,
+                                                    columnNumber: 23
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-medium text-ink-dim",
+                                                    children: project.year
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Work.tsx",
+                                                    lineNumber: 90,
+                                                    columnNumber: 23
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Work.tsx",
+                                            lineNumber: 79,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "px-6 pb-6 text-sm leading-7 text-ink-dim md:px-8 md:pb-8",
+                                            children: language === "es" ? project.summaryEs : project.summary
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Work.tsx",
+                                            lineNumber: 95,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Work.tsx",
+                                    lineNumber: 49,
+                                    columnNumber: 19
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Work.tsx",
+                                lineNumber: 48,
+                                columnNumber: 17
+                            }, this)
+                        }, project.slug, false, {
+                            fileName: "[project]/components/Work.tsx",
+                            lineNumber: 47,
+                            columnNumber: 15
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/components/Work.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Work.tsx",
+            lineNumber: 25,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Work.tsx",
+        lineNumber: 24,
+        columnNumber: 5
+    }, this);
+}
+_c = Work;
+var _c;
+__turbopack_context__.k.register(_c, "Work");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Showcase.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Showcase
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers3$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/layers.mjs [app-client] (ecmascript) <export default as Layers3>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.mjs [app-client] (ecmascript) <export default as Sparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wand$2d$sparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__WandSparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/wand-sparkles.mjs [app-client] (ecmascript) <export default as WandSparkles>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function Showcase({ language }) {
+    const content = language === "es" ? {
+        eyebrow: "Qué incluye cada sitio",
+        title: "Un sitio, hecho bien — no seis ideas a medias.",
+        intro: "Cada proyecto sale con el mismo nivel de cuidado: un sistema de diseño consistente, una construcción rápida y un plan para que se mantenga así.",
+        cardTitle: "Sistema de diseño",
+        cardText: "Un conjunto pequeño y consistente de colores, tipografía y espaciados — para que cada página nueva se vea como parte del mismo sitio.",
+        statTitle: "Rápido por defecto",
+        statText: "Sitios livianos que cargan rápido en cualquier conexión, sin builders pesados de por medio.",
+        galleryTitle: "Fotografía real, no genérica",
+        galleryText: "Cuando el negocio tiene fotos propias, las usamos. Cuando no, elegimos con cuidado en vez de rellenar con clichés."
+    } : {
+        eyebrow: "What's included",
+        title: "One site, done right — not six half-finished ideas.",
+        intro: "Every project ships with the same baseline: a consistent design system, a fast build, and a plan to keep it that way.",
+        cardTitle: "Design system",
+        cardText: "A small, consistent set of colors, type, and spacing — so any new page still looks like it belongs to the same site.",
+        statTitle: "Fast by default",
+        statText: "Lightweight sites that load quickly on any connection, with no heavy page-builder underneath.",
+        galleryTitle: "Real photography, not stock clichés",
+        galleryText: "When a business has its own photos, we use them. When it doesn't, we choose carefully instead of filling space."
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "showcase",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid gap-8 lg:grid-cols-[1.05fr_0.95fr]",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "card-surface rounded-[2rem] p-8 md:p-10",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs uppercase tracking-[0.28em] text-ink-dim",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                                            className: "h-3.5 w-3.5 text-accent-bright"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 54,
+                                            columnNumber: 15
+                                        }, this),
+                                        content.eyebrow
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 53,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "mt-6 font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                                    children: content.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 58,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-4 max-w-2xl text-base leading-8 text-ink-dim",
+                                    children: content.intro
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 61,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mt-8 rounded-[1.75rem] border border-white/10 bg-black/10 p-6 backdrop-blur-xl",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "metallic-gradient group relative overflow-hidden rounded-[1.5rem] p-8 transition duration-500 hover:-translate-y-1",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.38),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.18),transparent_38%)]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-[url('/arch-geometric-bw.jpg')] bg-cover bg-center opacity-20 transition duration-500 group-hover:scale-105"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex items-center justify-between gap-4",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-xs uppercase tracking-[0.28em] text-white/80",
+                                                                        children: content.cardTitle
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/Showcase.tsx",
+                                                                        lineNumber: 72,
+                                                                        columnNumber: 23
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                        className: "mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold text-white",
+                                                                        children: content.cardTitle
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/Showcase.tsx",
+                                                                        lineNumber: 75,
+                                                                        columnNumber: 23
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/Showcase.tsx",
+                                                                lineNumber: 71,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "rounded-full border border-white/20 bg-white/10 p-3 text-white",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$wand$2d$sparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__WandSparkles$3e$__["WandSparkles"], {
+                                                                    className: "h-5 w-5"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/components/Showcase.tsx",
+                                                                    lineNumber: 80,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/Showcase.tsx",
+                                                                lineNumber: 79,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/Showcase.tsx",
+                                                        lineNumber: 70,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "mt-6 max-w-xl text-sm leading-7 text-white/80",
+                                                        children: content.cardText
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Showcase.tsx",
+                                                        lineNumber: 84,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mt-8 grid gap-3 sm:grid-cols-3",
+                                                        children: [
+                                                            {
+                                                                label: language === "es" ? "Páginas" : "Pages",
+                                                                value: "1–5"
+                                                            },
+                                                            {
+                                                                label: language === "es" ? "Carga" : "Load time",
+                                                                value: language === "es" ? "Rápida" : "Fast"
+                                                            },
+                                                            {
+                                                                label: language === "es" ? "Cuidado" : "Care",
+                                                                value: language === "es" ? "Mensual" : "Monthly"
+                                                            }
+                                                        ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "rounded-2xl border border-white/20 bg-white/10 px-4 py-4 text-left backdrop-blur",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-xs uppercase tracking-[0.28em] text-white/70",
+                                                                        children: item.label
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/Showcase.tsx",
+                                                                        lineNumber: 107,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "mt-2 text-xl font-semibold text-white",
+                                                                        children: item.value
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/Showcase.tsx",
+                                                                        lineNumber: 110,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, item.label, true, {
+                                                                fileName: "[project]/components/Showcase.tsx",
+                                                                lineNumber: 103,
+                                                                columnNumber: 23
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Showcase.tsx",
+                                                        lineNumber: 88,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 69,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Showcase.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Showcase.tsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Showcase.tsx",
+                        lineNumber: 51,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 150,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-5",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "card-surface overflow-hidden rounded-[2rem] border-white/10",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "group relative aspect-[4/3] overflow-hidden",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/arch-skyline-dusk.jpg",
+                                                alt: language === "es" ? "Horizonte urbano al atardecer" : "City skyline at dusk",
+                                                fill: true,
+                                                sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+                                                className: "object-cover transition duration-500 group-hover:scale-105",
+                                                priority: true
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/10"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 134,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Showcase.tsx",
+                                        lineNumber: 125,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 124,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid gap-5 md:grid-cols-[0.95fr_1.05fr]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "card-surface rounded-[2rem] p-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-2 text-accent-bright",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$layers$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Layers3$3e$__["Layers3"], {
+                                                            className: "h-4 w-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Showcase.tsx",
+                                                            lineNumber: 141,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-sm font-medium uppercase tracking-[0.28em]",
+                                                            children: content.statTitle
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Showcase.tsx",
+                                                            lineNumber: 142,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Showcase.tsx",
+                                                    lineNumber: 140,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "mt-4 text-sm leading-7 text-ink-dim",
+                                                    children: content.statText
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Showcase.tsx",
+                                                    lineNumber: 146,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 139,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "card-surface rounded-[2rem] p-6",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "group aspect-[4/3] overflow-hidden rounded-[1.2rem] border border-white/10",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    src: "/arch-geometric-lines.jpg",
+                                                    alt: language === "es" ? "Líneas arquitectónicas" : "Architectural lines",
+                                                    width: 600,
+                                                    height: 450,
+                                                    className: "h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Showcase.tsx",
+                                                    lineNumber: 152,
+                                                    columnNumber: 19
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Showcase.tsx",
+                                                lineNumber: 151,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 150,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 138,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "card-surface rounded-[2rem] p-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "font-[family-name:var(--font-display)] text-2xl font-semibold text-ink",
+                                            children: content.galleryTitle
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mt-3 text-sm leading-7 text-ink-dim",
+                                            children: content.galleryText
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 167,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-6 grid gap-3 sm:grid-cols-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "group overflow-hidden rounded-[1.25rem] border border-white/10",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        src: "/arch-skyline-silhouette.jpg",
+                                                        alt: language === "es" ? "Silueta urbana al atardecer" : "City silhouette at sunset",
+                                                        width: 600,
+                                                        height: 400,
+                                                        className: "h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Showcase.tsx",
+                                                        lineNumber: 172,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Showcase.tsx",
+                                                    lineNumber: 171,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "rounded-[1.25rem] border border-white/10 bg-gradient-to-br from-accent/15 via-white/5 to-accent/25 p-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-sm uppercase tracking-[0.28em] text-accent-bright",
+                                                            children: language === "es" ? "Plan de cuidado" : "Care plan"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Showcase.tsx",
+                                                            lineNumber: 181,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "mt-3 text-sm leading-7 text-ink-dim",
+                                                            children: language === "es" ? "Un correo mensual con lo que cambió y un espacio para pedir ajustes — sin cotizar cada solicitud por separado." : "A monthly check-in on what changed, plus a standing place to request edits — no per-request quote needed."
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/components/Showcase.tsx",
+                                                            lineNumber: 184,
+                                                            columnNumber: 19
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/components/Showcase.tsx",
+                                                    lineNumber: 180,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Showcase.tsx",
+                                            lineNumber: 170,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Showcase.tsx",
+                                    lineNumber: 163,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Showcase.tsx",
+                            lineNumber: 123,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Showcase.tsx",
+                        lineNumber: 122,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Showcase.tsx",
+                lineNumber: 50,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/components/Showcase.tsx",
+            lineNumber: 49,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Showcase.tsx",
+        lineNumber: 48,
+        columnNumber: 5
+    }, this);
+}
+_c = Showcase;
+var _c;
+__turbopack_context__.k.register(_c, "Showcase");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Testimonials.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Testimonials
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+const TESTIMONIALS = [
+    {
+        quote: "We finally have a site that reads as a lookbook first and a store second — which is exactly how we wanted to be seen.",
+        quoteEs: "Por fin tenemos un sitio que se lee primero como lookbook y después como tienda — justo como queríamos que nos vieran.",
+        name: "Owner",
+        nameEs: "Dueña",
+        company: "Loom & Co.",
+        initials: "LC"
+    },
+    {
+        quote: "Bookings happen without a phone call now. The site feels like a continuation of the studio, not a tool bolted onto it.",
+        quoteEs: "Ahora las reservas ocurren sin llamada. El sitio se siente como una extensión del estudio, no una herramienta aparte.",
+        name: "Studio Director",
+        nameEs: "Directora del estudio",
+        company: "Halcyon Health",
+        initials: "HH"
+    },
+    {
+        quote: "It answers 'are these people legitimate' in the first five seconds — which was the entire brief.",
+        quoteEs: "Responde '¿es gente seria?' en los primeros cinco segundos — que era exactamente el encargo.",
+        name: "Partner",
+        nameEs: "Socio",
+        company: "Marlow & Row",
+        initials: "MR"
+    }
+];
+function Testimonials({ language }) {
+    const heading = language === "es" ? "Lo que dicen al lanzar" : "What they say at launch";
+    const intro = language === "es" ? "Citas ilustrativas basadas en los proyectos de ejemplo de arriba — el tono real de conversación que buscamos con cada cliente." : "Illustrative quotes based on the example projects above — the kind of conversation we aim for with every client.";
+    const exampleLabel = language === "es" ? "Cita de ejemplo" : "Example testimonial";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "max-w-md font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                                children: heading
+                            }, void 0, false, {
+                                fileName: "[project]/components/Testimonials.tsx",
+                                lineNumber: 58,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "max-w-sm text-sm text-ink-dim md:text-right",
+                                children: intro
+                            }, void 0, false, {
+                                fileName: "[project]/components/Testimonials.tsx",
+                                lineNumber: 61,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Testimonials.tsx",
+                        lineNumber: 57,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Testimonials.tsx",
+                    lineNumber: 56,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 gap-5 md:grid-cols-3",
+                    children: TESTIMONIALS.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 90,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "card-surface flex h-full flex-col rounded-[2rem] p-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "w-fit rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-medium tracking-wide text-ink-dim",
+                                        children: exampleLabel
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Testimonials.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-6 flex-1 text-base leading-7 text-ink",
+                                        children: [
+                                            "“",
+                                            language === "es" ? item.quoteEs : item.quote,
+                                            "”"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Testimonials.tsx",
+                                        lineNumber: 74,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-6 flex items-center gap-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-accent to-lavender text-xs font-bold text-white",
+                                                children: item.initials
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Testimonials.tsx",
+                                                lineNumber: 78,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "font-medium text-ink",
+                                                        children: language === "es" ? item.nameEs : item.name
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Testimonials.tsx",
+                                                        lineNumber: 82,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-ink-dim",
+                                                        children: item.company
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Testimonials.tsx",
+                                                        lineNumber: 85,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Testimonials.tsx",
+                                                lineNumber: 81,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Testimonials.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Testimonials.tsx",
+                                lineNumber: 70,
+                                columnNumber: 15
+                            }, this)
+                        }, item.company, false, {
+                            fileName: "[project]/components/Testimonials.tsx",
+                            lineNumber: 69,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Testimonials.tsx",
+                    lineNumber: 67,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Testimonials.tsx",
+            lineNumber: 55,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Testimonials.tsx",
+        lineNumber: 54,
+        columnNumber: 5
+    }, this);
+}
+_c = Testimonials;
+var _c;
+__turbopack_context__.k.register(_c, "Testimonials");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Process.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Process
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+const STEPS = [
+    {
+        n: "01",
+        title: "Discovery",
+        titleEs: "Descubrimiento",
+        duration: "Week 1",
+        durationEs: "Semana 1",
+        description: "A working session on the actual problem — audience, competitors, and the one metric this project needs to move.",
+        descriptionEs: "Una sesión para entender el problema real: audiencia, competencia y la métrica clave que debe moverse."
+    },
+    {
+        n: "02",
+        title: "Design",
+        titleEs: "Diseño",
+        duration: "Weeks 2–3",
+        durationEs: "Semanas 2–3",
+        description: "Token system, layout concepts, and a full design file, reviewed together before a single line of code is written.",
+        descriptionEs: "Sistema de tokens, conceptos de layout y un diseño completo, revisado antes de escribir una sola línea de código."
+    },
+    {
+        n: "03",
+        title: "Build",
+        titleEs: "Construcción",
+        duration: "Weeks 3–5",
+        durationEs: "Semanas 3–5",
+        description: "Next.js implementation, staged for review as it's built — not delivered as one surprise at the end.",
+        descriptionEs: "Implementación en Next.js, presentada por etapas para revisión en vez de entregarse de golpe al final."
+    },
+    {
+        n: "04",
+        title: "Launch",
+        titleEs: "Lanzamiento",
+        duration: "Week 6",
+        durationEs: "Semana 6",
+        description: "Domain, hosting, analytics, and a handoff doc you can actually read.",
+        descriptionEs: "Dominio, hosting, analytics y una guía de entrega que realmente puedas leer."
+    },
+    {
+        n: "05",
+        title: "Iterate",
+        titleEs: "Iterar",
+        duration: "Ongoing",
+        durationEs: "Continuo",
+        description: "Monthly care plan for edits, fixes, and small builds as the product keeps moving.",
+        descriptionEs: "Plan mensual de cuidado para cambios, ajustes y mejoras pequeñas mientras el producto sigue creciendo."
+    }
+];
+function Process({ language }) {
+    const heading = language === "es" ? "Así es como realmente funciona un proyecto" : "How a project actually runs";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "process",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-4xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                        children: heading
+                    }, void 0, false, {
+                        fileName: "[project]/components/Process.tsx",
+                        lineNumber: 79,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Process.tsx",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mt-14 space-y-5 md:mt-16",
+                    children: STEPS.map((step, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 80,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "card-surface grid grid-cols-[3rem_1fr] gap-x-6 rounded-[2rem] border-white/10 bg-white/5 p-8 first:border-t-0 md:grid-cols-[4rem_12rem_1fr] md:gap-x-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "font-[family-name:var(--font-display)] text-sm uppercase tracking-[0.2em] text-ink-dim",
+                                        children: step.n
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Process.tsx",
+                                        lineNumber: 88,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "col-start-2 md:col-start-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "font-[family-name:var(--font-display)] text-xl font-semibold text-ink",
+                                                children: language === "es" ? step.titleEs : step.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Process.tsx",
+                                                lineNumber: 92,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm text-accent-bright",
+                                                children: language === "es" ? step.durationEs : step.duration
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Process.tsx",
+                                                lineNumber: 95,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Process.tsx",
+                                        lineNumber: 91,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "col-span-2 mt-4 text-sm leading-7 text-ink-dim md:col-span-1 md:col-start-3 md:mt-0",
+                                        children: language === "es" ? step.descriptionEs : step.description
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Process.tsx",
+                                        lineNumber: 99,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Process.tsx",
+                                lineNumber: 87,
+                                columnNumber: 15
+                            }, this)
+                        }, step.n, false, {
+                            fileName: "[project]/components/Process.tsx",
+                            lineNumber: 86,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Process.tsx",
+                    lineNumber: 84,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Process.tsx",
+            lineNumber: 77,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Process.tsx",
+        lineNumber: 76,
+        columnNumber: 5
+    }, this);
+}
+_c = Process;
+var _c;
+__turbopack_context__.k.register(_c, "Process");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/content/blog/posts.json.[json].cjs [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
+
+module.exports = [
+    {
+        "slug": "fewer-pages-more-credible",
+        "title": "Why fewer pages make your site more credible",
+        "titleEs": "Por qué menos páginas hacen tu sitio más creíble",
+        "excerpt": "Most small business sites lose visitors to a menu bar, not a bad product. Here's why cutting pages usually beats adding them.",
+        "excerptEs": "La mayoría de los sitios de negocios pequeños pierden visitantes por un menú, no por un mal producto. Por qué quitar páginas suele ganarle a agregar más.",
+        "body": "Every extra page in your navigation is a decision you're asking a stranger to make before they trust you. \"Home,\" \"About,\" \"Services,\" \"Blog,\" \"FAQ,\" \"Team\" — six clicks that all lead to the same conclusion a single well-written page could reach in one scroll.\n\nWe see this constantly with new clients: a site with twelve pages and forty visits a month, most of them bouncing from the homepage before they ever see the other eleven. The fix is rarely \"write more content.\" It's usually \"delete the pages that exist because a template shipped with them, not because anyone needed them.\"\n\nA good rule of thumb: if a page hasn't been opened in your analytics in the last quarter, it's not serving your visitors — it's serving the idea of a complete website. Cut it, fold the one useful sentence into a page people actually read, and watch your bounce rate move more than any redesign will.",
+        "bodyEs": "Cada página adicional en tu menú es una decisión que le pides a un desconocido tomar antes de confiar en ti. \"Inicio\", \"Nosotros\", \"Servicios\", \"Blog\", \"Preguntas frecuentes\", \"Equipo\" — seis clics que terminan en la misma conclusión a la que una sola página bien escrita llegaría en un scroll.\n\nLo vemos todo el tiempo con clientes nuevos: un sitio con doce páginas y cuarenta visitas al mes, la mayoría abandonando desde el inicio antes de ver las otras once. La solución casi nunca es \"escribir más contenido\". Casi siempre es \"eliminar las páginas que existen porque venían con la plantilla, no porque alguien las necesitara\".\n\nUna buena regla: si una página no se ha abierto en tus analíticas en el último trimestre, no está sirviendo a tus visitantes — está sirviendo la idea de un sitio completo. Elimínala, integra la única frase útil en una página que sí se lee, y verás que tu tasa de rebote se mueve más que con cualquier rediseño.",
+        "date": "2026-06-02",
+        "tag": "Design",
+        "tagEs": "Diseño",
+        "isExample": true
+    },
+    {
+        "slug": "what-a-care-plan-actually-covers",
+        "title": "What actually goes into a monthly care plan",
+        "titleEs": "Qué incluye realmente un plan de cuidado mensual",
+        "excerpt": "\"Maintenance\" is a vague word. Here's the specific, boring list of things that quietly break on a small business site without one.",
+        "excerptEs": "\"Mantenimiento\" es una palabra vaga. Aquí está la lista concreta y aburrida de lo que se rompe silenciosamente en un sitio sin un plan de cuidado.",
+        "body": "Nobody budgets for a care plan because \"maintenance\" sounds like an insurance upsell. Then six months after launch, the hours changed, the phone number is wrong, a plugin nobody remembers installing broke the contact form, and the person who built the site isn't answering emails anymore.\n\nA care plan is really just a standing answer to a boring, specific list: content edits when your hours or menu change, dependency and security updates so the site doesn't quietly rot, form and link checks so a broken contact form doesn't cost you a lead for three weeks before anyone notices, and small layout fixes as your business adds a service or drops one.\n\nNone of that is glamorous. All of it is the difference between a site that still looks like it was built yesterday and one that quietly tells visitors nobody's been paying attention since it launched.",
+        "bodyEs": "Nadie presupuesta un plan de cuidado porque \"mantenimiento\" suena a venta de seguro. Después, seis meses tras el lanzamiento, cambiaron los horarios, el teléfono está mal, un plugin que nadie recuerda instalar rompió el formulario de contacto, y quien construyó el sitio ya no contesta correos.\n\nUn plan de cuidado es, en realidad, una respuesta permanente a una lista concreta y aburrida: ediciones de contenido cuando cambian tus horarios o menú, actualizaciones de seguridad para que el sitio no se deteriore en silencio, revisión de formularios y enlaces para que un formulario roto no te cueste semanas de clientes sin que nadie lo note, y ajustes pequeños de diseño a medida que tu negocio suma o quita un servicio.\n\nNada de eso es glamoroso. Pero es la diferencia entre un sitio que sigue viéndose recién construido y uno que le dice en silencio a los visitantes que nadie le ha prestado atención desde que se lanzó.",
+        "date": "2026-07-10",
+        "tag": "Care plan",
+        "tagEs": "Plan de cuidado",
+        "isExample": true
+    }
+];
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/lib/posts.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "POSTS",
+    ()=>POSTS,
+    "getPost",
+    ()=>getPost
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$content$2f$blog$2f$posts$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/content/blog/posts.json.[json].cjs [app-client] (ecmascript)");
+;
+const POSTS = [
+    ...__TURBOPACK__imported__module__$5b$project$5d2f$content$2f$blog$2f$posts$2e$json$2e5b$json$5d2e$cjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+].sort(_c = (a, b)=>a.date < b.date ? 1 : -1);
+_c1 = POSTS;
+function getPost(slug) {
+    return POSTS.find((post)=>post.slug === slug);
+}
+var _c, _c1;
+__turbopack_context__.k.register(_c, "POSTS$[...(postsData as Post[])].sort");
+__turbopack_context__.k.register(_c1, "POSTS");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Blog.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Blog
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$posts$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/posts.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+function formatDate(dateStr, language) {
+    const date = new Date(`${dateStr}T00:00:00`);
+    return date.toLocaleDateString(language === "es" ? "es-ES" : "en-US", {
+        month: "long",
+        year: "numeric"
+    });
+}
+function Blog({ language }) {
+    const posts = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$posts$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["POSTS"].slice(0, 3);
+    if (posts.length === 0) {
+        return null;
+    }
+    const heading = language === "es" ? "Notas del estudio" : "Notes from the studio";
+    const intro = language === "es" ? "Ideas cortas sobre diseño, mantenimiento y lo que realmente mueve la aguja en el sitio de un negocio pequeño." : "Short, occasional notes on design, upkeep, and what actually moves the needle for a small business site.";
+    const viewAll = language === "es" ? "Ver todas las notas" : "View all notes";
+    const readMore = language === "es" ? "Leer" : "Read";
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "blog",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "max-w-md font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl",
+                                children: heading
+                            }, void 0, false, {
+                                fileName: "[project]/components/Blog.tsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "max-w-sm text-sm text-ink-dim md:text-right",
+                                children: intro
+                            }, void 0, false, {
+                                fileName: "[project]/components/Blog.tsx",
+                                lineNumber: 46,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Blog.tsx",
+                        lineNumber: 42,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Blog.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid grid-cols-1 gap-5 md:grid-cols-3",
+                    children: posts.map((post, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: index * 90,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: `/blog/${post.slug}`,
+                                className: "card-surface group flex h-full flex-col rounded-[2rem] p-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-accent-bright",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                children: language === "es" ? post.tagEs : post.tag
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Blog.tsx",
+                                                lineNumber: 60,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "h-1 w-1 rounded-full bg-accent-bright/60"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Blog.tsx",
+                                                lineNumber: 61,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-ink-dim",
+                                                children: formatDate(post.date, language)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Blog.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Blog.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        className: "mt-6 font-[family-name:var(--font-display)] text-xl font-semibold text-ink",
+                                        children: language === "es" ? post.titleEs : post.title
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Blog.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-4 flex-1 text-sm leading-7 text-ink-dim",
+                                        children: language === "es" ? post.excerptEs : post.excerpt
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Blog.tsx",
+                                        lineNumber: 69,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-ink transition group-hover:text-accent-bright",
+                                        children: [
+                                            readMore,
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                className: "h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Blog.tsx",
+                                                lineNumber: 74,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Blog.tsx",
+                                        lineNumber: 72,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Blog.tsx",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, this)
+                        }, post.slug, false, {
+                            fileName: "[project]/components/Blog.tsx",
+                            lineNumber: 54,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Blog.tsx",
+                    lineNumber: 52,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    delayMs: 200,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mt-10 flex justify-center md:justify-start",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/blog",
+                            className: "inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-ink transition hover:border-accent-bright/60 hover:text-accent-bright",
+                            children: [
+                                viewAll,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                    className: "h-3.5 w-3.5"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Blog.tsx",
+                                    lineNumber: 88,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Blog.tsx",
+                            lineNumber: 83,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Blog.tsx",
+                        lineNumber: 82,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Blog.tsx",
+                    lineNumber: 81,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Blog.tsx",
+            lineNumber: 40,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Blog.tsx",
+        lineNumber: 39,
+        columnNumber: 5
+    }, this);
+}
+_c = Blog;
+var _c;
+__turbopack_context__.k.register(_c, "Blog");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/ContactForm.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ContactForm
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check.mjs [app-client] (ecmascript) <export default as CheckCircle2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.mjs [app-client] (ecmascript) <export default as Loader2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$gtag$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/gtag.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+function ContactForm({ language }) {
+    _s();
+    const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("idle");
+    const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [message, setMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [company, setCompany] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const content = language === "es" ? {
+        nameLabel: "Nombre",
+        emailLabel: "Email",
+        messageLabel: "Mensaje",
+        namePlaceholder: "Tu nombre",
+        emailPlaceholder: "tu@email.com",
+        messagePlaceholder: "Cuéntanos sobre tu proyecto...",
+        submit: "Enviar mensaje",
+        sending: "Enviando...",
+        sent: "¡Mensaje enviado! Te responderemos pronto.",
+        error: "Algo salió mal. Intenta de nuevo en un momento."
+    } : {
+        nameLabel: "Name",
+        emailLabel: "Email",
+        messageLabel: "Message",
+        namePlaceholder: "Your name",
+        emailPlaceholder: "you@email.com",
+        messagePlaceholder: "Tell us about your project...",
+        submit: "Send message",
+        sending: "Sending...",
+        sent: "Message sent! We'll get back to you soon.",
+        error: "Something went wrong. Please try again in a moment."
+    };
+    const handleSubmit = async (event)=>{
+        event.preventDefault();
+        if (company) {
+            setStatus("sent");
+            return;
+        }
+        setStatus("sending");
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    message
+                })
+            });
+            if (!response.ok) {
+                throw new Error("Request failed");
+            }
+            setStatus("sent");
+            setName("");
+            setEmail("");
+            setMessage("");
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$gtag$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gtagEvent"])({
+                action: "generate_lead",
+                category: "contact_form"
+            });
+        } catch  {
+            setStatus("error");
+        }
+    };
+    if (status === "sent") {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mt-14 flex items-center gap-3 rounded-2xl border border-[color:var(--line)] bg-bg-raised/60 px-6 py-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                    className: "h-5 w-5 shrink-0 text-accent-bright"
+                }, void 0, false, {
+                    fileName: "[project]/components/ContactForm.tsx",
+                    lineNumber: 83,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-sm leading-6 text-ink",
+                    children: content.sent
+                }, void 0, false, {
+                    fileName: "[project]/components/ContactForm.tsx",
+                    lineNumber: 84,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/ContactForm.tsx",
+            lineNumber: 82,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+        onSubmit: handleSubmit,
+        className: "mt-14 flex flex-col gap-5",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                type: "text",
+                name: "company",
+                value: company,
+                onChange: (event)=>setCompany(event.target.value),
+                className: "hidden",
+                tabIndex: -1,
+                autoComplete: "off",
+                "aria-hidden": "true"
+            }, void 0, false, {
+                fileName: "[project]/components/ContactForm.tsx",
+                lineNumber: 91,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid gap-5 md:grid-cols-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                htmlFor: "contact-name",
+                                className: "text-xs font-semibold uppercase tracking-[0.2em] text-ink-dim",
+                                children: content.nameLabel
+                            }, void 0, false, {
+                                fileName: "[project]/components/ContactForm.tsx",
+                                lineNumber: 104,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                id: "contact-name",
+                                required: true,
+                                value: name,
+                                onChange: (event)=>setName(event.target.value),
+                                placeholder: content.namePlaceholder,
+                                className: "rounded-xl border border-[color:var(--line)] bg-white/5 px-4 py-3 text-ink outline-none transition placeholder:text-ink-dim/60 focus:border-accent-bright"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ContactForm.tsx",
+                                lineNumber: 110,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ContactForm.tsx",
+                        lineNumber: 103,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                htmlFor: "contact-email",
+                                className: "text-xs font-semibold uppercase tracking-[0.2em] text-ink-dim",
+                                children: content.emailLabel
+                            }, void 0, false, {
+                                fileName: "[project]/components/ContactForm.tsx",
+                                lineNumber: 120,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                id: "contact-email",
+                                type: "email",
+                                required: true,
+                                value: email,
+                                onChange: (event)=>setEmail(event.target.value),
+                                placeholder: content.emailPlaceholder,
+                                className: "rounded-xl border border-[color:var(--line)] bg-white/5 px-4 py-3 text-ink outline-none transition placeholder:text-ink-dim/60 focus:border-accent-bright"
+                            }, void 0, false, {
+                                fileName: "[project]/components/ContactForm.tsx",
+                                lineNumber: 126,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/ContactForm.tsx",
+                        lineNumber: 119,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ContactForm.tsx",
+                lineNumber: 102,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-col gap-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        htmlFor: "contact-message",
+                        className: "text-xs font-semibold uppercase tracking-[0.2em] text-ink-dim",
+                        children: content.messageLabel
+                    }, void 0, false, {
+                        fileName: "[project]/components/ContactForm.tsx",
+                        lineNumber: 139,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                        id: "contact-message",
+                        required: true,
+                        rows: 5,
+                        value: message,
+                        onChange: (event)=>setMessage(event.target.value),
+                        placeholder: content.messagePlaceholder,
+                        className: "resize-none rounded-xl border border-[color:var(--line)] bg-white/5 px-4 py-3 text-ink outline-none transition placeholder:text-ink-dim/60 focus:border-accent-bright"
+                    }, void 0, false, {
+                        fileName: "[project]/components/ContactForm.tsx",
+                        lineNumber: 145,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/ContactForm.tsx",
+                lineNumber: 138,
+                columnNumber: 7
+            }, this),
+            status === "error" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "text-sm text-red-400",
+                children: content.error
+            }, void 0, false, {
+                fileName: "[project]/components/ContactForm.tsx",
+                lineNumber: 157,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                type: "submit",
+                disabled: status === "sending",
+                className: "group inline-flex w-fit items-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-accent/90 disabled:cursor-not-allowed disabled:opacity-60",
+                children: status === "sending" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                            className: "h-4 w-4 animate-spin"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ContactForm.tsx",
+                            lineNumber: 167,
+                            columnNumber: 13
+                        }, this),
+                        content.sending
+                    ]
+                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                    children: [
+                        content.submit,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                            className: "h-4 w-4 transition group-hover:translate-x-1 group-hover:-translate-y-1"
+                        }, void 0, false, {
+                            fileName: "[project]/components/ContactForm.tsx",
+                            lineNumber: 173,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true)
+            }, void 0, false, {
+                fileName: "[project]/components/ContactForm.tsx",
+                lineNumber: 160,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/ContactForm.tsx",
+        lineNumber: 90,
+        columnNumber: 5
+    }, this);
+}
+_s(ContactForm, "xolCZ0OF6AZ3N64AYOP4qv30bXs=");
+_c = ContactForm;
+var _c;
+__turbopack_context__.k.register(_c, "ContactForm");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Contact.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Contact
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/mail.mjs [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ContactForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ContactForm.tsx [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function Contact({ language }) {
+    const content = language === "es" ? {
+        eyebrow: "¿Listo para empezar algo grande?",
+        title: "Cuéntanos en qué estás trabajando.",
+        paragraph: "Una respuesta breve, normalmente en un día, con la verdad sobre si somos el ajuste correcto.",
+        workLabel: "Ver el trabajo"
+    } : {
+        eyebrow: "Ready to start something bold?",
+        title: "Tell us what you're building.",
+        paragraph: "A short reply, usually within a day — with the honest version of whether we're the right fit.",
+        workLabel: "View the work"
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "contact",
+        className: "relative border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "pointer-events-none absolute inset-0",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "aura absolute -top-24 right-[-10%] h-[28rem] w-[28rem] rounded-full bg-accent/20 blur-[130px]"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "noise absolute inset-0"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/Contact.tsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative mx-auto max-w-5xl px-6 py-24 md:px-10 md:py-32",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sm font-bold uppercase tracking-[0.28em] text-accent-bright",
+                                    children: content.eyebrow
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Contact.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-balance mt-6 font-[family-name:var(--font-display)] text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[0.98] tracking-tight text-ink",
+                                    children: content.title
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Contact.tsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-6 max-w-xl text-balance text-lg leading-8 text-ink-dim",
+                                    children: content.paragraph
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Contact.tsx",
+                                    lineNumber: 47,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 40,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: 150,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ContactForm$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                language: language
+                            }, void 0, false, {
+                                fileName: "[project]/components/Contact.tsx",
+                                lineNumber: 53,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            delayMs: 200,
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "mt-4 divide-y divide-white/10 border-t border-white/10",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "mailto:hello@fenwebstudio.com",
+                                        className: "group flex items-center justify-between gap-4 py-6 text-ink transition hover:pl-2 hover:text-accent-bright",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "flex items-center gap-3 font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight md:text-3xl",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                        className: "h-6 w-6 shrink-0 text-accent-bright"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Contact.tsx",
+                                                        lineNumber: 63,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    "hello@fenwebstudio.com"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Contact.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                className: "h-6 w-6 shrink-0 transition group-hover:translate-x-1 group-hover:-translate-y-1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Contact.tsx",
+                                                lineNumber: 66,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Contact.tsx",
+                                        lineNumber: 58,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "#work",
+                                        className: "group flex items-center justify-between gap-4 py-6 text-ink transition hover:pl-2 hover:text-accent-bright",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "font-[family-name:var(--font-display)] text-2xl font-bold tracking-tight md:text-3xl",
+                                                children: content.workLabel
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Contact.tsx",
+                                                lineNumber: 72,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                className: "h-6 w-6 shrink-0 transition group-hover:translate-x-1 group-hover:-translate-y-1"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Contact.tsx",
+                                                lineNumber: 75,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Contact.tsx",
+                                        lineNumber: 68,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Contact.tsx",
+                                lineNumber: 57,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Contact.tsx",
+                            lineNumber: 56,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/Contact.tsx",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Contact.tsx",
+            lineNumber: 33,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Contact.tsx",
+        lineNumber: 32,
+        columnNumber: 5
+    }, this);
+}
+_c = Contact;
+var _c;
+__turbopack_context__.k.register(_c, "Contact");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/lib/site.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "SITE_NAME",
+    ()=>SITE_NAME,
+    "SITE_URL",
+    ()=>SITE_URL
+]);
+const SITE_URL = "https://www.fenwebstudio.com";
+const SITE_NAME = "Fen Web Studio";
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/lib/landingPages.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "LANDING_PAGES",
+    ()=>LANDING_PAGES,
+    "buildLandingJsonLd",
+    ()=>buildLandingJsonLd,
+    "buildLandingMetadata",
+    ()=>buildLandingMetadata,
+    "getLandingPage",
+    ()=>getLandingPage,
+    "getLandingPageByProject",
+    ()=>getLandingPageByProject
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/site.ts [app-client] (ecmascript)");
+;
+const LANDING_PAGES = [
+    {
+        slug: "website-design-for-restaurants",
+        projectSlug: "rosewood-table",
+        image: "/arch-skyline-dusk.jpg",
+        industry: "Restaurants",
+        industryEs: "Restaurantes",
+        metaTitle: "Website Design for Restaurants — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Restaurantes — Fen Web Studio",
+        metaDescription: "Menu-first restaurant websites that are easy to update and easy to book from — built once, cared for every month. See how we replaced a stale PDF menu with a real site.",
+        metaDescriptionEs: "Sitios web para restaurantes centrados en el menú, fáciles de actualizar y reservar — construidos una vez, cuidados cada mes. Mira cómo reemplazamos un menú en PDF por un sitio real.",
+        eyebrow: "For restaurants and cafés",
+        eyebrowEs: "Para restaurantes y cafés",
+        title: "A website that keeps up with your menu, not the other way around.",
+        titleEs: "Un sitio web que se actualiza con tu menú, no al revés.",
+        intro: "Most restaurant sites are a splash page linking to a PDF nobody bothers to open on a phone. We build the menu as an actual page — readable, current, and easy for you to update the same week a dish changes — with reservations one tap away instead of buried in a footer.",
+        introEs: "La mayoría de los sitios de restaurantes son una página de bienvenida que enlaza a un PDF que nadie abre bien desde el teléfono. Construimos el menú como una página real — legible, actualizada, y fácil de modificar la misma semana que cambia un platillo — con reservas a un toque de distancia en vez de escondidas en el pie de página.",
+        painPoints: [
+            {
+                title: "The menu is a PDF nobody can read on a phone",
+                titleEs: "El menú es un PDF que nadie puede leer bien en el celular",
+                body: "Tiny text, sideways scrolling, and a file that's months out of date because updating it means calling whoever built the site.",
+                bodyEs: "Texto diminuto, scroll horizontal, y un archivo desactualizado por meses porque cambiarlo significa llamar a quien hizo el sitio."
+            },
+            {
+                title: "Reservations happen by phone during service",
+                titleEs: "Las reservas se hacen por teléfono durante el servicio",
+                body: "Every call during a dinner rush is a distraction your staff doesn't need, and a guest who could've booked in ten seconds online.",
+                bodyEs: "Cada llamada durante la hora pico es una distracción que tu equipo no necesita, y un cliente que pudo reservar en línea en diez segundos."
+            },
+            {
+                title: "The photos don't match the room",
+                titleEs: "Las fotos no reflejan el lugar",
+                body: "A stock-photo hero image or a decade-old interior shot undersells a space that looks great in person.",
+                bodyEs: "Una imagen genérica de stock o una foto del interior de hace diez años no le hace justicia a un lugar que se ve muy bien en persona."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Menu as a real page, not a download",
+                titleEs: "Menú como página real, no como descarga",
+                body: "You edit it like a document — no developer required — and it renders cleanly on every phone.",
+                bodyEs: "Lo editas como un documento — sin necesitar desarrollador — y se ve bien en cualquier celular."
+            },
+            {
+                title: "Booking built into the design",
+                titleEs: "Reservas integradas al diseño",
+                body: "Reservations live inside your site's own look, not a mismatched third-party widget that breaks the mood.",
+                bodyEs: "Las reservas viven dentro del diseño de tu propio sitio, no en un widget externo que no combina y rompe el ambiente."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "Seasonal menu swaps, new photography, small copy edits — handled without another agency invoice.",
+                bodyEs: "Cambios de menú por temporada, fotos nuevas, ajustes de texto — resueltos sin otra factura de agencia."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Rosewood Table",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Rosewood Table"
+    },
+    {
+        slug: "website-design-for-wellness-studios",
+        projectSlug: "halcyon-health",
+        image: "/arch-skyline-silhouette.jpg",
+        industry: "Wellness Studios",
+        industryEs: "Estudios de Bienestar",
+        metaTitle: "Website Design for Wellness Studios — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Estudios de Bienestar — Fen Web Studio",
+        metaDescription: "Calm, editorial websites for wellness studios with booking built in — so new clients stop calling to schedule and start booking online instead.",
+        metaDescriptionEs: "Sitios web calmados y editoriales para estudios de bienestar con reservas integradas — para que los clientes nuevos dejen de llamar y reserven en línea.",
+        eyebrow: "For studios, spas, and practitioners",
+        eyebrowEs: "Para estudios, spas y profesionales",
+        title: "A site as calm as the space it represents.",
+        titleEs: "Un sitio tan tranquilo como el espacio que representa.",
+        intro: "A wellness brand lives or dies on trust and tone before a client ever walks in. We build sites that read as an extension of the studio itself — with booking woven into the design instead of bolted on as a separate, brand-mismatched tool.",
+        introEs: "Una marca de bienestar depende de la confianza y el tono antes de que un cliente cruce la puerta. Construimos sitios que se sienten como una extensión del estudio mismo — con reservas integradas al diseño en vez de una herramienta aparte que no combina con la marca.",
+        painPoints: [
+            {
+                title: "Booking links out to a mismatched third-party tool",
+                titleEs: "Las reservas enlazan a una herramienta externa que no combina",
+                body: "The calm, considered feeling of the site breaks the moment someone clicks 'Book' and lands somewhere generic.",
+                bodyEs: "La sensación calmada y cuidada del sitio se rompe en el momento en que alguien hace clic en 'Reservar' y llega a algo genérico."
+            },
+            {
+                title: "New clients still call to ask basic questions",
+                titleEs: "Los clientes nuevos siguen llamando para preguntas básicas",
+                body: "Pricing, what to expect in a first session, how to prepare — if it's not clearly on the site, it becomes a phone call.",
+                bodyEs: "Precios, qué esperar en la primera sesión, cómo prepararse — si no está claro en el sitio, se convierte en una llamada."
+            },
+            {
+                title: "The design feels clinical instead of calming",
+                titleEs: "El diseño se siente clínico en vez de calmado",
+                body: "A generic template undersells a practice built around care, attention, and a specific feeling.",
+                bodyEs: "Un template genérico no le hace justicia a una práctica construida sobre cuidado, atención y una sensación específica."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Booking in the site's own visual language",
+                titleEs: "Reservas en el propio lenguaje visual del sitio",
+                body: "No jarring redirect to a third-party scheduler — the flow looks and feels like the rest of the brand.",
+                bodyEs: "Sin redirección brusca a un sistema externo — el flujo se ve y se siente como el resto de la marca."
+            },
+            {
+                title: "An editorial, unhurried homepage",
+                titleEs: "Una página de inicio editorial y sin prisa",
+                body: "Fewer, better sections that let the space and the practice speak for themselves.",
+                bodyEs: "Menos secciones, pero mejores, que dejan que el espacio y la práctica hablen por sí mismos."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "New offerings, updated bios, seasonal promotions — kept current without you touching any code.",
+                bodyEs: "Nuevos servicios, biografías actualizadas, promociones de temporada — al día sin que toques ningún código."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Halcyon Health",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Halcyon Health"
+    },
+    {
+        slug: "website-design-for-boutiques",
+        projectSlug: "loom-and-co",
+        image: "/arch-geometric-lines.jpg",
+        industry: "Boutiques & Retail",
+        industryEs: "Boutiques y Retail",
+        metaTitle: "Website Design for Boutiques & Retail Shops — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Boutiques y Tiendas — Fen Web Studio",
+        metaDescription: "A lookbook-first website for your boutique — real product photography, a handful of collections, and a clear way to get in touch. No bloated e-commerce template required.",
+        metaDescriptionEs: "Un sitio web centrado en el lookbook para tu boutique — fotografía real de producto, unas pocas colecciones, y una forma clara de contactar. Sin templates de e-commerce inflados.",
+        eyebrow: "For boutiques and small shops",
+        eyebrowEs: "Para boutiques y tiendas pequeñas",
+        title: "A lookbook first, a store second.",
+        titleEs: "Un lookbook primero, una tienda después.",
+        intro: "Generic e-commerce templates bury a small shop's actual taste under navigation menus built for a thousand SKUs. We build a single, elegant scroll instead — a handful of collections, real photography, and one clear way to reach you — that reads as a brand, not a warehouse.",
+        introEs: "Los templates genéricos de e-commerce esconden el gusto real de una tienda pequeña bajo menús de navegación pensados para mil productos. En su lugar, construimos un solo scroll elegante — unas pocas colecciones, fotografía real, y una forma clara de contactarte — que se lee como marca, no como bodega.",
+        painPoints: [
+            {
+                title: "More navigation than products",
+                titleEs: "Más navegación que productos",
+                body: "A generic store template ships with menus, filters, and category pages built for a catalog ten times the size of yours.",
+                bodyEs: "Un template genérico de tienda viene con menús, filtros y páginas de categoría pensados para un catálogo diez veces más grande que el tuyo."
+            },
+            {
+                title: "Customers can't tell what you actually sell",
+                titleEs: "Los clientes no saben qué vendes realmente",
+                body: "The homepage leads with a slideshow and a newsletter popup instead of the products people came to see.",
+                bodyEs: "La página de inicio empieza con un carrusel y un popup de newsletter en vez de los productos que la gente vino a ver."
+            },
+            {
+                title: "Carts get abandoned mid-checkout",
+                titleEs: "Los carritos se abandonan a medio pago",
+                body: "A clunky, multi-step checkout built for a big-box retailer loses sales a boutique can't afford to lose.",
+                bodyEs: "Un proceso de pago torpe y de varios pasos, pensado para una gran cadena, pierde ventas que una boutique no puede permitirse perder."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "One scroll, a handful of collections",
+                titleEs: "Un solo scroll, unas pocas colecciones",
+                body: "No account creation, no ten-item mega menu — just the pieces you actually want to sell, shown well.",
+                bodyEs: "Sin crear cuenta, sin menús de diez niveles — solo las piezas que realmente quieres vender, bien presentadas."
+            },
+            {
+                title: "Real product photography, front and center",
+                titleEs: "Fotografía real de producto, al frente",
+                body: "The site is built around your images, not a stock template that could belong to any shop.",
+                bodyEs: "El sitio se construye alrededor de tus imágenes, no de un template genérico que podría ser de cualquier tienda."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "New collections, seasonal refreshes, and small copy changes — handled for you, month to month.",
+                bodyEs: "Nuevas colecciones, renovaciones de temporada y pequeños cambios de texto — resueltos por nosotros, mes a mes."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Loom & Co.",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Loom & Co."
+    },
+    {
+        slug: "website-design-for-professional-services",
+        projectSlug: "marlow-and-row",
+        image: "/arch-geometric-bw.jpg",
+        industry: "Professional Services",
+        industryEs: "Servicios Profesionales",
+        metaTitle: "Website Design for Professional Services Firms — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Firmas de Servicios Profesionales — Fen Web Studio",
+        metaDescription: "A quiet, credible website for consultants, advisors, and small firms — answers 'are these people legitimate' in the first five seconds, without needing a CMS to maintain.",
+        metaDescriptionEs: "Un sitio web sobrio y creíble para consultores, asesores y firmas pequeñas — responde '¿es gente seria?' en los primeros cinco segundos, sin necesitar un CMS para mantenerlo.",
+        eyebrow: "For consultants, advisors, and small firms",
+        eyebrowEs: "Para consultores, asesores y firmas pequeñas",
+        title: "The site that shows up before the first call.",
+        titleEs: "El sitio que aparece antes de la primera llamada.",
+        intro: "Prospective clients Google a firm before they ever pick up the phone. If what they find is a LinkedIn page or nothing at all, the call often doesn't happen. We build a small, credible site — what you do, who's behind it, how engagements work — with nothing that needs a CMS to keep current.",
+        introEs: "Los clientes potenciales buscan una firma en Google antes de siquiera marcar. Si lo que encuentran es una página de LinkedIn o nada, la llamada muchas veces no sucede. Construimos un sitio pequeño y creíble — qué hacen, quién está detrás, cómo funcionan los proyectos — sin nada que requiera un CMS para mantenerse al día.",
+        painPoints: [
+            {
+                title: "There's no site at all — just a LinkedIn page",
+                titleEs: "No hay sitio — solo una página de LinkedIn",
+                body: "A prospective client searches the firm's name and finds a profile, not a homepage, and quietly moves on.",
+                bodyEs: "Un cliente potencial busca el nombre de la firma y encuentra un perfil, no una página de inicio, y sigue de largo sin decir nada."
+            },
+            {
+                title: "The old site reads as generic and dated",
+                titleEs: "El sitio anterior se ve genérico y desactualizado",
+                body: "A template built for any small business undersells a practice built on specific expertise and trust.",
+                bodyEs: "Un template pensado para cualquier negocio pequeño no le hace justicia a una práctica construida sobre experiencia y confianza específicas."
+            },
+            {
+                title: "Nobody wants to maintain a CMS",
+                titleEs: "Nadie quiere mantener un CMS",
+                body: "A two-partner practice doesn't have time to fight with a page builder for a site that rarely needs to change.",
+                bodyEs: "Una práctica de dos socios no tiene tiempo para pelear con un constructor de páginas para un sitio que rara vez necesita cambiar."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Four sections, nothing more",
+                titleEs: "Cuatro secciones, nada más",
+                body: "What the firm does, who's behind it, how engagements work, and how to reach you — the entire brief.",
+                bodyEs: "Qué hace la firma, quién está detrás, cómo funcionan los proyectos y cómo contactarlos — todo el encargo."
+            },
+            {
+                title: "Built to answer 'are these people legitimate'",
+                titleEs: "Construido para responder '¿es gente seria?'",
+                body: "In the first five seconds, before a prospective client reads a single word of copy.",
+                bodyEs: "En los primeros cinco segundos, antes de que un cliente potencial lea una sola palabra."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "Small updates as the practice evolves, handled for you — no CMS login required on your end.",
+                bodyEs: "Pequeñas actualizaciones conforme la práctica evoluciona, resueltas por nosotros — sin necesitar acceso a ningún CMS."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Marlow & Row",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Marlow & Row"
+    }
+];
+function getLandingPage(slug) {
+    return LANDING_PAGES.find((page)=>page.slug === slug);
+}
+function getLandingPageByProject(projectSlug) {
+    return LANDING_PAGES.find((page)=>page.projectSlug === projectSlug);
+}
+function buildLandingMetadata(page) {
+    return {
+        title: page.metaTitle,
+        description: page.metaDescription,
+        alternates: {
+            canonical: `/${page.slug}`
+        },
+        openGraph: {
+            title: page.metaTitle,
+            description: page.metaDescription,
+            type: "website",
+            url: `/${page.slug}`,
+            siteName: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SITE_NAME"]
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: page.metaTitle,
+            description: page.metaDescription
+        }
+    };
+}
+function buildLandingJsonLd(page) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        serviceType: `Website design for ${page.industry.toLowerCase()}`,
+        name: page.metaTitle,
+        description: page.metaDescription,
+        provider: {
+            "@type": "Organization",
+            name: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SITE_NAME"],
+            url: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SITE_URL"]
+        },
+        url: `${__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SITE_URL"]}/${page.slug}`
+    };
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/Footer.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up.mjs [app-client] (ecmascript) <export default as ArrowUp>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Reveal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landingPages$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/landingPages.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+function Footer({ language }) {
+    const content = language === "es" ? {
+        tagline: "Sitios elegantes para negocios pequeños y medianos, diseñados una vez y cuidados siempre.",
+        sectionsLabel: "Secciones",
+        solutionsLabel: "Soluciones",
+        studioLabel: "Estudio",
+        sections: [
+            {
+                label: "Trabajo",
+                href: "/#work"
+            },
+            {
+                label: "Servicios",
+                href: "/#services"
+            },
+            {
+                label: "Proceso",
+                href: "/#process"
+            },
+            {
+                label: "Notas",
+                href: "/blog"
+            },
+            {
+                label: "Contacto",
+                href: "/#contact"
+            }
+        ],
+        studio: [
+            {
+                label: "hello@fenwebstudio.com",
+                href: "mailto:hello@fenwebstudio.com"
+            },
+            {
+                label: "Empezar un proyecto",
+                href: "/#contact"
+            }
+        ],
+        backToTop: "Volver arriba",
+        copyright: `© ${new Date().getFullYear()} Fen Web Studio. Todos los derechos reservados.`
+    } : {
+        tagline: "Elegant websites for small and medium businesses, designed once and cared for always.",
+        sectionsLabel: "Sections",
+        solutionsLabel: "Solutions",
+        studioLabel: "Studio",
+        sections: [
+            {
+                label: "Work",
+                href: "/#work"
+            },
+            {
+                label: "Services",
+                href: "/#services"
+            },
+            {
+                label: "Process",
+                href: "/#process"
+            },
+            {
+                label: "Notes",
+                href: "/blog"
+            },
+            {
+                label: "Contact",
+                href: "/#contact"
+            }
+        ],
+        studio: [
+            {
+                label: "hello@fenwebstudio.com",
+                href: "mailto:hello@fenwebstudio.com"
+            },
+            {
+                label: "Start a project",
+                href: "/#contact"
+            }
+        ],
+        backToTop: "Back to top",
+        copyright: `© ${new Date().getFullYear()} Fen Web Studio. All rights reserved.`
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+        className: "border-t border-white/10",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mx-auto max-w-6xl px-6 py-16 md:px-10 md:py-20",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid gap-12 md:grid-cols-[1.2fr_1fr_1fr_1fr]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: "/#top",
+                                        className: "flex items-center gap-2.5 font-[family-name:var(--font-display)] text-xl font-extrabold tracking-tight text-ink",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                src: "/icon.svg",
+                                                alt: "",
+                                                width: 32,
+                                                height: 32,
+                                                className: "rounded-[8px]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 69,
+                                                columnNumber: 17
+                                            }, this),
+                                            "fenwebstudio"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 65,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "mt-4 max-w-xs text-sm leading-6 text-ink-dim",
+                                        children: content.tagline
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 78,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Footer.tsx",
+                                lineNumber: 64,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs font-semibold uppercase tracking-[0.28em] text-ink-dim",
+                                        children: content.sectionsLabel
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 84,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "mt-5 flex flex-col gap-3",
+                                        children: content.sections.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: item.href,
+                                                    className: "text-sm text-ink transition hover:text-accent",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 90,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, item.href, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 89,
+                                                columnNumber: 19
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 87,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Footer.tsx",
+                                lineNumber: 83,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs font-semibold uppercase tracking-[0.28em] text-ink-dim",
+                                        children: content.solutionsLabel
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "mt-5 flex flex-col gap-3",
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$landingPages$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LANDING_PAGES"].map((page)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: `/${page.slug}`,
+                                                    className: "text-sm text-ink transition hover:text-accent",
+                                                    children: language === "es" ? page.industryEs : page.industry
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 108,
+                                                    columnNumber: 21
+                                                }, this)
+                                            }, page.slug, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 107,
+                                                columnNumber: 19
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 105,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Footer.tsx",
+                                lineNumber: 101,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-xs font-semibold uppercase tracking-[0.28em] text-ink-dim",
+                                        children: content.studioLabel
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 120,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "mt-5 flex flex-col gap-3",
+                                        children: content.studio.map((item)=>item.href.startsWith("mailto:") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: item.href,
+                                                    className: "text-sm text-ink transition hover:text-accent",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 127,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, item.href, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 126,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                    href: item.href,
+                                                    className: "text-sm text-ink transition hover:text-accent",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Footer.tsx",
+                                                    lineNumber: 136,
+                                                    columnNumber: 23
+                                                }, this)
+                                            }, item.href, false, {
+                                                fileName: "[project]/components/Footer.tsx",
+                                                lineNumber: 135,
+                                                columnNumber: 21
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Footer.tsx",
+                                        lineNumber: 123,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Footer.tsx",
+                                lineNumber: 119,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Footer.tsx",
+                        lineNumber: 63,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 62,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-ink-dim md:flex-row",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: content.copyright
+                        }, void 0, false, {
+                            fileName: "[project]/components/Footer.tsx",
+                            lineNumber: 151,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "/#top",
+                            className: "group inline-flex items-center gap-1.5 transition hover:text-ink",
+                            children: [
+                                content.backToTop,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUp$3e$__["ArrowUp"], {
+                                    className: "h-3.5 w-3.5 transition group-hover:-translate-y-0.5"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Footer.tsx",
+                                    lineNumber: 157,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Footer.tsx",
+                            lineNumber: 152,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/Footer.tsx",
+                    lineNumber: 150,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Footer.tsx",
+            lineNumber: 61,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/Footer.tsx",
+        lineNumber: 60,
+        columnNumber: 5
+    }, this);
+}
+_c = Footer;
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/PromoModal.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>PromoModal
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-client] (ecmascript) <export default as X>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+const DISMISS_KEY = "promoModalDismissed";
+const OPEN_DELAY_MS = 1600;
+// Owner-editable: flip `enabled` off to turn the modal off entirely.
+// `devMode` ignores the "already dismissed this session" check, so it
+// pops up on every page load — handy for previewing copy/design changes.
+const CONFIG = {
+    enabled: true,
+    devMode: false
+};
+// Owner-editable: swap this for whatever's actually running this month.
+const OFFER = {
+    eyebrow: "Limited availability",
+    eyebrowEs: "Cupo limitado",
+    title: "Free 20-minute site audit",
+    titleEs: "Auditoría de sitio gratis de 20 minutos",
+    body: "No pitch, no obligation — just a short call where we point out what's costing you visitors on your current site.",
+    bodyEs: "Sin venta, sin compromiso — solo una llamada corta donde te decimos qué le está costando visitantes a tu sitio actual.",
+    cta: "Claim your slot",
+    ctaEs: "Reservar mi lugar"
+};
+function PromoModal({ language }) {
+    _s();
+    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const dismiss = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "PromoModal.useCallback[dismiss]": ()=>{
+            if (!CONFIG.devMode) {
+                window.sessionStorage.setItem(DISMISS_KEY, "1");
+            }
+            setOpen(false);
+        }
+    }["PromoModal.useCallback[dismiss]"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PromoModal.useEffect": ()=>{
+            if (!CONFIG.enabled) {
+                return;
+            }
+            if (!CONFIG.devMode && window.sessionStorage.getItem(DISMISS_KEY) === "1") {
+                return;
+            }
+            const timer = window.setTimeout({
+                "PromoModal.useEffect.timer": ()=>{
+                    setOpen(true);
+                }
+            }["PromoModal.useEffect.timer"], OPEN_DELAY_MS);
+            return ({
+                "PromoModal.useEffect": ()=>window.clearTimeout(timer)
+            })["PromoModal.useEffect"];
+        }
+    }["PromoModal.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PromoModal.useEffect": ()=>{
+            if (!open) return;
+            const onKeyDown = {
+                "PromoModal.useEffect.onKeyDown": (event)=>{
+                    if (event.key === "Escape") {
+                        dismiss();
+                    }
+                }
+            }["PromoModal.useEffect.onKeyDown"];
+            window.addEventListener("keydown", onKeyDown);
+            return ({
+                "PromoModal.useEffect": ()=>window.removeEventListener("keydown", onKeyDown)
+            })["PromoModal.useEffect"];
+        }
+    }["PromoModal.useEffect"], [
+        open,
+        dismiss
+    ]);
+    if (!CONFIG.enabled || !open) {
+        return null;
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-6 backdrop-blur-sm",
+        onClick: dismiss,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "relative w-full max-w-md overflow-hidden rounded-[2rem] border border-[color:var(--line)] bg-bg-raised/95 p-8 shadow-2xl backdrop-blur-xl md:p-10",
+            onClick: (event)=>event.stopPropagation(),
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "pointer-events-none absolute inset-0",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "aura absolute -top-16 right-[-25%] h-56 w-56 rounded-full bg-accent/25 blur-[90px]"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PromoModal.tsx",
+                        lineNumber: 90,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 89,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "button",
+                    "aria-label": language === "es" ? "Cerrar" : "Dismiss",
+                    onClick: dismiss,
+                    className: "absolute right-5 top-5 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/5 text-ink-dim transition hover:bg-white/10 hover:text-ink",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                        className: "h-4 w-4"
+                    }, void 0, false, {
+                        fileName: "[project]/components/PromoModal.tsx",
+                        lineNumber: 99,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 93,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "relative text-xs font-bold uppercase tracking-[0.28em] text-accent-bright",
+                    children: language === "es" ? OFFER.eyebrowEs : OFFER.eyebrow
+                }, void 0, false, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 102,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "text-balance relative mt-4 font-[family-name:var(--font-display)] text-3xl font-extrabold leading-[1.05] tracking-tight text-ink",
+                    children: language === "es" ? OFFER.titleEs : OFFER.title
+                }, void 0, false, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 105,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "relative mt-4 text-sm leading-7 text-ink-dim",
+                    children: language === "es" ? OFFER.bodyEs : OFFER.body
+                }, void 0, false, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 108,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/#contact",
+                    onClick: dismiss,
+                    className: "relative mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-accent/90",
+                    children: [
+                        language === "es" ? OFFER.ctaEs : OFFER.cta,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                            className: "h-4 w-4"
+                        }, void 0, false, {
+                            fileName: "[project]/components/PromoModal.tsx",
+                            lineNumber: 118,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/PromoModal.tsx",
+                    lineNumber: 112,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/PromoModal.tsx",
+            lineNumber: 85,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/PromoModal.tsx",
+        lineNumber: 81,
+        columnNumber: 5
+    }, this);
+}
+_s(PromoModal, "3UpSUON+wEWKQcSM+DKPHLdZkHY=");
+_c = PromoModal;
+var _c;
+__turbopack_context__.k.register(_c, "PromoModal");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/components/AvailabilityBadge.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>AvailabilityBadge
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.mjs [app-client] (ecmascript) <export default as X>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+const DISMISS_KEY = "availabilityBadgeDismissed";
+function getQuarterLabel(language) {
+    const now = new Date();
+    const quarter = Math.floor(now.getMonth() / 3) + 1;
+    const year = now.getFullYear();
+    return language === "es" ? `T${quarter} ${year}` : `Q${quarter} ${year}`;
+}
+function AvailabilityBadge({ language }) {
+    _s();
+    const [visible, setVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AvailabilityBadge.useEffect": ()=>{
+            if (window.sessionStorage.getItem(DISMISS_KEY) !== "1") {
+                // eslint-disable-next-line react-hooks/set-state-in-effect
+                setVisible(true);
+            }
+        }
+    }["AvailabilityBadge.useEffect"], []);
+    if (!visible) {
+        return null;
+    }
+    const label = language === "es" ? `Abriendo espacio para ${getQuarterLabel(language)}` : `Booking new projects for ${getQuarterLabel(language)}`;
+    const dismiss = ()=>{
+        window.sessionStorage.setItem(DISMISS_KEY, "1");
+        setVisible(false);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "fixed bottom-5 left-5 z-30 hidden sm:block",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "card-surface flex items-center gap-2 rounded-full py-2 pl-4 pr-2 shadow-lg",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "relative flex h-2 w-2 shrink-0",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "aura absolute inline-flex h-full w-full rounded-full bg-accent-bright"
+                        }, void 0, false, {
+                            fileName: "[project]/components/AvailabilityBadge.tsx",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "relative inline-flex h-2 w-2 rounded-full bg-accent-bright"
+                        }, void 0, false, {
+                            fileName: "[project]/components/AvailabilityBadge.tsx",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/AvailabilityBadge.tsx",
+                    lineNumber: 49,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/#contact",
+                    className: "text-sm font-medium text-ink transition hover:text-accent-bright",
+                    children: label
+                }, void 0, false, {
+                    fileName: "[project]/components/AvailabilityBadge.tsx",
+                    lineNumber: 53,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    type: "button",
+                    "aria-label": language === "es" ? "Cerrar" : "Dismiss",
+                    onClick: dismiss,
+                    className: "inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-ink-dim transition hover:bg-white/10 hover:text-ink",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                        className: "h-3.5 w-3.5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/AvailabilityBadge.tsx",
+                        lineNumber: 65,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/AvailabilityBadge.tsx",
+                    lineNumber: 59,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/AvailabilityBadge.tsx",
+            lineNumber: 48,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/components/AvailabilityBadge.tsx",
+        lineNumber: 47,
+        columnNumber: 5
+    }, this);
+}
+_s(AvailabilityBadge, "cz/DzCD06IMMsoBJ0A1IgCy1P5M=");
+_c = AvailabilityBadge;
+var _c;
+__turbopack_context__.k.register(_c, "AvailabilityBadge");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/lib/useSiteChrome.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useSiteChrome",
+    ()=>useSiteChrome
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+function useSiteChrome() {
+    _s();
+    const [language, setLanguage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        "useSiteChrome.useState": ()=>{
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            const savedLanguage = window.localStorage.getItem("language");
+            return savedLanguage === "en" || savedLanguage === "es" ? savedLanguage : "es";
+        }
+    }["useSiteChrome.useState"]);
+    const [theme, setTheme] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        "useSiteChrome.useState": ()=>{
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            const savedTheme = window.localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            return savedTheme === "dark" || savedTheme === "light" ? savedTheme : prefersDark ? "dark" : "light";
+        }
+    }["useSiteChrome.useState"]);
+    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useSiteChrome.useEffect": ()=>{
+            // Hydration-safe mount flag: no way to detect "mounted" other than an effect.
+            // eslint-disable-next-line react-hooks/set-state-in-effect
+            setMounted(true);
+        }
+    }["useSiteChrome.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useSiteChrome.useEffect": ()=>{
+            document.documentElement.dataset.theme = theme;
+            document.documentElement.style.colorScheme = theme;
+            window.localStorage.setItem("theme", theme);
+        }
+    }["useSiteChrome.useEffect"], [
+        theme
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useSiteChrome.useEffect": ()=>{
+            window.localStorage.setItem("language", language);
+        }
+    }["useSiteChrome.useEffect"], [
+        language
+    ]);
+    const toggleTheme = ()=>{
+        setTheme((current)=>current === "dark" ? "light" : "dark");
+    };
+    const toggleLanguage = ()=>{
+        setLanguage((current)=>current === "en" ? "es" : "en");
+    };
+    return {
+        language,
+        theme,
+        mounted,
+        toggleLanguage,
+        toggleTheme
+    };
+}
+_s(useSiteChrome, "AiEqXkTiCfM58rH792BMHoALWEE=");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Nav.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MarqueeStrip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/MarqueeStrip.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Hero.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TrustStrip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/TrustStrip.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Services$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Services.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Why$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Why.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Work$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Work.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Showcase$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Showcase.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Testimonials$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Testimonials.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Process$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Process.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Blog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Blog.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Contact$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Contact.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Footer.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PromoModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/PromoModal.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AvailabilityBadge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/AvailabilityBadge.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$useSiteChrome$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/useSiteChrome.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function Home() {
+    _s();
+    const { language, theme, mounted, toggleLanguage, toggleTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$useSiteChrome$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSiteChrome"])();
+    if (!mounted) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen bg-bg"
+        }, void 0, false, {
+            fileName: "[project]/app/page.tsx",
+            lineNumber: 25,
+            columnNumber: 12
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-bg",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                language: language,
+                onToggleLanguage: toggleLanguage,
+                theme: theme,
+                onToggleTheme: toggleTheme
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 30,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$MarqueeStrip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                language: language
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TrustStrip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Services$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Why$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Showcase$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Work$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 43,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Testimonials$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 44,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Process$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Blog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Contact$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        language: language
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 37,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                language: language
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$AvailabilityBadge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                language: language
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 50,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PromoModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                language: language
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/page.tsx",
+        lineNumber: 29,
+        columnNumber: 5
+    }, this);
+}
+_s(Home, "90s2OwYraioM3dsLIucP6RpMzQw=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$useSiteChrome$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSiteChrome"]
+    ];
+});
+_c = Home;
+var _c;
+__turbopack_context__.k.register(_c, "Home");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=_0uixgsa._.js.map

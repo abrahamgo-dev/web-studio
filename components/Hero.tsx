@@ -13,36 +13,46 @@ export default function Hero({ language }: HeroProps) {
   const content =
     language === "es"
       ? {
-          badge: "Abriendo espacio para nuevos proyectos en Q4",
+          badge: "Diseño premium para negocios que venden",
           heading: (
             <span className="block">
-              Un sitio web tan
+              Tu sitio debe
               <br />
-              <span className="text-accent-bright">confiable</span> como
+              <span className="text-accent-bright">convertir</span>
               <br />
-              tu negocio.
+              desde el primer clic.
             </span>
           ),
           paragraph:
-            "Fen Web Studio diseña sitios elegantes y sin relleno para negocios pequeños y medianos — y luego los mantiene al día con un plan de cuidado mensual. Sin rediseños cada dos años, sin buscar quién arregle un texto.",
-          primary: "Ver el trabajo",
-          secondary: "Empezar un proyecto",
+            "Creamos páginas web elegantes, rápidas y enfocadas en resultados para negocios que quieren captar clientes, ganar confianza y cerrar más oportunidades sin complicaciones.",
+          primary: "Ver proyectos",
+          secondary: "Reservar una llamada",
+          bullets: [
+            "Diseño premium y claro",
+            "Optimizado para móvil",
+            "Mantenimiento continuo",
+          ],
         }
       : {
-          badge: "Booking new projects for Q4",
+          badge: "Premium web design for businesses that sell",
           heading: (
             <span className="block">
-              A website as
+              Your website should
               <br />
-              <span className="text-accent-bright">trustworthy</span> as
+              <span className="text-accent-bright">convert</span>
               <br />
-              your business.
+              from the first click.
             </span>
           ),
           paragraph:
-            "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses — then keeps them polished with a monthly care plan. No redesign every two years, no developer to chase down for a typo fix.",
-          primary: "See the work",
-          secondary: "Start a project",
+            "We create elegant, fast, conversion-focused websites for businesses that want to attract clients, build trust, and close more opportunities without the usual complexity.",
+          primary: "See projects",
+          secondary: "Book a call",
+          bullets: [
+            "Premium, clear design",
+            "Mobile optimized",
+            "Ongoing care",
+          ],
         };
 
   return (
@@ -55,7 +65,7 @@ export default function Hero({ language }: HeroProps) {
         <div className="noise absolute inset-0" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-6 pt-16 pb-28 text-center md:px-10 md:pt-24 md:pb-36">
+      <div className="relative mx-auto max-w-6xl px-6 pt-16 pb-20 text-center md:px-10 md:pt-24 md:pb-28">
         <Reveal>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-2 text-xs font-semibold tracking-wide text-accent-bright backdrop-blur-sm">
             <Sparkle className="h-3.5 w-3.5 text-accent-bright" />
@@ -64,7 +74,7 @@ export default function Hero({ language }: HeroProps) {
         </Reveal>
 
         <Reveal delayMs={100}>
-          <h1 className="text-balance font-[family-name:var(--font-display)] text-[clamp(4rem,9vw,7.5rem)] font-extrabold leading-[0.92] tracking-tight text-ink">
+          <h1 className="text-balance font-[family-name:var(--font-display)] text-[clamp(3.8rem,8vw,6.8rem)] font-extrabold leading-[0.92] tracking-tight text-ink">
             {content.heading}
           </h1>
         </Reveal>
@@ -76,7 +86,7 @@ export default function Hero({ language }: HeroProps) {
         </Reveal>
 
         <Reveal delayMs={340}>
-          <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#work"
               className="w-full rounded-full border border-[color:var(--line)] bg-transparent px-7 py-4 text-sm font-medium text-ink transition hover:bg-white/5 sm:w-auto"
@@ -90,6 +100,19 @@ export default function Hero({ language }: HeroProps) {
               {content.secondary}
               <ArrowUpRight className="h-4 w-4" />
             </a>
+          </div>
+        </Reveal>
+
+        <Reveal delayMs={460}>
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-ink-dim">
+            {content.bullets.map((bullet) => (
+              <div
+                key={bullet}
+                className="rounded-full border border-white/10 bg-white/6 px-4 py-2 backdrop-blur-sm"
+              >
+                {bullet}
+              </div>
+            ))}
           </div>
         </Reveal>
       </div>

@@ -147,7 +147,7 @@ function Nav({ language, onToggleLanguage, theme, onToggleTheme }) {
                                 type: "button",
                                 "aria-label": theme === "dark" ? "Switch to light theme" : "Switch to dark theme",
                                 onClick: onToggleTheme,
-                                className: "inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 text-ink shadow-sm transition hover:bg-white/10",
+                                className: "hidden h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 text-ink shadow-sm transition hover:bg-white/10 md:inline-flex",
                                 children: theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2d$medium$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__SunMedium$3e$__["SunMedium"], {
                                     className: "h-4 w-4"
                                 }, void 0, false, {

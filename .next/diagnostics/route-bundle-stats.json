@@ -1,13 +1,13 @@
 [
   {
     "route": "/",
-    "firstLoadUncompressedJsBytes": 622006,
+    "firstLoadUncompressedJsBytes": 623250,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/10sdf9wv8asr2.js",
-      ".next/static/chunks/3jgw5ya-mhfio.js",
-      ".next/static/chunks/1mgbz3dgmnwfw.js",
+      ".next/static/chunks/1tz36zwkggi24.js",
+      ".next/static/chunks/05fmmrd46lz62.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -18,12 +18,12 @@
   },
   {
     "route": "/website-design-for-boutiques",
-    "firstLoadUncompressedJsBytes": 579338,
+    "firstLoadUncompressedJsBytes": 579348,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/312f2ei-d41hv.js",
-      ".next/static/chunks/1tvr7smvef0q8.js",
+      ".next/static/chunks/17y0t3j6rxvvb.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -34,12 +34,12 @@
   },
   {
     "route": "/website-design-for-professional-services",
-    "firstLoadUncompressedJsBytes": 579338,
+    "firstLoadUncompressedJsBytes": 579348,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/312f2ei-d41hv.js",
-      ".next/static/chunks/1tvr7smvef0q8.js",
+      ".next/static/chunks/17y0t3j6rxvvb.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -50,12 +50,12 @@
   },
   {
     "route": "/website-design-for-restaurants",
-    "firstLoadUncompressedJsBytes": 579338,
+    "firstLoadUncompressedJsBytes": 579348,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/312f2ei-d41hv.js",
-      ".next/static/chunks/1tvr7smvef0q8.js",
+      ".next/static/chunks/17y0t3j6rxvvb.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -66,12 +66,12 @@
   },
   {
     "route": "/website-design-for-wellness-studios",
-    "firstLoadUncompressedJsBytes": 579338,
+    "firstLoadUncompressedJsBytes": 579348,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/312f2ei-d41hv.js",
-      ".next/static/chunks/1tvr7smvef0q8.js",
+      ".next/static/chunks/17y0t3j6rxvvb.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -82,12 +82,12 @@
   },
   {
     "route": "/work/[slug]",
-    "firstLoadUncompressedJsBytes": 573647,
+    "firstLoadUncompressedJsBytes": 573657,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/2l4ukescltidy.js",
-      ".next/static/chunks/1tvr7smvef0q8.js",
+      ".next/static/chunks/17y0t3j6rxvvb.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -98,12 +98,12 @@
   },
   {
     "route": "/blog",
-    "firstLoadUncompressedJsBytes": 571279,
+    "firstLoadUncompressedJsBytes": 571289,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/3z6ttj29deykd.js",
-      ".next/static/chunks/1eeq-2mrdzjkw.js",
+      ".next/static/chunks/13epzermwfu-c.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",
@@ -114,12 +114,12 @@
   },
   {
     "route": "/blog/[slug]",
-    "firstLoadUncompressedJsBytes": 571210,
+    "firstLoadUncompressedJsBytes": 571220,
     "firstLoadChunkPaths": [
       ".next/static/chunks/3dlychj7uvedb.js",
       ".next/static/chunks/14mrh2-p_w84d.js",
       ".next/static/chunks/42vdrhpnng497.js",
-      ".next/static/chunks/1eeq-2mrdzjkw.js",
+      ".next/static/chunks/13epzermwfu-c.js",
       ".next/static/chunks/2iho8jepmwwua.js",
       ".next/static/chunks/3z524g4q0o21c.js",
       ".next/static/chunks/1eglloh0s_w8l.js",

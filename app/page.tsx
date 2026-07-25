@@ -1,6 +1,7 @@
 "use client";
 
 import Nav from "@/components/Nav";
+import MarqueeStrip from "@/components/MarqueeStrip";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
@@ -32,6 +33,7 @@ export default function Home() {
         theme={theme}
         onToggleTheme={toggleTheme}
       />
+      <MarqueeStrip language={language} />
       <main>
         <Hero language={language} />
         <TrustStrip language={language} />

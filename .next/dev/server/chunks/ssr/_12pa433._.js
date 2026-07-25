@@ -147,7 +147,7 @@ function Nav({ language, onToggleLanguage, theme, onToggleTheme }) {
                                 type: "button",
                                 "aria-label": theme === "dark" ? "Switch to light theme" : "Switch to dark theme",
                                 onClick: onToggleTheme,
-                                className: "inline-flex h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 text-ink shadow-sm transition hover:bg-white/10",
+                                className: "hidden h-10 w-10 items-center justify-center rounded-full border border-[color:var(--line)] bg-bg-raised/80 text-ink shadow-sm transition hover:bg-white/10 md:inline-flex",
                                 children: theme === "dark" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2d$medium$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__SunMedium$3e$__["SunMedium"], {
                                     className: "h-4 w-4"
                                 }, void 0, false, {
@@ -373,11 +373,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx_
 ;
 function Hero({ language }) {
     const content = language === "es" ? {
-        badge: "Abriendo espacio para nuevos proyectos en Q4",
+        badge: "Diseño premium para negocios que venden",
         heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "block",
             children: [
-                "Un sitio web tan",
+                "Tu sitio debe",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
                     lineNumber: 20,
@@ -385,63 +385,71 @@ function Hero({ language }) {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "text-accent-bright",
-                    children: "confiable"
+                    children: "convertir"
                 }, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
                     lineNumber: 21,
                     columnNumber: 15
                 }, this),
-                " como",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
                     lineNumber: 22,
                     columnNumber: 15
                 }, this),
-                "tu negocio."
+                "desde el primer clic."
             ]
         }, void 0, true, {
             fileName: "[project]/components/Hero.tsx",
             lineNumber: 18,
             columnNumber: 13
         }, this),
-        paragraph: "Fen Web Studio diseña sitios elegantes y sin relleno para negocios pequeños y medianos — y luego los mantiene al día con un plan de cuidado mensual. Sin rediseños cada dos años, sin buscar quién arregle un texto.",
-        primary: "Ver el trabajo",
-        secondary: "Empezar un proyecto"
+        paragraph: "Creamos páginas web elegantes, rápidas y enfocadas en resultados para negocios que quieren captar clientes, ganar confianza y cerrar más oportunidades sin complicaciones.",
+        primary: "Ver proyectos",
+        secondary: "Reservar una llamada",
+        bullets: [
+            "Diseño premium y claro",
+            "Optimizado para móvil",
+            "Mantenimiento continuo"
+        ]
     } : {
-        badge: "Booking new projects for Q4",
+        badge: "Premium web design for businesses that sell",
         heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "block",
             children: [
-                "A website as",
+                "Your website should",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
-                    lineNumber: 36,
+                    lineNumber: 41,
                     columnNumber: 15
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "text-accent-bright",
-                    children: "trustworthy"
+                    children: "convert"
                 }, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
-                    lineNumber: 37,
+                    lineNumber: 42,
                     columnNumber: 15
                 }, this),
-                " as",
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                     fileName: "[project]/components/Hero.tsx",
-                    lineNumber: 38,
+                    lineNumber: 43,
                     columnNumber: 15
                 }, this),
-                "your business."
+                "from the first click."
             ]
         }, void 0, true, {
             fileName: "[project]/components/Hero.tsx",
-            lineNumber: 34,
+            lineNumber: 39,
             columnNumber: 13
         }, this),
-        paragraph: "Fen Web Studio designs elegant, no-clutter websites for small and medium businesses — then keeps them polished with a monthly care plan. No redesign every two years, no developer to chase down for a typo fix.",
-        primary: "See the work",
-        secondary: "Start a project"
+        paragraph: "We create elegant, fast, conversion-focused websites for businesses that want to attract clients, build trust, and close more opportunities without the usual complexity.",
+        primary: "See projects",
+        secondary: "Book a call",
+        bullets: [
+            "Premium, clear design",
+            "Mobile optimized",
+            "Ongoing care"
+        ]
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "top",
@@ -454,24 +462,24 @@ function Hero({ language }) {
                         className: "aura absolute -top-32 right-[-12%] h-[30rem] w-[30rem] rounded-full bg-accent/20 blur-[130px]"
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 54,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "noise absolute inset-0"
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 55,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.tsx",
-                lineNumber: 53,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative mx-auto max-w-5xl px-6 pt-16 pb-28 text-center md:px-10 md:pt-24 md:pb-36",
+                className: "relative mx-auto max-w-6xl px-6 pt-16 pb-20 text-center md:px-10 md:pt-24 md:pb-28",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -481,34 +489,34 @@ function Hero({ language }) {
                                     className: "h-3.5 w-3.5 text-accent-bright"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this),
                                 content.badge
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Hero.tsx",
-                            lineNumber: 60,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 59,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         delayMs: 100,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-balance font-[family-name:var(--font-display)] text-[clamp(4rem,9vw,7.5rem)] font-extrabold leading-[0.92] tracking-tight text-ink",
+                            className: "text-balance font-[family-name:var(--font-display)] text-[clamp(3.8rem,8vw,6.8rem)] font-extrabold leading-[0.92] tracking-tight text-ink",
                             children: content.heading
                         }, void 0, false, {
                             fileName: "[project]/components/Hero.tsx",
-                            lineNumber: 67,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 66,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -518,18 +526,18 @@ function Hero({ language }) {
                             children: content.paragraph
                         }, void 0, false, {
                             fileName: "[project]/components/Hero.tsx",
-                            lineNumber: 73,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 72,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         delayMs: 340,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row",
+                            className: "mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "#work",
@@ -537,7 +545,7 @@ function Hero({ language }) {
                                     children: content.primary
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.tsx",
-                                    lineNumber: 80,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -549,36 +557,58 @@ function Hero({ language }) {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Hero.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Hero.tsx",
-                                    lineNumber: 86,
+                                    lineNumber: 96,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Hero.tsx",
-                            lineNumber: 79,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.tsx",
-                        lineNumber: 78,
+                        lineNumber: 88,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        delayMs: 460,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-ink-dim",
+                            children: content.bullets.map((bullet)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "rounded-full border border-white/10 bg-white/6 px-4 py-2 backdrop-blur-sm",
+                                    children: bullet
+                                }, bullet, false, {
+                                    fileName: "[project]/components/Hero.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.tsx",
+                            lineNumber: 107,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.tsx",
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.tsx",
-                lineNumber: 58,
+                lineNumber: 68,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Hero.tsx",
-        lineNumber: 49,
+        lineNumber: 59,
         columnNumber: 5
     }, this);
 }
