@@ -2,6 +2,7 @@
 
 import { ArrowUpRight, Mail } from "lucide-react";
 import Reveal from "@/components/Reveal";
+import ContactForm from "@/components/ContactForm";
 
 type Language = "en" | "es";
 
@@ -49,7 +50,11 @@ export default function Contact({ language }: ContactProps) {
           </Reveal>
 
           <Reveal delayMs={150}>
-            <div className="mt-14 divide-y divide-white/10 border-t border-white/10">
+            <ContactForm language={language} />
+          </Reveal>
+
+          <Reveal delayMs={200}>
+            <div className="mt-4 divide-y divide-white/10 border-t border-white/10">
               <a
                 href="mailto:hello@fenwebstudio.com"
                 className="group flex items-center justify-between gap-4 py-6 text-ink transition hover:pl-2 hover:text-accent-bright"

@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/blog/what-a-care-plan-actually-covers":{},"/blog/fewer-pages-more-credible":{},"/work/loom-and-co":{},"/work/halcyon-health":{},"/work/marlow-and-row":{},"/work/rosewood-table":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]},"/work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/work/[slug]","routeRegex":"^\\/work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"d2cd9b19c2d5cd63451ba4faec21e01d","previewModeSigningKey":"ad26719148c1af19d2c0dcb9c6c21aaf9fb57cf83d9f1bf0146e8bdb393863a0","previewModeEncryptionKey":"92aa73713de06091313c31391a77185bc847ba244418dc1352def63ce7ba47d8"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "8f450af92ac1108da9b1a18f0d4f2526",
+    "previewModeSigningKey": "bae87b0925beac056c341f914f80c3a5e4f526d3321731cc93bc947ecf5e3afc",
+    "previewModeEncryptionKey": "1904bf16d1b1165ab0cda50c4b456919115e6abfc7f38edfb9f5d90edab1447c"
+  }
+}
