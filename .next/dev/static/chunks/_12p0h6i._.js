@@ -389,7 +389,7 @@ __turbopack_context__.s([
     "SITE_URL",
     ()=>SITE_URL
 ]);
-const SITE_URL = "https://fenwebstudio.com";
+const SITE_URL = "https://www.fenwebstudio.com";
 const SITE_NAME = "Fen Web Studio";
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);

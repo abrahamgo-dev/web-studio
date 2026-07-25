@@ -365,7 +365,7 @@ __turbopack_context__.s([
     "SITE_URL",
     ()=>SITE_URL
 ]);
-const SITE_URL = "https://fenwebstudio.com";
+const SITE_URL = "https://www.fenwebstudio.com";
 const SITE_NAME = "Fen Web Studio";
 }),
 "[project]/lib/landingPages.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
