@@ -10,18 +10,18 @@ export default function MarqueeStrip({ language }: MarqueeStripProps) {
   const items =
     language === "es"
       ? [
-          "Sitios que convierten",
-          "Diseño premium y claro",
-          "Optimizado para móvil",
-          "Mensajes que venden",
-          "Crecimiento sin fricción",
+          "Diseño que transmite confianza",
+          "Mensajes claros que venden",
+          "Experiencia premium en móvil",
+          "Sitios rápidos y elegantes",
+          "Marca sólida en cada pantalla",
         ]
       : [
-          "Websites that convert",
-          "Premium, clear design",
-          "Mobile optimized",
-          "Copy that sells",
-          "Growth without friction",
+          "Design that builds trust",
+          "Clear copy that sells",
+          "Premium mobile experience",
+          "Fast, elegant websites",
+          "A strong brand on every screen",
         ];
 
   const repeatedItems = [...items, ...items];

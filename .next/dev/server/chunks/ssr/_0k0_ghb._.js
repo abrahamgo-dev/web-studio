@@ -319,17 +319,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function MarqueeStrip({ language }) {
     const items = language === "es" ? [
-        "Sitios que convierten",
-        "Diseño premium y claro",
-        "Optimizado para móvil",
-        "Mensajes que venden",
-        "Crecimiento sin fricción"
+        "Diseño que transmite confianza",
+        "Mensajes claros que venden",
+        "Experiencia premium en móvil",
+        "Sitios rápidos y elegantes",
+        "Marca sólida en cada pantalla"
     ] : [
-        "Websites that convert",
-        "Premium, clear design",
-        "Mobile optimized",
-        "Copy that sells",
-        "Growth without friction"
+        "Design that builds trust",
+        "Clear copy that sells",
+        "Premium mobile experience",
+        "Fast, elegant websites",
+        "A strong brand on every screen"
     ];
     const repeatedItems = [
         ...items,
@@ -447,7 +447,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx_
 ;
 function Hero({ language }) {
     const content = language === "es" ? {
-        badge: "Diseño premium para negocios que venden",
+        badge: "Abriendo espacio para nuevos proyectos",
         heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "block",
             children: [
@@ -486,7 +486,7 @@ function Hero({ language }) {
             "Mantenimiento continuo"
         ]
     } : {
-        badge: "Premium web design for businesses that sell",
+        badge: "Opening space for new projects",
         heading: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
             className: "block",
             children: [
@@ -3819,12 +3819,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 const DISMISS_KEY = "availabilityBadgeDismissed";
-function getQuarterLabel(language) {
-    const now = new Date();
-    const quarter = Math.floor(now.getMonth() / 3) + 1;
-    const year = now.getFullYear();
-    return language === "es" ? `T${quarter} ${year}` : `Q${quarter} ${year}`;
-}
 function AvailabilityBadge({ language }) {
     const [visible, setVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -3836,7 +3830,7 @@ function AvailabilityBadge({ language }) {
     if (!visible) {
         return null;
     }
-    const label = language === "es" ? `Abriendo espacio para ${getQuarterLabel(language)}` : `Booking new projects for ${getQuarterLabel(language)}`;
+    const label = language === "es" ? "Abriendo espacio para nuevos proyectos" : "Taking on new projects";
     const dismiss = ()=>{
         window.sessionStorage.setItem(DISMISS_KEY, "1");
         setVisible(false);
@@ -3853,20 +3847,20 @@ function AvailabilityBadge({ language }) {
                             className: "aura absolute inline-flex h-full w-full rounded-full bg-accent-bright"
                         }, void 0, false, {
                             fileName: "[project]/components/AvailabilityBadge.tsx",
-                            lineNumber: 50,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "relative inline-flex h-2 w-2 rounded-full bg-accent-bright"
                         }, void 0, false, {
                             fileName: "[project]/components/AvailabilityBadge.tsx",
-                            lineNumber: 51,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/AvailabilityBadge.tsx",
-                    lineNumber: 49,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -3875,7 +3869,7 @@ function AvailabilityBadge({ language }) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/components/AvailabilityBadge.tsx",
-                    lineNumber: 53,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3887,23 +3881,23 @@ function AvailabilityBadge({ language }) {
                         className: "h-3.5 w-3.5"
                     }, void 0, false, {
                         fileName: "[project]/components/AvailabilityBadge.tsx",
-                        lineNumber: 65,
+                        lineNumber: 60,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/AvailabilityBadge.tsx",
-                    lineNumber: 59,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/AvailabilityBadge.tsx",
-            lineNumber: 48,
+            lineNumber: 43,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/AvailabilityBadge.tsx",
-        lineNumber: 47,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

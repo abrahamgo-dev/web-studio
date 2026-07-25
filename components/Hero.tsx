@@ -13,7 +13,7 @@ export default function Hero({ language }: HeroProps) {
   const content =
     language === "es"
       ? {
-          badge: "Diseño premium para negocios que venden",
+          badge: "Abriendo espacio para nuevos proyectos",
           heading: (
             <span className="block">
               Tu sitio debe
@@ -34,7 +34,7 @@ export default function Hero({ language }: HeroProps) {
           ],
         }
       : {
-          badge: "Premium web design for businesses that sell",
+          badge: "Opening space for new projects",
           heading: (
             <span className="block">
               Your website should

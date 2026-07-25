@@ -12,14 +12,9 @@ interface AvailabilityBadgeProps {
 
 const DISMISS_KEY = "availabilityBadgeDismissed";
 
-function getQuarterLabel(language: Language) {
-  const now = new Date();
-  const quarter = Math.floor(now.getMonth() / 3) + 1;
-  const year = now.getFullYear();
-  return language === "es" ? `T${quarter} ${year}` : `Q${quarter} ${year}`;
-}
-
-export default function AvailabilityBadge({ language }: AvailabilityBadgeProps) {
+export default function AvailabilityBadge({
+  language,
+}: AvailabilityBadgeProps) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -35,8 +30,8 @@ export default function AvailabilityBadge({ language }: AvailabilityBadgeProps) 
 
   const label =
     language === "es"
-      ? `Abriendo espacio para ${getQuarterLabel(language)}`
-      : `Booking new projects for ${getQuarterLabel(language)}`;
+      ? "Abriendo espacio para nuevos proyectos"
+      : "Taking on new projects";
 
   const dismiss = () => {
     window.sessionStorage.setItem(DISMISS_KEY, "1");
