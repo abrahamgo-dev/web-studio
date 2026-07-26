@@ -8,7 +8,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { SITE_URL, SITE_NAME } from "@/lib/site";
+import { INSTAGRAM_URL, SITE_URL, SITE_NAME } from "@/lib/site";
 
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION =
@@ -21,12 +21,6 @@ export const metadata: Metadata = {
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/",
-    },
-  },
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
@@ -60,6 +54,7 @@ const organizationJsonLd = {
   description: SITE_DESCRIPTION,
   image: `${SITE_URL}/icon.svg`,
   priceRange: "$$",
+  sameAs: [INSTAGRAM_URL],
 };
 
 export default function RootLayout({

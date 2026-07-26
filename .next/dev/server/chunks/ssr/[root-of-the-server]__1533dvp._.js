@@ -222,6 +222,9 @@ async function generateMetadata({ params }) {
     return {
         title,
         description,
+        alternates: {
+            canonical: `/work/${project.slug}`
+        },
         openGraph: {
             title,
             description,
@@ -244,7 +247,7 @@ async function ProjectPage({ params }) {
         project: project
     }, void 0, false, {
         fileName: "[project]/app/work/[slug]/page.tsx",
-        lineNumber: 45,
+        lineNumber: 48,
         columnNumber: 10
     }, this);
 }

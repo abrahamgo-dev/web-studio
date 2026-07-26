@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { LANDING_PAGES } from "@/lib/landingPages";
+import { INSTAGRAM_URL } from "@/lib/site";
 
 type Language = "en" | "es";
 
@@ -29,7 +30,11 @@ export default function Footer({ language }: FooterProps) {
             { label: "Contacto", href: "/#contact" },
           ],
           studio: [
-            { label: "hello@fenwebstudio.com", href: "mailto:hello@fenwebstudio.com" },
+            {
+              label: "hello@fenwebstudio.com",
+              href: "mailto:hello@fenwebstudio.com",
+            },
+            { label: "Instagram", href: INSTAGRAM_URL },
             { label: "Empezar un proyecto", href: "/#contact" },
           ],
           backToTop: "Volver arriba",
@@ -49,7 +54,11 @@ export default function Footer({ language }: FooterProps) {
             { label: "Contact", href: "/#contact" },
           ],
           studio: [
-            { label: "hello@fenwebstudio.com", href: "mailto:hello@fenwebstudio.com" },
+            {
+              label: "hello@fenwebstudio.com",
+              href: "mailto:hello@fenwebstudio.com",
+            },
+            { label: "Instagram", href: INSTAGRAM_URL },
             { label: "Start a project", href: "/#contact" },
           ],
           backToTop: "Back to top",
@@ -126,6 +135,17 @@ export default function Footer({ language }: FooterProps) {
                     <li key={item.href}>
                       <a
                         href={item.href}
+                        className="text-sm text-ink transition hover:text-accent"
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ) : item.href.startsWith("http") ? (
+                    <li key={item.href}>
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noreferrer"
                         className="text-sm text-ink transition hover:text-accent"
                       >
                         {item.label}

@@ -143,6 +143,9 @@ async function generateMetadata({ params }) {
     return {
         title,
         description: post.excerpt,
+        alternates: {
+            canonical: `/blog/${post.slug}`
+        },
         openGraph: {
             title,
             description: post.excerpt,
@@ -165,7 +168,7 @@ async function BlogPostPage({ params }) {
         post: post
     }, void 0, false, {
         fileName: "[project]/app/blog/[slug]/page.tsx",
-        lineNumber: 44,
+        lineNumber: 47,
         columnNumber: 10
     }, this);
 }

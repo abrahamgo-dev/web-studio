@@ -1,54 +1,28 @@
-"use client";
+import type { Metadata } from "next";
+import HomePage from "@/components/HomePage";
 
-import Nav from "@/components/Nav";
-import MarqueeStrip from "@/components/MarqueeStrip";
-import Hero from "@/components/Hero";
-import TrustStrip from "@/components/TrustStrip";
-import Services from "@/components/Services";
-import Why from "@/components/Why";
-import Work from "@/components/Work";
-import Showcase from "@/components/Showcase";
-import Testimonials from "@/components/Testimonials";
-import Process from "@/components/Process";
-import Blog from "@/components/Blog";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import PromoModal from "@/components/PromoModal";
-import AvailabilityBadge from "@/components/AvailabilityBadge";
-import { useSiteChrome } from "@/lib/useSiteChrome";
+export const metadata: Metadata = {
+  title: "Fen Web Studio | Web Design for Small Businesses",
+  description:
+    "Fen Web Studio creates elegant, conversion-focused websites for small businesses that want to build trust, attract better leads, and stay polished over time.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Fen Web Studio | Web Design for Small Businesses",
+    description:
+      "Elegant, conversion-focused websites for small businesses that need trust, clarity, and a site that keeps working after launch.",
+    type: "website",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fen Web Studio | Web Design for Small Businesses",
+    description:
+      "Elegant, conversion-focused websites for small businesses that need trust, clarity, and a site that keeps working after launch.",
+  },
+};
 
 export default function Home() {
-  const { language, theme, mounted, toggleLanguage, toggleTheme } =
-    useSiteChrome();
-
-  if (!mounted) {
-    return <div className="min-h-screen bg-bg" />;
-  }
-
-  return (
-    <div className="min-h-screen bg-bg">
-      <Nav
-        language={language}
-        onToggleLanguage={toggleLanguage}
-        theme={theme}
-        onToggleTheme={toggleTheme}
-      />
-      <MarqueeStrip language={language} />
-      <main>
-        <Hero language={language} />
-        <TrustStrip language={language} />
-        <Services language={language} />
-        <Why language={language} />
-        <Showcase language={language} />
-        <Work language={language} />
-        <Testimonials language={language} />
-        <Process language={language} />
-        <Blog language={language} />
-        <Contact language={language} />
-      </main>
-      <Footer language={language} />
-      <AvailabilityBadge language={language} />
-      <PromoModal language={language} />
-    </div>
-  );
+  return <HomePage />;
 }

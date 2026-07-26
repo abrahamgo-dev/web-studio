@@ -2360,7 +2360,7 @@ button, a {
 
 .marquee-track {
   width: max-content;
-  animation: 28s linear infinite marquee;
+  animation: 40s linear infinite marquee;
 }
 
 .marquee-fade {
