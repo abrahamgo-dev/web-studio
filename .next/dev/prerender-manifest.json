@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "a2d1629c3ab6dfd320136801906e36bd",
-    "previewModeSigningKey": "a2dc4ffd5a49646dc04695ffae9b17cdb16ef1ab9589334a71058b83f39ecc8b",
-    "previewModeEncryptionKey": "79af52d37ef37e3837931095653d7b805b612dcfc1362c0fbbc73263bcf53c45"
-  }
-}
+{"version":4,"routes":{"/work/apaoil":{},"/work/loom-and-co":{}},"dynamicRoutes":{"/work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/work/[slug]","routeRegex":"^\\/work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"ba5100b6f6f54cc4a84ee8475525fb89","previewModeSigningKey":"8f1e930f10af78304169a55670ec525c975b691609b4b2aae95981bb609b645f","previewModeEncryptionKey":"fcf0b833ccad6b3a7fe39ee38a7bc8610c92ba9241f62f3c109f03ef0640208c"}}

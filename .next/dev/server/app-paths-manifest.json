@@ -1,3 +1,7 @@
 {
-  "/page": "app/page.js"
+  "/blog/page": "app/blog/page.js",
+  "/low-maintenance-website-design/page": "app/low-maintenance-website-design/page.js",
+  "/page": "app/page.js",
+  "/website-design-for-b2b-distributors/page": "app/website-design-for-b2b-distributors/page.js",
+  "/work/[slug]/page": "app/work/[slug]/page.js"
 }

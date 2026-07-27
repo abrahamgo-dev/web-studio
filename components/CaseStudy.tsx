@@ -28,6 +28,7 @@ export default function CaseStudy({ project }: CaseStudyProps) {
       ? {
           back: "Trabajo",
           exampleBadge: "Ejemplo de plantilla",
+          visitSite: "Ver sitio en vivo",
           problem: "El problema",
           approach: "El enfoque",
           result: "El resultado",
@@ -40,6 +41,7 @@ export default function CaseStudy({ project }: CaseStudyProps) {
       : {
           back: "Work",
           exampleBadge: "Template example",
+          visitSite: "Visit live site",
           problem: "The problem",
           approach: "The approach",
           result: "The result",
@@ -90,6 +92,18 @@ export default function CaseStudy({ project }: CaseStudyProps) {
               {language === "es" ? project.kindEs : project.kind} ·{" "}
               {project.year}
             </p>
+
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20"
+              >
+                {copy.visitSite}
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            )}
           </div>
         </section>
 

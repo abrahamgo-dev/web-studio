@@ -77,6 +77,18 @@
       "namedRegex": "^/icon\\.svg(?:/)?$"
     },
     {
+      "page": "/low-maintenance-website-design",
+      "regex": "^/low\\-maintenance\\-website\\-design(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/low\\-maintenance\\-website\\-design(?:/)?$"
+    },
+    {
+      "page": "/new-business-website-design",
+      "regex": "^/new\\-business\\-website\\-design(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/new\\-business\\-website\\-design(?:/)?$"
+    },
+    {
       "page": "/opengraph-image",
       "regex": "^/opengraph\\-image(?:/)?$",
       "routeKeys": {},
@@ -101,10 +113,22 @@
       "namedRegex": "^/twitter\\-image(?:/)?$"
     },
     {
+      "page": "/website-design-for-b2b-distributors",
+      "regex": "^/website\\-design\\-for\\-b2b\\-distributors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-design\\-for\\-b2b\\-distributors(?:/)?$"
+    },
+    {
       "page": "/website-design-for-boutiques",
       "regex": "^/website\\-design\\-for\\-boutiques(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/website\\-design\\-for\\-boutiques(?:/)?$"
+    },
+    {
+      "page": "/website-design-for-contractors",
+      "regex": "^/website\\-design\\-for\\-contractors(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-design\\-for\\-contractors(?:/)?$"
     },
     {
       "page": "/website-design-for-professional-services",
@@ -123,6 +147,12 @@
       "regex": "^/website\\-design\\-for\\-wellness\\-studios(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/website\\-design\\-for\\-wellness\\-studios(?:/)?$"
+    },
+    {
+      "page": "/website-redesign",
+      "regex": "^/website\\-redesign(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-redesign(?:/)?$"
     }
   ],
   "dataRoutes": [],

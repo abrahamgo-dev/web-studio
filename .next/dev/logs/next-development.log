@@ -1,8 +1,2 @@
-{"timestamp":"00:00:06.565","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.737","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:03:44.121","source":"Server","level":"LOG","message":"✓ Compiled in 33.5s"}
-{"timestamp":"00:03:50.768","source":"Server","level":"LOG","message":"✓ Compiled in 2.5s"}
-{"timestamp":"00:03:54.402","source":"Server","level":"LOG","message":"✓ Finished writing to filesystem cache in 11.0s"}
-{"timestamp":"00:04:15.507","source":"Server","level":"LOG","message":"✓ Finished filesystem cache database compaction in 10.3s"}
-{"timestamp":"00:04:31.131","source":"Server","level":"LOG","message":"✓ Finished filesystem cache database compaction in 15.6s"}
-{"timestamp":"00:05:22.724","source":"Server","level":"LOG","message":"✓ Compiled in 1708ms"}
+{"timestamp":"00:00:02.670","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:15:29.470","source":"Server","level":"LOG","message":"✓ Compiled in 307ms"}

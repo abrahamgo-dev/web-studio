@@ -1092,6 +1092,33 @@ __turbopack_context__.s([
 ]);
 const PROJECTS = [
     {
+        slug: "apaoil",
+        name: "ApaOil",
+        year: "2026",
+        kind: "Industrial B2B / lubricant import",
+        kindEs: "B2B industrial / importación de lubricantes",
+        summary: "A B2B catalog site that turns a multi-brand lubricant import business into one place to request a quote.",
+        summaryEs: "Un sitio B2B que convierte un negocio de importación de lubricantes multimarca en un solo lugar para cotizar.",
+        problem: "APAOIL sources premium lubricant brands from a dozen international manufacturers, but buyers had no single place to see the catalog, understand consolidated order minimums, or request a quote — every relationship ran through email and spreadsheets.",
+        problemEs: "APAOIL importa marcas de lubricantes premium de una docena de fabricantes internacionales, pero los compradores no tenían un solo lugar para ver el catálogo, entender los mínimos de pedido consolidado o pedir una cotización — todo se manejaba por correo y hojas de cálculo.",
+        approach: "Built a site structured around the actual buying process: a multi-brand portfolio, a dedicated page for their in-house German Gold line, and a quote-request flow built for consolidated B2B orders — not a generic product-listing template.",
+        approachEs: "Construimos un sitio estructurado alrededor del proceso real de compra: un portafolio multimarca, una página dedicada a su línea propia German Gold, y un flujo de cotización pensado para pedidos B2B consolidados — no un template genérico de listado de productos.",
+        result: "Prospective buyers can now browse APAOIL's full portfolio — 12+ international brands — and submit a quote request in minutes, with order minimums and lead times presented up front instead of negotiated cold over email.",
+        resultEs: "Los compradores ahora pueden navegar el portafolio completo de APAOIL — más de 12 marcas internacionales — y enviar una cotización en minutos, con mínimos de pedido y tiempos de entrega claros desde el inicio en vez de negociarse en frío por correo.",
+        services: [
+            "Design",
+            "Build",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Plan de cuidado"
+        ],
+        image: "/apaoil/apaoil-2.png",
+        isExample: false
+    },
+    {
         slug: "loom-and-co",
         name: "Loom & Co.",
         year: "2026",
@@ -1116,91 +1143,6 @@ const PROJECTS = [
             "Plan de cuidado"
         ],
         image: "/arch-geometric-lines.jpg",
-        isExample: true
-    },
-    {
-        slug: "halcyon-health",
-        name: "Halcyon Health",
-        year: "2026",
-        kind: "Wellness studio",
-        kindEs: "Estudio de bienestar",
-        summary: "A marketing site with booking built in, so calls stopped happening.",
-        summaryEs: "Un sitio de marketing con reservas integradas, para dejar de recibir llamadas.",
-        problem: "New clients were calling to book sessions because the old site only linked out to a third-party scheduler that didn't match the brand.",
-        problemEs: "Los clientes nuevos llamaban para reservar sesiones porque el sitio anterior solo enlazaba a un sistema de citas externo que no encajaba con la marca.",
-        approach: "Built the booking flow directly into the site's own design language, alongside a calmer, more editorial homepage that matches the in-studio experience.",
-        approachEs: "Integramos el flujo de reservas directamente en el diseño del sitio, junto a una página de inicio más calmada y editorial que refleja la experiencia en el estudio.",
-        result: "Bookings now happen without a phone call, and the site feels like a continuation of the studio instead of a separate tool bolted on.",
-        resultEs: "Las reservas ahora ocurren sin llamada, y el sitio se siente como una continuación del estudio en vez de una herramienta aparte.",
-        services: [
-            "Design",
-            "Build",
-            "Booking integration",
-            "Care plan"
-        ],
-        servicesEs: [
-            "Diseño",
-            "Construcción",
-            "Integración de reservas",
-            "Plan de cuidado"
-        ],
-        image: "/arch-skyline-silhouette.jpg",
-        isExample: true
-    },
-    {
-        slug: "marlow-and-row",
-        name: "Marlow & Row",
-        year: "2025",
-        kind: "Professional services",
-        kindEs: "Servicios profesionales",
-        summary: "A quiet, credible site for a two-partner consulting practice.",
-        summaryEs: "Un sitio sobrio y creíble para una práctica de consultoría de dos socios.",
-        problem: "Prospective clients were googling the firm before a first call and finding nothing — no site at all, just a LinkedIn page.",
-        problemEs: "Los clientes potenciales buscaban la firma en Google antes de una primera llamada y no encontraban nada — ningún sitio, solo una página de LinkedIn.",
-        approach: "Kept it to four sections: what the firm does, who's behind it, how engagements work, and how to reach them — nothing that needed a CMS to maintain.",
-        approachEs: "Lo redujimos a cuatro secciones: qué hace la firma, quién está detrás, cómo funcionan los proyectos y cómo contactarlos — nada que requiriera un CMS para mantener.",
-        result: "A site that answers 'are these people legitimate' in the first five seconds, which was the entire brief.",
-        resultEs: "Un sitio que responde '¿es gente seria?' en los primeros cinco segundos, que era exactamente el encargo.",
-        services: [
-            "Design",
-            "Build",
-            "Care plan"
-        ],
-        servicesEs: [
-            "Diseño",
-            "Construcción",
-            "Plan de cuidado"
-        ],
-        image: "/arch-geometric-bw.jpg",
-        isExample: true
-    },
-    {
-        slug: "rosewood-table",
-        name: "Rosewood Table",
-        year: "2025",
-        kind: "Restaurant",
-        kindEs: "Restaurante",
-        summary: "A menu-first site that finally matched the room.",
-        summaryEs: "Un sitio centrado en el menú que finalmente estuvo a la altura del lugar.",
-        problem: "The restaurant's site was a PDF menu linked from a single splash page, and it hadn't been updated in over a year.",
-        problemEs: "El sitio del restaurante era un menú en PDF enlazado desde una sola página, y no se había actualizado en más de un año.",
-        approach: "Built a site the owner can update seasonally without calling anyone, with the menu as an actual page instead of a downloadable file, and reservations one tap away.",
-        approachEs: "Construimos un sitio que el dueño puede actualizar por temporada sin llamar a nadie, con el menú como página real en vez de un archivo descargable, y reservas a un toque de distancia.",
-        result: "The site now gets updated the same week the menu changes, instead of months later.",
-        resultEs: "El sitio ahora se actualiza la misma semana que cambia el menú, en vez de meses después.",
-        services: [
-            "Design",
-            "Build",
-            "Booking integration",
-            "Care plan"
-        ],
-        servicesEs: [
-            "Diseño",
-            "Construcción",
-            "Integración de reservas",
-            "Plan de cuidado"
-        ],
-        image: "/arch-skyline-dusk.jpg",
         isExample: true
     }
 ];
@@ -1230,7 +1172,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx_
 ;
 function Work({ language }) {
     const heading = language === "es" ? "Trabajo seleccionado" : "Selected work";
-    const intro = language === "es" ? "Ejemplos de plantilla mientras sumamos proyectos reales — cada uno tiene su propia página de caso." : "Template examples while real projects get added — each one has its own case study page.";
+    const intro = language === "es" ? "Un caso real por ahora, junto a un ejemplo de plantilla mientras sumamos más proyectos — cada uno tiene su propia página de caso." : "One real case so far, alongside a template example while more projects get added — each one has its own case study page.";
     const cta = language === "es" ? "Ver caso" : "View case";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "work",
@@ -1572,7 +1514,7 @@ function Showcase({ language }) {
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute inset-0 bg-[url('/arch-geometric-bw.jpg')] bg-cover bg-center opacity-20 transition duration-500 group-hover:scale-105"
+                                                className: "absolute inset-0 bg-[url('/vincent-maufay-tGPq7x38FdM-unsplash.jpg')] bg-cover bg-center opacity-20 transition duration-500 group-hover:scale-105"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Showcase.tsx",
                                                 lineNumber: 68,
@@ -2123,8 +2065,6 @@ const STEPS = [
         n: "01",
         title: "Discovery",
         titleEs: "Descubrimiento",
-        duration: "Week 1",
-        durationEs: "Semana 1",
         description: "A working session on the actual problem — audience, competitors, and the one metric this project needs to move.",
         descriptionEs: "Una sesión para entender el problema real: audiencia, competencia y la métrica clave que debe moverse."
     },
@@ -2132,8 +2072,6 @@ const STEPS = [
         n: "02",
         title: "Design",
         titleEs: "Diseño",
-        duration: "Weeks 2–3",
-        durationEs: "Semanas 2–3",
         description: "Token system, layout concepts, and a full design file, reviewed together before a single line of code is written.",
         descriptionEs: "Sistema de tokens, conceptos de layout y un diseño completo, revisado antes de escribir una sola línea de código."
     },
@@ -2141,8 +2079,6 @@ const STEPS = [
         n: "03",
         title: "Build",
         titleEs: "Construcción",
-        duration: "Weeks 3–5",
-        durationEs: "Semanas 3–5",
         description: "Next.js implementation, staged for review as it's built — not delivered as one surprise at the end.",
         descriptionEs: "Implementación en Next.js, presentada por etapas para revisión en vez de entregarse de golpe al final."
     },
@@ -2150,8 +2086,6 @@ const STEPS = [
         n: "04",
         title: "Launch",
         titleEs: "Lanzamiento",
-        duration: "Week 6",
-        durationEs: "Semana 6",
         description: "Domain, hosting, analytics, and a handoff doc you can actually read.",
         descriptionEs: "Dominio, hosting, analytics y una guía de entrega que realmente puedas leer."
     },
@@ -2159,8 +2093,6 @@ const STEPS = [
         n: "05",
         title: "Iterate",
         titleEs: "Iterar",
-        duration: "Ongoing",
-        durationEs: "Continuo",
         description: "Monthly care plan for edits, fixes, and small builds as the product keeps moving.",
         descriptionEs: "Plan mensual de cuidado para cambios, ajustes y mejoras pequeñas mientras el producto sigue creciendo."
     }
@@ -2179,12 +2111,12 @@ function Process({ language }) {
                         children: heading
                     }, void 0, false, {
                         fileName: "[project]/components/Process.tsx",
-                        lineNumber: 79,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Process.tsx",
-                    lineNumber: 78,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2199,32 +2131,22 @@ function Process({ language }) {
                                         children: step.n
                                     }, void 0, false, {
                                         fileName: "[project]/components/Process.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 78,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "col-start-2 md:col-start-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                className: "font-[family-name:var(--font-display)] text-xl font-semibold text-ink",
-                                                children: language === "es" ? step.titleEs : step.title
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Process.tsx",
-                                                lineNumber: 92,
-                                                columnNumber: 19
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-sm text-accent-bright",
-                                                children: language === "es" ? step.durationEs : step.duration
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/Process.tsx",
-                                                lineNumber: 95,
-                                                columnNumber: 19
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "font-[family-name:var(--font-display)] text-xl font-semibold text-ink",
+                                            children: language === "es" ? step.titleEs : step.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Process.tsx",
+                                            lineNumber: 82,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
                                         fileName: "[project]/components/Process.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 81,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2232,34 +2154,34 @@ function Process({ language }) {
                                         children: language === "es" ? step.descriptionEs : step.description
                                     }, void 0, false, {
                                         fileName: "[project]/components/Process.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 86,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Process.tsx",
-                                lineNumber: 87,
+                                lineNumber: 77,
                                 columnNumber: 15
                             }, this)
                         }, step.n, false, {
                             fileName: "[project]/components/Process.tsx",
-                            lineNumber: 86,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Process.tsx",
-                    lineNumber: 84,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Process.tsx",
-            lineNumber: 77,
+            lineNumber: 67,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Process.tsx",
-        lineNumber: 76,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 }

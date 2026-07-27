@@ -1,6 +1,10 @@
 {
   "app": {
-    "[project]/app/page": []
+    "[project]/app/blog/page": [],
+    "[project]/app/low-maintenance-website-design/page": [],
+    "[project]/app/page": [],
+    "[project]/app/website-design-for-b2b-distributors/page": [],
+    "[project]/app/work/[slug]/page": []
   },
   "appUsingSizeAdjust": true,
   "pages": {},

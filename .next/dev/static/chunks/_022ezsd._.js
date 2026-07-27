@@ -651,6 +651,289 @@ const LANDING_PAGES = [
         ],
         caseStudyLabel: "See how we did this for Marlow & Row",
         caseStudyLabelEs: "Mira cómo lo hicimos para Marlow & Row"
+    },
+    {
+        slug: "website-design-for-b2b-distributors",
+        projectSlug: "apaoil",
+        image: "/apaoil/apaoil-2.png",
+        industry: "B2B Distributors & Importers",
+        industryEs: "Distribuidores e Importadores B2B",
+        metaTitle: "Website Design for B2B Distributors & Importers — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Distribuidores e Importadores B2B — Fen Web Studio",
+        metaDescription: "A catalog-and-quote website for distributors and importers, built around how B2B buyers actually decide — so RFQs stop happening over email and spreadsheets. See how we did it for a multi-brand lubricant importer.",
+        metaDescriptionEs: "Un sitio de catálogo y cotización para distribuidores e importadores, construido alrededor de cómo compran realmente los clientes B2B — para que las cotizaciones dejen de pasar por correo y hojas de cálculo. Mira cómo lo hicimos para un importador multimarca de lubricantes.",
+        eyebrow: "For distributors, importers, and B2B suppliers",
+        eyebrowEs: "Para distribuidores, importadores y proveedores B2B",
+        title: "A catalog and a quote request, not a brochure.",
+        titleEs: "Un catálogo y una cotización, no un folleto.",
+        intro: "Most B2B buyers decide who to call before anyone picks up the phone — by checking whether a supplier's site actually shows what they carry, what the minimums are, and how to request pricing. We build sites around that decision, not a generic 'About Us' template.",
+        introEs: "La mayoría de los compradores B2B deciden a quién llamar antes de que alguien conteste el teléfono — revisando si el sitio del proveedor realmente muestra qué manejan, cuáles son los mínimos, y cómo pedir precio. Construimos sitios alrededor de esa decisión, no de un template genérico de 'Quiénes somos'.",
+        painPoints: [
+            {
+                title: "The catalog lives in a PDF or a rep's inbox",
+                titleEs: "El catálogo vive en un PDF o en el correo de un vendedor",
+                body: "A buyer comparing suppliers wants to see what you carry in two minutes, not request a PDF and wait for a reply.",
+                bodyEs: "Un comprador que compara proveedores quiere ver qué manejas en dos minutos, no pedir un PDF y esperar respuesta."
+            },
+            {
+                title: "Every quote starts from zero over email",
+                titleEs: "Cada cotización empieza de cero por correo",
+                body: "Without a structured request form, every deal starts with the same back-and-forth: what do you need, how much, by when.",
+                bodyEs: "Sin un formulario estructurado, cada trato empieza con el mismo ida y vuelta: qué necesitas, cuánto, para cuándo."
+            },
+            {
+                title: "The site doesn't explain minimums or lead times",
+                titleEs: "El sitio no explica mínimos ni tiempos de entrega",
+                body: "Buyers qualify themselves out silently when they can't tell if their order size or timeline even fits your model.",
+                bodyEs: "Los compradores se autodescalifican en silencio cuando no pueden saber si su volumen o plazo encaja con tu modelo."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "A real portfolio, browsable by brand",
+                titleEs: "Un portafolio real, navegable por marca",
+                body: "Every brand or product line gets its own section instead of one long undifferentiated list.",
+                bodyEs: "Cada marca o línea de producto tiene su propia sección en vez de una sola lista larga y sin diferenciar."
+            },
+            {
+                title: "A quote flow built for consolidated orders",
+                titleEs: "Un flujo de cotización pensado para pedidos consolidados",
+                body: "One form captures what a buyer actually needs to specify — no generic 'contact us' box.",
+                bodyEs: "Un formulario capta lo que un comprador realmente necesita especificar — no una caja genérica de 'contáctanos'."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "New product lines, updated pricing pages, and catalog changes — handled without a redevelopment invoice.",
+                bodyEs: "Nuevas líneas de producto, páginas de precios actualizadas y cambios al catálogo — resueltos sin una factura de rediseño."
+            }
+        ],
+        caseStudyLabel: "See how we did this for ApaOil",
+        caseStudyLabelEs: "Mira cómo lo hicimos para ApaOil"
+    },
+    {
+        slug: "website-design-for-contractors",
+        image: "/arch-geometric-bw.jpg",
+        industry: "Contractors & Home Services",
+        industryEs: "Contratistas y Servicios para el Hogar",
+        metaTitle: "Website Design for Contractors & Home Services — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Contratistas y Servicios para el Hogar — Fen Web Studio",
+        metaDescription: "A website that gets a contractor found, trusted, and called — built once, kept current every month. No page builder, no plugins, no monthly login required on your end.",
+        metaDescriptionEs: "Un sitio web que hace que te encuentren, confíen en ti y te llamen — construido una vez, mantenido al día cada mes. Sin constructor visual, sin plugins, sin necesidad de entrar a nada de tu lado.",
+        eyebrow: "For contractors and home service businesses",
+        eyebrowEs: "Para contratistas y negocios de servicios para el hogar",
+        title: "The site that gets you the call, not just the visit.",
+        titleEs: "El sitio que consigue la llamada, no solo la visita.",
+        intro: "Most contractor sites exist because someone said they needed one — not because they actually bring in work. We build sites around the two things that matter: proof you do good work, and a way to reach you that doesn't require a phone tag.",
+        introEs: "La mayoría de los sitios de contratistas existen porque alguien dijo que hacía falta uno — no porque realmente traigan trabajo. Construimos sitios alrededor de lo que importa: evidencia de que haces buen trabajo, y una forma de contactarte sin jugar al teléfono.",
+        painPoints: [
+            {
+                title: "No proof of past work, just a service list",
+                titleEs: "Sin evidencia del trabajo anterior, solo una lista de servicios",
+                body: "A homeowner comparing three contractors picks the one who looks like they've actually done the job before.",
+                bodyEs: "Un dueño de casa que compara tres contratistas elige al que se ve como que ya ha hecho el trabajo antes."
+            },
+            {
+                title: "The only way to reach you is a phone call",
+                titleEs: "La única forma de contactarte es una llamada",
+                body: "Some leads won't call during work hours — a simple request form catches the ones a missed call loses.",
+                bodyEs: "Algunos clientes no llaman en horario laboral — un formulario simple capta a los que una llamada perdida deja ir."
+            },
+            {
+                title: "Nobody's updated it since it launched",
+                titleEs: "Nadie lo ha actualizado desde que se lanzó",
+                body: "Old project photos and an outdated service area quietly cost jobs to competitors with a current site.",
+                bodyEs: "Fotos de proyectos viejos y una zona de servicio desactualizada pierden trabajos en silencio frente a competidores con un sitio al día."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Real project photos, front and center",
+                titleEs: "Fotos reales de proyectos, al frente",
+                body: "The work speaks for itself instead of hiding behind a stock-photo hero image.",
+                bodyEs: "El trabajo habla por sí mismo en vez de esconderse detrás de una imagen genérica de stock."
+            },
+            {
+                title: "A request form that works outside business hours",
+                titleEs: "Un formulario que funciona fuera de horario",
+                body: "A lead left at 9pm on a Sunday is still a lead — the site should be able to take it.",
+                bodyEs: "Un cliente que escribe un domingo a las 9pm sigue siendo un cliente — el sitio debe poder recibirlo."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "New project photos, updated service areas, and small edits — handled without you touching any code.",
+                bodyEs: "Fotos nuevas de proyectos, zonas de servicio actualizadas y pequeños cambios — resueltos sin que toques ningún código."
+            }
+        ]
+    },
+    {
+        slug: "new-business-website-design",
+        image: "/arch-skyline-dusk.jpg",
+        industry: "New & Growing Businesses",
+        industryEs: "Negocios Nuevos y en Crecimiento",
+        metaTitle: "Website Design for New Businesses — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Negocios Nuevos — Fen Web Studio",
+        metaDescription: "Your first website, done right the first time — a small, credible site built around what your business actually needs, with a plan to keep it current as you grow.",
+        metaDescriptionEs: "Tu primer sitio web, bien hecho desde el inicio — un sitio pequeño y creíble construido alrededor de lo que tu negocio realmente necesita, con un plan para mantenerlo al día conforme creces.",
+        eyebrow: "For businesses building their first website",
+        eyebrowEs: "Para negocios que construyen su primer sitio web",
+        title: "Your first website, built to actually last.",
+        titleEs: "Tu primer sitio web, hecho para durar de verdad.",
+        intro: "A first website doesn't need fifteen pages and a blog nobody will write. It needs to say what you do, prove you're legitimate, and give people a clear way to reach you — built on something you won't have to rebuild from scratch in two years.",
+        introEs: "Un primer sitio web no necesita quince páginas y un blog que nadie va a escribir. Necesita decir qué haces, demostrar que eres legítimo, y dar una forma clara de contactarte — construido sobre algo que no tendrás que rehacer desde cero en dos años.",
+        painPoints: [
+            {
+                title: "A DIY builder that's slow and hard to trust",
+                titleEs: "Un constructor DIY lento y poco confiable",
+                body: "Free-tier site builders load slowly, look generic, and often come with someone else's ads or branding attached.",
+                bodyEs: "Los constructores gratuitos cargan lento, se ven genéricos y a veces traen anuncios o marca ajena pegada."
+            },
+            {
+                title: "Not knowing what actually needs to be on it",
+                titleEs: "No saber qué necesita tener el sitio realmente",
+                body: "Most new businesses either build too little — no way to contact them — or too much, chasing features nobody will use yet.",
+                bodyEs: "La mayoría de los negocios nuevos construyen muy poco — sin forma de contactarlos — o demasiado, persiguiendo funciones que nadie va a usar todavía."
+            },
+            {
+                title: "No plan for what happens after launch",
+                titleEs: "Sin plan para después del lanzamiento",
+                body: "A site that never gets updated after week one starts looking abandoned by month six.",
+                bodyEs: "Un sitio que nunca se actualiza después de la primera semana empieza a verse abandonado a los seis meses."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "A small site, built around what you need today",
+                titleEs: "Un sitio pequeño, construido alrededor de lo que necesitas hoy",
+                body: "A handful of clear sections instead of a template with pages you'll never fill in.",
+                bodyEs: "Unas pocas secciones claras en vez de un template con páginas que nunca vas a llenar."
+            },
+            {
+                title: "Fast, credible, and built to grow with you",
+                titleEs: "Rápido, creíble y hecho para crecer contigo",
+                body: "A real Next.js build instead of a page-builder template — new pages get added as the business does, not rebuilt from zero.",
+                bodyEs: "Una construcción real en Next.js en vez de un template de constructor visual — se agregan páginas nuevas conforme crece el negocio, sin rehacer todo desde cero."
+            },
+            {
+                title: "A monthly care plan from day one",
+                titleEs: "Un plan de cuidado mensual desde el primer día",
+                body: "Small edits and updates handled as you grow, instead of a redesign invoice down the road.",
+                bodyEs: "Pequeños cambios y actualizaciones resueltos conforme creces, en vez de una factura de rediseño más adelante."
+            }
+        ]
+    },
+    {
+        slug: "website-redesign",
+        image: "/arch-skyline-silhouette.jpg",
+        industry: "Businesses Outgrowing Their Old Site",
+        industryEs: "Negocios que Ya Superaron su Sitio Actual",
+        metaTitle: "Website Redesign for Small Businesses — Fen Web Studio",
+        metaTitleEs: "Rediseño de Sitios Web para Negocios Pequeños — Fen Web Studio",
+        metaDescription: "A redesign for a website that no longer represents the business — same domain, same content you actually need, rebuilt to load fast and look current.",
+        metaDescriptionEs: "Un rediseño para un sitio que ya no representa al negocio — mismo dominio, mismo contenido que realmente necesitas, reconstruido para cargar rápido y verse actual.",
+        eyebrow: "For businesses whose site no longer fits",
+        eyebrowEs: "Para negocios cuyo sitio ya no encaja",
+        title: "The redesign that doesn't start from a blank page — or your old headaches.",
+        titleEs: "El rediseño que no empieza de cero — ni con los mismos dolores de cabeza.",
+        intro: "An old website usually isn't broken, it's just stopped representing the business it belongs to. We rebuild it on something faster and easier to maintain, keep what actually works, and cut what was only ever there because a template shipped with it.",
+        introEs: "Un sitio viejo casi nunca está roto, solo dejó de representar al negocio al que pertenece. Lo reconstruimos sobre algo más rápido y fácil de mantener, conservamos lo que sí funciona, y quitamos lo que solo estaba ahí porque venía con el template.",
+        painPoints: [
+            {
+                title: "It looks like it was built a decade ago",
+                titleEs: "Se ve como si lo hubieran hecho hace una década",
+                body: "Fonts, layout, and photography that quietly signal the business hasn't kept up — even if the work itself has.",
+                bodyEs: "Tipografía, layout y fotos que sin querer dan a entender que el negocio no se ha actualizado — aunque el trabajo sí lo haya hecho."
+            },
+            {
+                title: "It's slow, and half the plugins are outdated",
+                titleEs: "Es lento, y la mitad de los plugins están desactualizados",
+                body: "Years of add-ons on top of an old page builder add up to a site that takes seconds too long to load.",
+                bodyEs: "Años de complementos sobre un constructor viejo se acumulan en un sitio que tarda segundos de más en cargar."
+            },
+            {
+                title: "Nobody remembers how to update it",
+                titleEs: "Ya nadie recuerda cómo actualizarlo",
+                body: "The person who built it moved on, and every small change now means starting a search for someone new.",
+                bodyEs: "La persona que lo construyó ya no está, y cada cambio pequeño ahora significa buscar a alguien nuevo."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Keep the domain, rebuild what's under it",
+                titleEs: "Se conserva el dominio, se reconstruye lo que hay debajo",
+                body: "No lost SEO history, no confusing migration for returning customers — same address, better site.",
+                bodyEs: "Sin perder historial de SEO, sin migración confusa para clientes que regresan — misma dirección, mejor sitio."
+            },
+            {
+                title: "A fast, current design system",
+                titleEs: "Un sistema de diseño actual y rápido",
+                body: "Built on Next.js instead of a legacy page builder — no plugins to keep updated, no slow admin panel.",
+                bodyEs: "Construido en Next.js en vez de un constructor visual heredado — sin plugins que mantener, sin panel lento."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "So the new site doesn't quietly age the same way the old one did.",
+                bodyEs: "Para que el sitio nuevo no envejezca en silencio de la misma forma que el anterior."
+            }
+        ]
+    },
+    {
+        slug: "low-maintenance-website-design",
+        image: "/arch-geometric-lines.jpg",
+        industry: "Owners Who Don't Want to Touch a CMS",
+        industryEs: "Dueños que No Quieren Tocar un CMS",
+        metaTitle: "Low-Maintenance Website Design — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web de Bajo Mantenimiento — Fen Web Studio",
+        metaDescription: "A website you're not responsible for keeping alive — no CMS login, no plugin updates, no page-builder subscription. Small changes handled for you every month instead.",
+        metaDescriptionEs: "Un sitio web del que no eres responsable de mantener vivo — sin entrar a ningún CMS, sin actualizar plugins, sin suscripción a un constructor visual. Los cambios pequeños se resuelven por ti cada mes.",
+        eyebrow: "For owners who don't want another login to manage",
+        eyebrowEs: "Para dueños que no quieren otro acceso más que administrar",
+        title: "A website that's someone else's job to maintain — because it's ours.",
+        titleEs: "Un sitio web que es trabajo de alguien más mantener — porque es nuestro.",
+        intro: "Not every business owner wants to learn a CMS, and they shouldn't have to. We build the site, then handle the small stuff every month — text changes, new photos, a fixed typo — so it stays current without becoming one more account you have to log into.",
+        introEs: "No todo dueño de negocio quiere aprender a usar un CMS, y no debería tener que hacerlo. Construimos el sitio, y luego nos encargamos de lo pequeño cada mes — cambios de texto, fotos nuevas, una errata corregida — para que se mantenga al día sin volverse una cuenta más en la que tienes que entrar.",
+        painPoints: [
+            {
+                title: "A CMS login nobody has time to learn",
+                titleEs: "Un acceso a CMS que nadie tiene tiempo de aprender",
+                body: "Even a 'simple' page builder still means learning an interface, and re-learning it every time it changes.",
+                bodyEs: "Incluso un constructor 'simple' significa aprender una interfaz, y volver a aprenderla cada vez que cambia."
+            },
+            {
+                title: "Plugins and updates that quietly break things",
+                titleEs: "Plugins y actualizaciones que rompen cosas en silencio",
+                body: "A missed update can take a site down, or open a security hole, without anyone noticing for weeks.",
+                bodyEs: "Una actualización que se pasa puede tumbar el sitio, o dejar un hueco de seguridad, sin que nadie se dé cuenta por semanas."
+            },
+            {
+                title: "Small changes end up waiting for months",
+                titleEs: "Los cambios pequeños terminan esperando meses",
+                body: "A one-line text edit shouldn't require finding a freelancer or remembering an admin password from two years ago.",
+                bodyEs: "Un cambio de una línea de texto no debería requerir buscar a un freelancer o recordar una contraseña de hace dos años."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "Built on Next.js, not a page builder",
+                titleEs: "Construido en Next.js, no en un constructor visual",
+                body: "No plugin ecosystem to maintain, no admin panel to secure — the site is just fast, static, and simple underneath.",
+                bodyEs: "Sin ecosistema de plugins que mantener, sin panel de administración que asegurar — el sitio es rápido, estático y simple por dentro."
+            },
+            {
+                title: "Small requests handled monthly, not invoiced one by one",
+                titleEs: "Solicitudes pequeñas resueltas cada mes, sin cotizar una por una",
+                body: "Text edits, new photos, small fixes — sent over, handled, done, as part of the standing care plan.",
+                bodyEs: "Cambios de texto, fotos nuevas, ajustes pequeños — se envían, se resuelven, listo, como parte del plan de cuidado."
+            },
+            {
+                title: "One point of contact, not a support ticket queue",
+                titleEs: "Un solo punto de contacto, no una fila de tickets de soporte",
+                body: "A direct line to the person who actually built the site, instead of a generic help desk.",
+                bodyEs: "Una línea directa con quien realmente construyó el sitio, en vez de una mesa de ayuda genérica."
+            }
+        ]
     }
 ];
 function getLandingPage(slug) {

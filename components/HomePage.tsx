@@ -8,7 +8,6 @@ import Services from "@/components/Services";
 import Why from "@/components/Why";
 import Work from "@/components/Work";
 import Showcase from "@/components/Showcase";
-import Testimonials from "@/components/Testimonials";
 import Process from "@/components/Process";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
@@ -41,7 +40,6 @@ export default function HomePage() {
         <Why language={language} />
         <Showcase language={language} />
         <Work language={language} />
-        <Testimonials language={language} />
         <Process language={language} />
         <Blog language={language} />
         <Contact language={language} />

@@ -22,7 +22,7 @@ export default function IndustryLanding({ page }: IndustryLandingProps) {
     return <div className="min-h-screen bg-bg" />;
   }
 
-  const project = getProject(page.projectSlug);
+  const project = page.projectSlug ? getProject(page.projectSlug) : undefined;
 
   const copy =
     language === "es"

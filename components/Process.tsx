@@ -13,8 +13,6 @@ const STEPS = [
     n: "01",
     title: "Discovery",
     titleEs: "Descubrimiento",
-    duration: "Week 1",
-    durationEs: "Semana 1",
     description:
       "A working session on the actual problem — audience, competitors, and the one metric this project needs to move.",
     descriptionEs:
@@ -24,8 +22,6 @@ const STEPS = [
     n: "02",
     title: "Design",
     titleEs: "Diseño",
-    duration: "Weeks 2–3",
-    durationEs: "Semanas 2–3",
     description:
       "Token system, layout concepts, and a full design file, reviewed together before a single line of code is written.",
     descriptionEs:
@@ -35,8 +31,6 @@ const STEPS = [
     n: "03",
     title: "Build",
     titleEs: "Construcción",
-    duration: "Weeks 3–5",
-    durationEs: "Semanas 3–5",
     description:
       "Next.js implementation, staged for review as it's built — not delivered as one surprise at the end.",
     descriptionEs:
@@ -46,8 +40,6 @@ const STEPS = [
     n: "04",
     title: "Launch",
     titleEs: "Lanzamiento",
-    duration: "Week 6",
-    durationEs: "Semana 6",
     description:
       "Domain, hosting, analytics, and a handoff doc you can actually read.",
     descriptionEs:
@@ -57,8 +49,6 @@ const STEPS = [
     n: "05",
     title: "Iterate",
     titleEs: "Iterar",
-    duration: "Ongoing",
-    durationEs: "Continuo",
     description:
       "Monthly care plan for edits, fixes, and small builds as the product keeps moving.",
     descriptionEs:
@@ -92,9 +82,6 @@ export default function Process({ language }: ProcessProps) {
                   <h3 className="font-[family-name:var(--font-display)] text-xl font-semibold text-ink">
                     {language === "es" ? step.titleEs : step.title}
                   </h3>
-                  <span className="text-sm text-accent-bright">
-                    {language === "es" ? step.durationEs : step.duration}
-                  </span>
                 </div>
                 <p className="col-span-2 mt-4 text-sm leading-7 text-ink-dim md:col-span-1 md:col-start-3 md:mt-0">
                   {language === "es" ? step.descriptionEs : step.description}

@@ -65,7 +65,8 @@ export default function Showcase({ language }: ShowcaseProps) {
             <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-black/10 p-6 backdrop-blur-xl">
               <div className="metallic-gradient group relative overflow-hidden rounded-[1.5rem] p-8 transition duration-500 hover:-translate-y-1">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.38),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.18),transparent_38%)]" />
-                <div className="absolute inset-0 bg-[url('/arch-geometric-bw.jpg')] bg-cover bg-center opacity-20 transition duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-[url('/vincent-maufay-tGPq7x38FdM-unsplash.jpg')] bg-cover bg-center opacity-40 transition duration-500 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-br from-black/55 via-black/35 to-black/60" />
                 <div className="relative">
                   <div className="flex items-center justify-between gap-4">
                     <div>
@@ -124,8 +125,8 @@ export default function Showcase({ language }: ShowcaseProps) {
             <div className="card-surface overflow-hidden rounded-[2rem] border-white/10">
               <div className="group relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/arch-skyline-dusk.jpg"
-                  alt={language === "es" ? "Horizonte urbano al atardecer" : "City skyline at dusk"}
+                  src="/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg"
+                  alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
@@ -150,8 +151,8 @@ export default function Showcase({ language }: ShowcaseProps) {
               <div className="card-surface rounded-[2rem] p-6">
                 <div className="group aspect-[4/3] overflow-hidden rounded-[1.2rem] border border-white/10">
                   <Image
-                    src="/arch-geometric-lines.jpg"
-                    alt={language === "es" ? "Líneas arquitectónicas" : "Architectural lines"}
+                    src="/vincent-maufay-tGPq7x38FdM-unsplash.jpg"
+                    alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
                     width={600}
                     height={450}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
@@ -170,8 +171,8 @@ export default function Showcase({ language }: ShowcaseProps) {
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <div className="group overflow-hidden rounded-[1.25rem] border border-white/10">
                   <Image
-                    src="/arch-skyline-silhouette.jpg"
-                    alt={language === "es" ? "Silueta urbana al atardecer" : "City silhouette at sunset"}
+                    src="/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg"
+                    alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
                     width={600}
                     height={400}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
