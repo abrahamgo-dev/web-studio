@@ -1732,13 +1732,15 @@ function Showcase({ language }) {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "group relative aspect-[4/3] overflow-hidden",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: "/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg",
-                                                alt: language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient",
-                                                fill: true,
-                                                sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
-                                                className: "object-cover transition duration-500 group-hover:scale-105",
-                                                priority: true
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                                className: "absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105",
+                                                src: "/me_gustaria_un_video_mas_simpl.mp4",
+                                                poster: "/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg",
+                                                autoPlay: true,
+                                                loop: true,
+                                                muted: true,
+                                                playsInline: true,
+                                                preload: "metadata"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Showcase.tsx",
                                                 lineNumber: 127,
@@ -1748,7 +1750,7 @@ function Showcase({ language }) {
                                                 className: "absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/10"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Showcase.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 137,
                                                 columnNumber: 17
                                             }, this)
                                         ]
@@ -1775,7 +1777,7 @@ function Showcase({ language }) {
                                                             className: "h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Showcase.tsx",
-                                                            lineNumber: 142,
+                                                            lineNumber: 144,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1783,13 +1785,13 @@ function Showcase({ language }) {
                                                             children: content.statTitle
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Showcase.tsx",
-                                                            lineNumber: 143,
+                                                            lineNumber: 145,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/Showcase.tsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 143,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1797,13 +1799,13 @@ function Showcase({ language }) {
                                                     children: content.statText
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Showcase.tsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 149,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/Showcase.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 142,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1818,23 +1820,23 @@ function Showcase({ language }) {
                                                     className: "h-full w-full object-cover transition duration-500 group-hover:scale-105"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Showcase.tsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 155,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Showcase.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 154,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/Showcase.tsx",
-                                            lineNumber: 151,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Showcase.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1845,7 +1847,7 @@ function Showcase({ language }) {
                                             children: content.galleryTitle
                                         }, void 0, false, {
                                             fileName: "[project]/components/Showcase.tsx",
-                                            lineNumber: 165,
+                                            lineNumber: 167,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1853,7 +1855,7 @@ function Showcase({ language }) {
                                             children: content.galleryText
                                         }, void 0, false, {
                                             fileName: "[project]/components/Showcase.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1862,19 +1864,19 @@ function Showcase({ language }) {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "group overflow-hidden rounded-[1.25rem] border border-white/10",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        src: "/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg",
-                                                        alt: language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient",
+                                                        src: "/apaoil/apaoil-7.png",
+                                                        alt: language === "es" ? "Portafolio multimarcas de ApaOil" : "ApaOil multi-brand portfolio",
                                                         width: 600,
                                                         height: 400,
                                                         className: "h-full w-full object-cover transition duration-500 group-hover:scale-105"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/Showcase.tsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 175,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Showcase.tsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 174,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1885,7 +1887,7 @@ function Showcase({ language }) {
                                                             children: language === "es" ? "Plan de cuidado" : "Care plan"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Showcase.tsx",
-                                                            lineNumber: 182,
+                                                            lineNumber: 184,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1893,25 +1895,25 @@ function Showcase({ language }) {
                                                             children: language === "es" ? "Un correo mensual con lo que cambió y un espacio para pedir ajustes — sin cotizar cada solicitud por separado." : "A monthly check-in on what changed, plus a standing place to request edits — no per-request quote needed."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/Showcase.tsx",
-                                                            lineNumber: 185,
+                                                            lineNumber: 187,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/Showcase.tsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 183,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/Showcase.tsx",
-                                            lineNumber: 171,
+                                            lineNumber: 173,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/Showcase.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 166,
                                     columnNumber: 13
                                 }, this)
                             ]

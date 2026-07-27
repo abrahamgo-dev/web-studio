@@ -124,13 +124,15 @@ export default function Showcase({ language }: ShowcaseProps) {
           <div className="space-y-5">
             <div className="card-surface overflow-hidden rounded-[2rem] border-white/10">
               <div className="group relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg"
-                  alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  priority
+                <video
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  src="/me_gustaria_un_video_mas_simpl.mp4"
+                  poster="/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  preload="metadata"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-white/10" />
               </div>
@@ -171,8 +173,8 @@ export default function Showcase({ language }: ShowcaseProps) {
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 <div className="group overflow-hidden rounded-[1.25rem] border border-white/10">
                   <Image
-                    src="/codioful-formerly-gradienta-7E5kq_sW0Ew-unsplash.jpg"
-                    alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
+                    src="/apaoil/apaoil-7.png"
+                    alt={language === "es" ? "Portafolio multimarcas de ApaOil" : "ApaOil multi-brand portfolio"}
                     width={600}
                     height={400}
                     className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
