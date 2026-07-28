@@ -16,8 +16,8 @@ export default function Work({ language }: WorkProps) {
   const heading = language === "es" ? "Trabajo seleccionado" : "Selected work";
   const intro =
     language === "es"
-      ? "Un caso real por ahora, junto a un ejemplo de plantilla mientras sumamos más proyectos — cada uno tiene su propia página de caso."
-      : "One real case so far, alongside a template example while more projects get added — each one has its own case study page.";
+      ? "El primer caso real, con más proyectos sumándose pronto — cada uno tiene su propia página de caso."
+      : "The first real case, with more projects landing here soon — each one has its own case study page.";
   const cta = language === "es" ? "Ver caso" : "View case";
 
   return (

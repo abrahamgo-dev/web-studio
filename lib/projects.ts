@@ -50,31 +50,6 @@ export const PROJECTS: Project[] = [
     url: "https://www.apaoil.com",
     isExample: false,
   },
-  {
-    slug: "loom-and-co",
-    name: "Loom & Co.",
-    year: "2026",
-    kind: "Boutique retail",
-    kindEs: "Retail boutique",
-    summary: "A single-page lookbook site that replaced a cluttered store template.",
-    summaryEs: "Un sitio de una sola página que reemplazó un template de tienda saturado.",
-    problem:
-      "The old site was a generic e-commerce template with more navigation than products, and customers couldn't tell what the shop actually sold from the homepage.",
-    problemEs:
-      "El sitio anterior era un template de e-commerce genérico con más navegación que productos, y los clientes no podían saber qué vendía la tienda desde el inicio.",
-    approach:
-      "Cut the site down to one elegant scroll: a handful of collections, real product photography, and a single clear way to get in touch — no account creation, no cart abandoned mid-checkout.",
-    approachEs:
-      "Reducimos el sitio a un solo scroll elegante: unas pocas colecciones, fotografía real de producto y una sola forma clara de contactar — sin crear cuenta, sin carritos abandonados.",
-    result:
-      "A site that reads as a lookbook first and a store second, matching how the brand actually wants to be seen.",
-    resultEs:
-      "Un sitio que se lee primero como lookbook y después como tienda, alineado con cómo la marca quiere presentarse.",
-    services: ["Design", "Build", "Care plan"],
-    servicesEs: ["Diseño", "Construcción", "Plan de cuidado"],
-    image: "/arch-geometric-lines.jpg",
-    isExample: true,
-  },
 ];
 
 export function getProject(slug: string): Project | undefined {

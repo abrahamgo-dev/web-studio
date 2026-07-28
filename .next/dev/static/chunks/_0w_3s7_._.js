@@ -384,8 +384,12 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 "use strict";
 
 __turbopack_context__.s([
+    "FACEBOOK_URL",
+    ()=>FACEBOOK_URL,
     "INSTAGRAM_URL",
     ()=>INSTAGRAM_URL,
+    "LINKEDIN_URL",
+    ()=>LINKEDIN_URL,
     "SITE_NAME",
     ()=>SITE_NAME,
     "SITE_URL",
@@ -394,6 +398,8 @@ __turbopack_context__.s([
 const SITE_URL = "https://www.fenwebstudio.com";
 const SITE_NAME = "Fen Web Studio";
 const INSTAGRAM_URL = "https://www.instagram.com/fenwebstudio/";
+const FACEBOOK_URL = "https://www.facebook.com/Fenwebstudio/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/fen-web-studio/";
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -1042,6 +1048,14 @@ function Footer({ language }) {
                 href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INSTAGRAM_URL"]
             },
             {
+                label: "Facebook",
+                href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FACEBOOK_URL"]
+            },
+            {
+                label: "LinkedIn",
+                href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LINKEDIN_URL"]
+            },
+            {
                 label: "Empezar un proyecto",
                 href: "/#contact"
             }
@@ -1085,6 +1099,14 @@ function Footer({ language }) {
                 href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["INSTAGRAM_URL"]
             },
             {
+                label: "Facebook",
+                href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FACEBOOK_URL"]
+            },
+            {
+                label: "LinkedIn",
+                href: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LINKEDIN_URL"]
+            },
+            {
                 label: "Start a project",
                 href: "/#contact"
             }
@@ -1115,14 +1137,14 @@ function Footer({ language }) {
                                                 className: "rounded-[8px]"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 78,
+                                                lineNumber: 82,
                                                 columnNumber: 17
                                             }, this),
                                             "fenwebstudio"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1130,13 +1152,13 @@ function Footer({ language }) {
                                         children: content.tagline
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 73,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,7 +1168,7 @@ function Footer({ language }) {
                                         children: content.sectionsLabel
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1158,23 +1180,23 @@ function Footer({ language }) {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 99,
+                                                    lineNumber: 103,
                                                     columnNumber: 21
                                                 }, this)
                                             }, item.href, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 102,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 92,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1184,7 +1206,7 @@ function Footer({ language }) {
                                         children: content.solutionsLabel
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 115,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1196,23 +1218,23 @@ function Footer({ language }) {
                                                     children: language === "es" ? page.industryEs : page.industry
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 117,
+                                                    lineNumber: 121,
                                                     columnNumber: 21
                                                 }, this)
                                             }, page.slug, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 120,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 118,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 110,
+                                lineNumber: 114,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1222,7 +1244,7 @@ function Footer({ language }) {
                                         children: content.studioLabel
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 133,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1234,12 +1256,12 @@ function Footer({ language }) {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 140,
                                                     columnNumber: 23
                                                 }, this)
                                             }, item.href, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 139,
                                                 columnNumber: 21
                                             }, this) : item.href.startsWith("http") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1250,12 +1272,12 @@ function Footer({ language }) {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 145,
+                                                    lineNumber: 149,
                                                     columnNumber: 23
                                                 }, this)
                                             }, item.href, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 148,
                                                 columnNumber: 21
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1264,34 +1286,34 @@ function Footer({ language }) {
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/Footer.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 160,
                                                     columnNumber: 23
                                                 }, this)
                                             }, item.href, false, {
                                                 fileName: "[project]/components/Footer.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 159,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/Footer.tsx",
-                                        lineNumber: 132,
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Footer.tsx",
-                                lineNumber: 128,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Footer.tsx",
-                        lineNumber: 72,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 71,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1301,7 +1323,7 @@ function Footer({ language }) {
                             children: content.copyright
                         }, void 0, false, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 171,
+                            lineNumber: 175,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1313,30 +1335,30 @@ function Footer({ language }) {
                                     className: "h-3.5 w-3.5 transition group-hover:-translate-y-0.5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Footer.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/Footer.tsx",
-                            lineNumber: 172,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Footer.tsx",
-                    lineNumber: 170,
+                    lineNumber: 174,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Footer.tsx",
-            lineNumber: 70,
+            lineNumber: 74,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Footer.tsx",
-        lineNumber: 69,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 }
@@ -1457,33 +1479,6 @@ const PROJECTS = [
         image: "/apaoil/apaoil-2.png",
         url: "https://www.apaoil.com",
         isExample: false
-    },
-    {
-        slug: "loom-and-co",
-        name: "Loom & Co.",
-        year: "2026",
-        kind: "Boutique retail",
-        kindEs: "Retail boutique",
-        summary: "A single-page lookbook site that replaced a cluttered store template.",
-        summaryEs: "Un sitio de una sola página que reemplazó un template de tienda saturado.",
-        problem: "The old site was a generic e-commerce template with more navigation than products, and customers couldn't tell what the shop actually sold from the homepage.",
-        problemEs: "El sitio anterior era un template de e-commerce genérico con más navegación que productos, y los clientes no podían saber qué vendía la tienda desde el inicio.",
-        approach: "Cut the site down to one elegant scroll: a handful of collections, real product photography, and a single clear way to get in touch — no account creation, no cart abandoned mid-checkout.",
-        approachEs: "Reducimos el sitio a un solo scroll elegante: unas pocas colecciones, fotografía real de producto y una sola forma clara de contactar — sin crear cuenta, sin carritos abandonados.",
-        result: "A site that reads as a lookbook first and a store second, matching how the brand actually wants to be seen.",
-        resultEs: "Un sitio que se lee primero como lookbook y después como tienda, alineado con cómo la marca quiere presentarse.",
-        services: [
-            "Design",
-            "Build",
-            "Care plan"
-        ],
-        servicesEs: [
-            "Diseño",
-            "Construcción",
-            "Plan de cuidado"
-        ],
-        image: "/arch-geometric-lines.jpg",
-        isExample: true
     }
 ];
 function getProject(slug) {

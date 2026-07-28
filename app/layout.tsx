@@ -8,7 +8,13 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "./globals.css";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { INSTAGRAM_URL, SITE_URL, SITE_NAME } from "@/lib/site";
+import {
+  INSTAGRAM_URL,
+  FACEBOOK_URL,
+  LINKEDIN_URL,
+  SITE_URL,
+  SITE_NAME,
+} from "@/lib/site";
 
 const SITE_TITLE = "Fen Web Studio — Elegant Websites for Small Businesses";
 const SITE_DESCRIPTION =
@@ -54,7 +60,7 @@ const organizationJsonLd = {
   description: SITE_DESCRIPTION,
   image: `${SITE_URL}/icon.svg`,
   priceRange: "$$",
-  sameAs: [INSTAGRAM_URL],
+  sameAs: [INSTAGRAM_URL, FACEBOOK_URL, LINKEDIN_URL],
 };
 
 export default function RootLayout({

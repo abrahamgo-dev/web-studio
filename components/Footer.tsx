@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import { LANDING_PAGES } from "@/lib/landingPages";
-import { INSTAGRAM_URL } from "@/lib/site";
+import { INSTAGRAM_URL, FACEBOOK_URL, LINKEDIN_URL } from "@/lib/site";
 
 type Language = "en" | "es";
 
@@ -35,6 +35,8 @@ export default function Footer({ language }: FooterProps) {
               href: "mailto:hello@fenwebstudio.com",
             },
             { label: "Instagram", href: INSTAGRAM_URL },
+            { label: "Facebook", href: FACEBOOK_URL },
+            { label: "LinkedIn", href: LINKEDIN_URL },
             { label: "Empezar un proyecto", href: "/#contact" },
           ],
           backToTop: "Volver arriba",
@@ -59,6 +61,8 @@ export default function Footer({ language }: FooterProps) {
               href: "mailto:hello@fenwebstudio.com",
             },
             { label: "Instagram", href: INSTAGRAM_URL },
+            { label: "Facebook", href: FACEBOOK_URL },
+            { label: "LinkedIn", href: LINKEDIN_URL },
             { label: "Start a project", href: "/#contact" },
           ],
           backToTop: "Back to top",

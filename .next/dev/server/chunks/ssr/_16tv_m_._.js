@@ -127,8 +127,12 @@ function GoogleAnalytics() {
 "use strict";
 
 __turbopack_context__.s([
+    "FACEBOOK_URL",
+    ()=>FACEBOOK_URL,
     "INSTAGRAM_URL",
     ()=>INSTAGRAM_URL,
+    "LINKEDIN_URL",
+    ()=>LINKEDIN_URL,
     "SITE_NAME",
     ()=>SITE_NAME,
     "SITE_URL",
@@ -137,6 +141,8 @@ __turbopack_context__.s([
 const SITE_URL = "https://www.fenwebstudio.com";
 const SITE_NAME = "Fen Web Studio";
 const INSTAGRAM_URL = "https://www.instagram.com/fenwebstudio/";
+const FACEBOOK_URL = "https://www.facebook.com/Fenwebstudio/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/fen-web-studio/";
 }),
 "[project]/app/layout.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -199,7 +205,9 @@ const organizationJsonLd = {
     image: `${__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_URL"]}/icon.svg`,
     priceRange: "$$",
     sameAs: [
-        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["INSTAGRAM_URL"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["INSTAGRAM_URL"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["FACEBOOK_URL"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$site$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["LINKEDIN_URL"]
     ]
 };
 function RootLayout({ children }) {
@@ -217,23 +225,23 @@ function RootLayout({ children }) {
                     }
                 }, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 69,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$GoogleAnalytics$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/layout.tsx",
-                    lineNumber: 75,
+                    lineNumber: 81,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/layout.tsx",
-            lineNumber: 67,
+            lineNumber: 73,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/layout.tsx",
-        lineNumber: 66,
+        lineNumber: 72,
         columnNumber: 5
     }, this);
 }
