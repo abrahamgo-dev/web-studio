@@ -507,6 +507,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/website-design-for-training-centers": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/website-design-for-training-centers",
+      "dataRoute": "/website-design-for-training-centers.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/website-design-for-wellness-studios": {
       "experimentalBypassFor": [
         {
@@ -570,6 +594,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/work/[slug]",
       "dataRoute": "/work/apaoil.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/work/once-fc": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/work/[slug]",
+      "dataRoute": "/work/once-fc.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",

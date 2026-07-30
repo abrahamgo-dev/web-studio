@@ -1118,6 +1118,35 @@ const PROJECTS = [
         image: "/apaoil/apaoil-2.png",
         url: "https://www.apaoil.com",
         isExample: false
+    },
+    {
+        slug: "once-fc",
+        name: "Once FC",
+        year: "2026",
+        kind: "Sports & fitness training",
+        kindEs: "Entrenamiento deportivo",
+        summary: "A booking-first site for an adult soccer training club, so signing up stops happening over WhatsApp DMs.",
+        summaryEs: "Un sitio centrado en reservas para un club de entrenamiento de fútbol para adultos, para dejar de inscribirse por WhatsApp.",
+        problem: "Once FC runs six different training levels across five cities, but nothing explained the system to a new player — figuring out which level, city, and schedule fit meant messaging around on WhatsApp or Instagram before ever setting foot on the field.",
+        problemEs: "Once FC maneja seis niveles de entrenamiento en cinco ciudades, pero nada explicaba el sistema a un jugador nuevo — saber qué nivel, ciudad y horario le quedaba significaba escribir por WhatsApp o Instagram antes de siquiera pisar la cancha.",
+        approach: "Built a site around self-selection: a clear level system with schedules for each one, a method section explaining what separates it from casual pickup soccer, and a per-city landing page with a free trial-session form instead of one generic contact box.",
+        approachEs: "Construimos un sitio pensado para que el jugador se ubique solo: un sistema de niveles claro con horarios para cada uno, una sección de método que explica qué lo distingue de una cascarita, y una página por ciudad con un formulario de sesión de prueba gratuita en vez de un solo contacto genérico.",
+        result: "A prospective player can now find their city, pick a level based on schedule and intensity, and request a free trial session in under two minutes — with a reply promised inside 24 hours instead of an open-ended DM.",
+        resultEs: "Un jugador nuevo ahora puede encontrar su ciudad, elegir un nivel según horario e intensidad, y pedir una sesión de prueba gratuita en menos de dos minutos — con respuesta prometida en 24 horas en vez de un mensaje directo sin fecha.",
+        services: [
+            "Design",
+            "Build",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Plan de cuidado"
+        ],
+        image: "/once-fc/once-fc-1.png",
+        url: "https://www.once-fc.com",
+        instagramUrl: "https://www.instagram.com/oncefcmx/",
+        isExample: false
     }
 ];
 function getProject(slug) {
@@ -1146,7 +1175,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$tsx_
 ;
 function Work({ language }) {
     const heading = language === "es" ? "Trabajo seleccionado" : "Selected work";
-    const intro = language === "es" ? "El primer caso real, con más proyectos sumándose pronto — cada uno tiene su propia página de caso." : "The first real case, with more projects landing here soon — each one has its own case study page.";
+    const intro = language === "es" ? "Proyectos reales, con más sumándose pronto — cada uno tiene su propia página de caso." : "Real projects, with more landing here soon — each one has its own case study page.";
     const cta = language === "es" ? "Ver caso" : "View case";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "work",
@@ -3251,6 +3280,65 @@ const LANDING_PAGES = [
                 bodyEs: "Una línea directa con quien realmente construyó el sitio, en vez de una mesa de ayuda genérica."
             }
         ]
+    },
+    {
+        slug: "website-design-for-training-centers",
+        projectSlug: "once-fc",
+        image: "/once-fc/once-fc-1.png",
+        industry: "Training Centers & Sports Clubs",
+        industryEs: "Centros de Entrenamiento y Clubes Deportivos",
+        metaTitle: "Website Design for Training Centers & Sports Clubs — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Centros de Entrenamiento y Clubes Deportivos — Fen Web Studio",
+        metaDescription: "A booking-first website for training centers, clubs, and coaches — turn levels, schedules, and locations into something people can book themselves. See how we did it for an adult soccer training club.",
+        metaDescriptionEs: "Un sitio centrado en reservas para centros de entrenamiento, clubes y entrenadores — convierte niveles, horarios y sedes en algo que la gente pueda reservar sola. Mira cómo lo hicimos para un club de entrenamiento de fútbol para adultos.",
+        eyebrow: "For training centers, sports clubs, and coaches",
+        eyebrowEs: "Para centros de entrenamiento, clubes y entrenadores",
+        title: "The site that turns 'which WhatsApp group do I join' into a booking.",
+        titleEs: "El sitio que convierte '¿a qué grupo de WhatsApp le escribo?' en una reserva.",
+        intro: "Most training centers run a real system — levels, schedules, locations — that nobody outside the group ever sees. A prospective member has to message around to figure out where they fit. We build sites that do that sorting up front, so the first message someone sends is 'I'm in,' not 'which one is for me?'",
+        introEs: "La mayoría de los centros de entrenamiento manejan un sistema real — niveles, horarios, sedes — que nadie fuera del grupo llega a ver. Un posible integrante tiene que preguntar por su cuenta para saber dónde encaja. Construimos sitios que hacen esa clasificación desde el inicio, para que el primer mensaje que alguien mande sea 'me apunto', no '¿cuál es para mí?'",
+        painPoints: [
+            {
+                title: "Sign-ups happen through DMs, not the site",
+                titleEs: "Las inscripciones pasan por DM, no por el sitio",
+                body: "Every new member starts with the same back-and-forth on WhatsApp or Instagram that the site should already be answering.",
+                bodyEs: "Cada integrante nuevo empieza con el mismo ida y vuelta por WhatsApp o Instagram que el sitio ya debería estar respondiendo."
+            },
+            {
+                title: "No clear way to show levels or locations",
+                titleEs: "Sin una forma clara de mostrar niveles o sedes",
+                body: "Running multiple groups, levels, or branches through one generic 'contact us' page leaves people guessing which one is actually theirs.",
+                bodyEs: "Manejar varios grupos, niveles o sedes a través de una sola página genérica de 'contáctanos' deja a la gente adivinando cuál es la suya."
+            },
+            {
+                title: "The site doesn't build trust before day one",
+                titleEs: "El sitio no genera confianza antes del primer día",
+                body: "Someone considering a new club or team wants to see real coaching and real sessions before showing up — not a stock photo of a ball.",
+                bodyEs: "Alguien que considera un club o equipo nuevo quiere ver entrenamientos y coaches reales antes de presentarse — no una foto de stock de un balón."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "A structured, self-select system",
+                titleEs: "Un sistema estructurado, de autoselección",
+                body: "Levels, schedules, and locations laid out clearly enough that people place themselves without messaging first.",
+                bodyEs: "Niveles, horarios y sedes presentados con la claridad suficiente para que la gente se ubique sola, sin escribir primero."
+            },
+            {
+                title: "A real booking or trial-request flow",
+                titleEs: "Un flujo real de reserva o sesión de prueba",
+                body: "One clear path to convert interest into a first session — not a static contact box that goes into a queue.",
+                bodyEs: "Un solo camino claro para convertir el interés en una primera sesión — no una caja de contacto estática que cae en una fila."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "Schedules, levels, and locations shift season to season — updated for you instead of waiting on a redesign.",
+                bodyEs: "Horarios, niveles y sedes cambian de temporada en temporada — se actualizan por ti en vez de esperar a un rediseño."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Once FC",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Once FC"
     }
 ];
 function getLandingPage(slug) {

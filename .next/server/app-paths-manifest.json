@@ -17,6 +17,7 @@
   "/website-design-for-contractors/page": "app/website-design-for-contractors/page.js",
   "/website-design-for-professional-services/page": "app/website-design-for-professional-services/page.js",
   "/website-design-for-restaurants/page": "app/website-design-for-restaurants/page.js",
+  "/website-design-for-training-centers/page": "app/website-design-for-training-centers/page.js",
   "/website-design-for-wellness-studios/page": "app/website-design-for-wellness-studios/page.js",
   "/website-redesign/page": "app/website-redesign/page.js",
   "/work/[slug]/page": "app/work/[slug]/page.js"

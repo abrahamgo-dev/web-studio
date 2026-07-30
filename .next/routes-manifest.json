@@ -143,6 +143,12 @@
       "namedRegex": "^/website\\-design\\-for\\-restaurants(?:/)?$"
     },
     {
+      "page": "/website-design-for-training-centers",
+      "regex": "^/website\\-design\\-for\\-training\\-centers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-design\\-for\\-training\\-centers(?:/)?$"
+    },
+    {
       "page": "/website-design-for-wellness-studios",
       "regex": "^/website\\-design\\-for\\-wellness\\-studios(?:/)?$",
       "routeKeys": {},

@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "c19a22deb856911fb08ad5345894c21a",
-    "previewModeSigningKey": "9b2e8e7d92cfae143618576d544dd668fbcfb8b409ce8eabc1385fa4f00be9d6",
-    "previewModeEncryptionKey": "da1057316795c9914864905eb615df8d5825d1ac28ae70bfbd73194b90d00339"
-  }
-}
+{"version":4,"routes":{"/work/apaoil":{},"/work/once-fc":{}},"dynamicRoutes":{"/work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/work/[slug]","routeRegex":"^\\/work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"57798e0d97976b4dc6ddf2549f4049bd","previewModeSigningKey":"92dec7dda95c41dfd6ad620995b2c414dc63ab2eaf157c736f3629df2795d0a9","previewModeEncryptionKey":"aa1df44b5c6188f6283699f64823c2db005a3de744c9fe642f28d00630ffd17a"}}

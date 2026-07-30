@@ -96,6 +96,35 @@ const PROJECTS = [
         image: "/apaoil/apaoil-2.png",
         url: "https://www.apaoil.com",
         isExample: false
+    },
+    {
+        slug: "once-fc",
+        name: "Once FC",
+        year: "2026",
+        kind: "Sports & fitness training",
+        kindEs: "Entrenamiento deportivo",
+        summary: "A booking-first site for an adult soccer training club, so signing up stops happening over WhatsApp DMs.",
+        summaryEs: "Un sitio centrado en reservas para un club de entrenamiento de fútbol para adultos, para dejar de inscribirse por WhatsApp.",
+        problem: "Once FC runs six different training levels across five cities, but nothing explained the system to a new player — figuring out which level, city, and schedule fit meant messaging around on WhatsApp or Instagram before ever setting foot on the field.",
+        problemEs: "Once FC maneja seis niveles de entrenamiento en cinco ciudades, pero nada explicaba el sistema a un jugador nuevo — saber qué nivel, ciudad y horario le quedaba significaba escribir por WhatsApp o Instagram antes de siquiera pisar la cancha.",
+        approach: "Built a site around self-selection: a clear level system with schedules for each one, a method section explaining what separates it from casual pickup soccer, and a per-city landing page with a free trial-session form instead of one generic contact box.",
+        approachEs: "Construimos un sitio pensado para que el jugador se ubique solo: un sistema de niveles claro con horarios para cada uno, una sección de método que explica qué lo distingue de una cascarita, y una página por ciudad con un formulario de sesión de prueba gratuita en vez de un solo contacto genérico.",
+        result: "A prospective player can now find their city, pick a level based on schedule and intensity, and request a free trial session in under two minutes — with a reply promised inside 24 hours instead of an open-ended DM.",
+        resultEs: "Un jugador nuevo ahora puede encontrar su ciudad, elegir un nivel según horario e intensidad, y pedir una sesión de prueba gratuita en menos de dos minutos — con respuesta prometida en 24 horas en vez de un mensaje directo sin fecha.",
+        services: [
+            "Design",
+            "Build",
+            "Care plan"
+        ],
+        servicesEs: [
+            "Diseño",
+            "Construcción",
+            "Plan de cuidado"
+        ],
+        image: "/once-fc/once-fc-1.png",
+        url: "https://www.once-fc.com",
+        instagramUrl: "https://www.instagram.com/oncefcmx/",
+        isExample: false
     }
 ];
 function getProject(slug) {

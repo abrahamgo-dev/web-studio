@@ -93,16 +93,31 @@ export default function CaseStudy({ project }: CaseStudyProps) {
               {project.year}
             </p>
 
-            {project.url && (
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20"
-              >
-                {copy.visitSite}
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </a>
+            {(project.url || project.instagramUrl) && (
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20"
+                  >
+                    {copy.visitSite}
+                    <ArrowUpRight className="h-3.5 w-3.5" />
+                  </a>
+                )}
+                {project.instagramUrl && (
+                  <a
+                    href={project.instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20"
+                  >
+                    Instagram
+                    <ArrowUpRight className="h-3.5 w-3.5" />
+                  </a>
+                )}
+              </div>
             )}
           </div>
         </section>

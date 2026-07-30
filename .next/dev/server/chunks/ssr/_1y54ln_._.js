@@ -913,6 +913,65 @@ const LANDING_PAGES = [
                 bodyEs: "Una línea directa con quien realmente construyó el sitio, en vez de una mesa de ayuda genérica."
             }
         ]
+    },
+    {
+        slug: "website-design-for-training-centers",
+        projectSlug: "once-fc",
+        image: "/once-fc/once-fc-1.png",
+        industry: "Training Centers & Sports Clubs",
+        industryEs: "Centros de Entrenamiento y Clubes Deportivos",
+        metaTitle: "Website Design for Training Centers & Sports Clubs — Fen Web Studio",
+        metaTitleEs: "Diseño de Sitios Web para Centros de Entrenamiento y Clubes Deportivos — Fen Web Studio",
+        metaDescription: "A booking-first website for training centers, clubs, and coaches — turn levels, schedules, and locations into something people can book themselves. See how we did it for an adult soccer training club.",
+        metaDescriptionEs: "Un sitio centrado en reservas para centros de entrenamiento, clubes y entrenadores — convierte niveles, horarios y sedes en algo que la gente pueda reservar sola. Mira cómo lo hicimos para un club de entrenamiento de fútbol para adultos.",
+        eyebrow: "For training centers, sports clubs, and coaches",
+        eyebrowEs: "Para centros de entrenamiento, clubes y entrenadores",
+        title: "The site that turns 'which WhatsApp group do I join' into a booking.",
+        titleEs: "El sitio que convierte '¿a qué grupo de WhatsApp le escribo?' en una reserva.",
+        intro: "Most training centers run a real system — levels, schedules, locations — that nobody outside the group ever sees. A prospective member has to message around to figure out where they fit. We build sites that do that sorting up front, so the first message someone sends is 'I'm in,' not 'which one is for me?'",
+        introEs: "La mayoría de los centros de entrenamiento manejan un sistema real — niveles, horarios, sedes — que nadie fuera del grupo llega a ver. Un posible integrante tiene que preguntar por su cuenta para saber dónde encaja. Construimos sitios que hacen esa clasificación desde el inicio, para que el primer mensaje que alguien mande sea 'me apunto', no '¿cuál es para mí?'",
+        painPoints: [
+            {
+                title: "Sign-ups happen through DMs, not the site",
+                titleEs: "Las inscripciones pasan por DM, no por el sitio",
+                body: "Every new member starts with the same back-and-forth on WhatsApp or Instagram that the site should already be answering.",
+                bodyEs: "Cada integrante nuevo empieza con el mismo ida y vuelta por WhatsApp o Instagram que el sitio ya debería estar respondiendo."
+            },
+            {
+                title: "No clear way to show levels or locations",
+                titleEs: "Sin una forma clara de mostrar niveles o sedes",
+                body: "Running multiple groups, levels, or branches through one generic 'contact us' page leaves people guessing which one is actually theirs.",
+                bodyEs: "Manejar varios grupos, niveles o sedes a través de una sola página genérica de 'contáctanos' deja a la gente adivinando cuál es la suya."
+            },
+            {
+                title: "The site doesn't build trust before day one",
+                titleEs: "El sitio no genera confianza antes del primer día",
+                body: "Someone considering a new club or team wants to see real coaching and real sessions before showing up — not a stock photo of a ball.",
+                bodyEs: "Alguien que considera un club o equipo nuevo quiere ver entrenamientos y coaches reales antes de presentarse — no una foto de stock de un balón."
+            }
+        ],
+        approachPoints: [
+            {
+                title: "A structured, self-select system",
+                titleEs: "Un sistema estructurado, de autoselección",
+                body: "Levels, schedules, and locations laid out clearly enough that people place themselves without messaging first.",
+                bodyEs: "Niveles, horarios y sedes presentados con la claridad suficiente para que la gente se ubique sola, sin escribir primero."
+            },
+            {
+                title: "A real booking or trial-request flow",
+                titleEs: "Un flujo real de reserva o sesión de prueba",
+                body: "One clear path to convert interest into a first session — not a static contact box that goes into a queue.",
+                bodyEs: "Un solo camino claro para convertir el interés en una primera sesión — no una caja de contacto estática que cae en una fila."
+            },
+            {
+                title: "A monthly care plan",
+                titleEs: "Un plan de cuidado mensual",
+                body: "Schedules, levels, and locations shift season to season — updated for you instead of waiting on a redesign.",
+                bodyEs: "Horarios, niveles y sedes cambian de temporada en temporada — se actualizan por ti en vez de esperar a un rediseño."
+            }
+        ],
+        caseStudyLabel: "See how we did this for Once FC",
+        caseStudyLabelEs: "Mira cómo lo hicimos para Once FC"
     }
 ];
 function getLandingPage(slug) {
@@ -1550,19 +1609,48 @@ function CaseStudy({ project }) {
                                         lineNumber: 91,
                                         columnNumber: 13
                                     }, this),
-                                    project.url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: project.url,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        className: "mt-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20",
+                                    (project.url || project.instagramUrl) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-6 flex flex-wrap items-center gap-3",
                                         children: [
-                                            copy.visitSite,
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                className: "h-3.5 w-3.5"
-                                            }, void 0, false, {
+                                            project.url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: project.url,
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20",
+                                                children: [
+                                                    copy.visitSite,
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        className: "h-3.5 w-3.5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/CaseStudy.tsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/components/CaseStudy.tsx",
-                                                lineNumber: 104,
-                                                columnNumber: 17
+                                                lineNumber: 99,
+                                                columnNumber: 19
+                                            }, this),
+                                            project.instagramUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: project.instagramUrl,
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm transition hover:bg-white/20",
+                                                children: [
+                                                    "Instagram",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        className: "h-3.5 w-3.5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/CaseStudy.tsx",
+                                                        lineNumber: 117,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/CaseStudy.tsx",
+                                                lineNumber: 110,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
@@ -1594,7 +1682,7 @@ function CaseStudy({ project }) {
                                             children: copy.problem
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 113,
+                                            lineNumber: 128,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1602,13 +1690,13 @@ function CaseStudy({ project }) {
                                             children: language === "es" ? project.problemEs : project.problem
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 131,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 112,
+                                    lineNumber: 127,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1618,7 +1706,7 @@ function CaseStudy({ project }) {
                                             children: copy.approach
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 136,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1626,24 +1714,24 @@ function CaseStudy({ project }) {
                                             children: language === "es" ? project.approachEs : project.approach
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 139,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/CaseStudy.tsx",
-                            lineNumber: 111,
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/CaseStudy.tsx",
-                        lineNumber: 110,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1662,27 +1750,27 @@ function CaseStudy({ project }) {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/components/CaseStudy.tsx",
-                                        lineNumber: 135,
+                                        lineNumber: 150,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 149,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/CaseStudy.tsx",
-                                lineNumber: 133,
+                                lineNumber: 148,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/CaseStudy.tsx",
-                            lineNumber: 132,
+                            lineNumber: 147,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/CaseStudy.tsx",
-                        lineNumber: 131,
+                        lineNumber: 146,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1697,7 +1785,7 @@ function CaseStudy({ project }) {
                                             children: copy.result
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 150,
+                                            lineNumber: 165,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1705,13 +1793,13 @@ function CaseStudy({ project }) {
                                             children: language === "es" ? project.resultEs : project.result
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 153,
+                                            lineNumber: 168,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 149,
+                                    lineNumber: 164,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1721,7 +1809,7 @@ function CaseStudy({ project }) {
                                             children: copy.services
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 158,
+                                            lineNumber: 173,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1731,12 +1819,12 @@ function CaseStudy({ project }) {
                                                     children: service
                                                 }, service, false, {
                                                     fileName: "[project]/components/CaseStudy.tsx",
-                                                    lineNumber: 164,
+                                                    lineNumber: 179,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 176,
                                             columnNumber: 15
                                         }, this),
                                         landingPage && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1750,30 +1838,30 @@ function CaseStudy({ project }) {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/CaseStudy.tsx",
-                                                    lineNumber: 182,
+                                                    lineNumber: 197,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 189,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/CaseStudy.tsx",
-                            lineNumber: 148,
+                            lineNumber: 163,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/CaseStudy.tsx",
-                        lineNumber: 147,
+                        lineNumber: 162,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1786,7 +1874,7 @@ function CaseStudy({ project }) {
                                     children: copy.ctaTitle
                                 }, void 0, false, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1794,7 +1882,7 @@ function CaseStudy({ project }) {
                                     children: copy.ctaText
                                 }, void 0, false, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 194,
+                                    lineNumber: 209,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1806,24 +1894,24 @@ function CaseStudy({ project }) {
                                             className: "h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/components/CaseStudy.tsx",
-                                            lineNumber: 202,
+                                            lineNumber: 217,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/CaseStudy.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 212,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/CaseStudy.tsx",
-                            lineNumber: 190,
+                            lineNumber: 205,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/CaseStudy.tsx",
-                        lineNumber: 189,
+                        lineNumber: 204,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1836,7 +1924,7 @@ function CaseStudy({ project }) {
                 language: language
             }, void 0, false, {
                 fileName: "[project]/components/CaseStudy.tsx",
-                lineNumber: 207,
+                lineNumber: 222,
                 columnNumber: 7
             }, this)
         ]
