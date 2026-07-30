@@ -23,9 +23,9 @@ const STEPS = [
     title: "Design",
     titleEs: "Diseño",
     description:
-      "Token system, layout concepts, and a full design file, reviewed together before a single line of code is written.",
+      "A consistent set of colors, fonts, and spacing, plus full-page layouts — reviewed together before a single line of code is written.",
     descriptionEs:
-      "Sistema de tokens, conceptos de layout y un diseño completo, revisado antes de escribir una sola línea de código.",
+      "Un conjunto consistente de colores, tipografía y espaciados, más el diseño completo de cada página — revisado en conjunto antes de escribir una sola línea de código.",
   },
   {
     n: "03",
