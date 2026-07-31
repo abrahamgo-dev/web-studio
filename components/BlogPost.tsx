@@ -31,13 +31,13 @@ export default function BlogPost({ post }: BlogPostProps) {
   const copy =
     language === "es"
       ? {
-          back: "Notas del estudio",
+          back: "Blog del estudio",
           ctaTitle: "¿Tu sitio necesita este tipo de atención?",
           ctaText: "Cuéntanos qué tienes hoy y hacia dónde quieres llegar.",
           ctaButton: "Empezar un proyecto",
         }
       : {
-          back: "Notes from the studio",
+          back: "Blog from the studio",
           ctaTitle: "Does your site need this kind of attention?",
           ctaText: "Tell us what you have today and where you want to end up.",
           ctaButton: "Start a project",
