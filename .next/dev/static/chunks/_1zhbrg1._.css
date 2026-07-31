@@ -913,6 +913,10 @@
     display: inline-flex;
   }
 
+  .aspect-\[3\/2\] {
+    aspect-ratio: 3 / 2;
+  }
+
   .aspect-\[4\/3\] {
     aspect-ratio: 4 / 3;
   }
@@ -1502,6 +1506,16 @@
     }
   }
 
+  .bg-white\/25 {
+    background-color: #ffffff40;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-white\/25 {
+      background-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+    }
+  }
+
   .bg-white\/70 {
     background-color: #ffffffb3;
   }
@@ -1743,6 +1757,10 @@
 
   .object-cover {
     object-fit: cover;
+  }
+
+  .object-top {
+    object-position: top;
   }
 
   .p-0 {

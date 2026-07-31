@@ -10,6 +10,35 @@ interface ShowcaseProps {
   language: Language;
 }
 
+function BrowserFrame({
+  src,
+  alt,
+  sizes,
+}: {
+  src: string;
+  alt: string;
+  sizes: string;
+}) {
+  return (
+    <div className="group flex h-full w-full flex-col overflow-hidden rounded-[1.2rem] border border-white/10 bg-black/60">
+      <div className="flex shrink-0 items-center gap-1.5 border-b border-white/10 bg-white/5 px-3 py-2">
+        <span className="h-2 w-2 rounded-full bg-white/25" />
+        <span className="h-2 w-2 rounded-full bg-white/25" />
+        <span className="h-2 w-2 rounded-full bg-white/25" />
+      </div>
+      <div className="relative flex-1 overflow-hidden">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          className="object-cover object-top transition duration-500 group-hover:scale-105"
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function Showcase({ language }: ShowcaseProps) {
   const content =
     language === "es"
@@ -151,13 +180,11 @@ export default function Showcase({ language }: ShowcaseProps) {
                 </p>
               </div>
               <div className="card-surface rounded-[2rem] p-6">
-                <div className="group aspect-[4/3] overflow-hidden rounded-[1.2rem] border border-white/10">
-                  <Image
-                    src="/vincent-maufay-tGPq7x38FdM-unsplash.jpg"
-                    alt={language === "es" ? "Gradiente de color abstracto" : "Abstract color gradient"}
-                    width={600}
-                    height={450}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                <div className="aspect-[4/3]">
+                  <BrowserFrame
+                    src="/once-fc/once-fc-1.png"
+                    alt={language === "es" ? "Sitio web de Once FC" : "Once FC website"}
+                    sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>
               </div>
@@ -171,13 +198,11 @@ export default function Showcase({ language }: ShowcaseProps) {
                 {content.galleryText}
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                <div className="group overflow-hidden rounded-[1.25rem] border border-white/10">
-                  <Image
-                    src="/apaoil/apaoil-7.png"
-                    alt={language === "es" ? "Portafolio multimarcas de ApaOil" : "ApaOil multi-brand portfolio"}
-                    width={600}
-                    height={400}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                <div className="aspect-[3/2]">
+                  <BrowserFrame
+                    src="/apaoil/apaoil-2.png"
+                    alt={language === "es" ? "Sitio web de ApaOil" : "ApaOil website"}
+                    sizes="(max-width: 768px) 50vw, 20vw"
                   />
                 </div>
                 <div className="rounded-[1.25rem] border border-white/10 bg-gradient-to-br from-accent/15 via-white/5 to-accent/25 p-6">
