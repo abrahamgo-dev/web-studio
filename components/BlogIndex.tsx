@@ -32,14 +32,14 @@ export default function BlogIndex({ posts }: BlogIndexProps) {
   const copy =
     language === "es"
       ? {
-          eyebrow: "Notas del estudio",
+          eyebrow: "Blog del estudio",
           title: "Notas cortas, cuando hay algo que vale la pena decir.",
           intro:
             "No publicamos por publicar. Cada nota sale cuando aprendemos algo específico que le sirve a un negocio pequeño construyendo o cuidando su sitio.",
           readMore: "Leer",
         }
       : {
-          eyebrow: "Notes from the studio",
+          eyebrow: "Blog from the studio",
           title: "Short notes, published only when there's something to say.",
           intro:
             "We don't post on a schedule for its own sake. Each note goes up when we've learned something specific that's useful to a small business building or caring for a site.",

@@ -27,7 +27,7 @@ export default function Blog({ language }: BlogProps) {
   }
 
   const heading =
-    language === "es" ? "Notas del estudio" : "Notes from the studio";
+    language === "es" ? "Blog del estudio" : "Blog from the studio";
   const intro =
     language === "es"
       ? "Ideas cortas sobre diseño, mantenimiento y lo que realmente mueve la aguja en el sitio de un negocio pequeño."

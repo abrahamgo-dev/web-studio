@@ -29,14 +29,14 @@ export default function Nav({
           { label: "Trabajo", href: "/#work" },
           { label: "Servicios", href: "/#services" },
           { label: "Proceso", href: "/#process" },
-          { label: "Notas", href: "/blog" },
+          { label: "Blog", href: "/blog" },
           { label: "Contacto", href: "/#contact" },
         ]
       : [
           { label: "Work", href: "/#work" },
           { label: "Services", href: "/#services" },
           { label: "Process", href: "/#process" },
-          { label: "Notes", href: "/blog" },
+          { label: "Blog", href: "/blog" },
           { label: "Contact", href: "/#contact" },
         ];
 
