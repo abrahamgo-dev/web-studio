@@ -64,7 +64,7 @@ export default function Process({ language }: ProcessProps) {
 
   return (
     <section id="process" className="relative border-t border-white/10">
-      <div className="mx-auto max-w-4xl px-6 py-28 md:px-10 md:py-36">
+      <div className="mx-auto max-w-4xl px-6 py-20 md:px-10 md:py-36">
         <Reveal>
           <h2 className="font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
             {heading}

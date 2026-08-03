@@ -5,7 +5,6 @@ import MarqueeStrip from "@/components/MarqueeStrip";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
 import Services from "@/components/Services";
-import Why from "@/components/Why";
 import Work from "@/components/Work";
 import Showcase from "@/components/Showcase";
 import Process from "@/components/Process";
@@ -37,7 +36,6 @@ export default function HomePage() {
         <Hero language={language} />
         <TrustStrip language={language} />
         <Services language={language} />
-        <Why language={language} />
         <Showcase language={language} />
         <Work language={language} />
         <Process language={language} />

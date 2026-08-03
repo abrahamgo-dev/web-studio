@@ -22,7 +22,7 @@ export default function Work({ language }: WorkProps) {
 
   return (
     <section id="work" className="relative border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
+      <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-36">
         <Reveal>
           <div className="mb-12 flex flex-col gap-3 md:mb-16 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">

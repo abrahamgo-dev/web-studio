@@ -37,7 +37,7 @@ export default function Blog({ language }: BlogProps) {
 
   return (
     <section id="blog" className="relative border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 py-28 md:px-10 md:py-36">
+      <div className="mx-auto max-w-6xl px-6 py-20 md:px-10 md:py-36">
         <Reveal>
           <div className="mb-14 flex flex-col gap-4 md:mb-20 md:flex-row md:items-end md:justify-between">
             <h2 className="max-w-md font-[family-name:var(--font-display)] text-4xl font-extrabold tracking-tight text-ink md:text-5xl">
