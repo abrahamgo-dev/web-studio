@@ -17,7 +17,7 @@ const OPEN_DELAY_MS = 1600;
 // `devMode` ignores the "already dismissed this session" check, so it
 // pops up on every page load — handy for previewing copy/design changes.
 const CONFIG = {
-  enabled: true,
+  enabled: false,
   devMode: false,
 };
 
