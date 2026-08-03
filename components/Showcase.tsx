@@ -75,7 +75,7 @@ export default function Showcase({ language }: ShowcaseProps) {
 
   return (
     <section id="showcase" className="relative border-t border-white/10">
-      <div className="mx-auto max-w-7xl px-6 py-28 md:px-10 md:py-36">
+      <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-36">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal>
           <div className="card-surface rounded-[2rem] p-8 md:p-10">
