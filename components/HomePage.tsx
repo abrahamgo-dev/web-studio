@@ -35,9 +35,9 @@ export default function HomePage() {
       <main>
         <Hero language={language} />
         <TrustStrip language={language} />
+        <Work language={language} />
         <Services language={language} />
         <Showcase language={language} />
-        <Work language={language} />
         <Process language={language} />
         <Blog language={language} />
         <Contact language={language} />
