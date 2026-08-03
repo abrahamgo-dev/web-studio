@@ -139,7 +139,7 @@ export default function Nav({
       </div>
 
       {open && (
-        <div className="mx-6 mb-6 flex flex-col gap-2 rounded-2xl border border-white/10 bg-bg-raised/95 p-3 backdrop-blur-xl md:hidden">
+        <div className="absolute inset-x-0 top-full z-40 mx-6 mt-2 flex flex-col gap-2 rounded-2xl border border-white/10 bg-bg-raised/95 p-3 shadow-2xl backdrop-blur-xl md:hidden">
           <div className="flex items-center gap-2">
             <button
               type="button"

@@ -58,26 +58,26 @@ export default function Hero({ language }: HeroProps) {
       </div>
 
       <div className="relative mx-auto max-w-6xl px-6 pt-16 pb-20 text-center md:px-10 md:pt-24 md:pb-28">
-        <Reveal>
+        <Reveal blur>
           <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/15 px-4 py-2 text-xs font-semibold tracking-wide text-accent-bright backdrop-blur-sm">
             <Sparkle className="h-3.5 w-3.5 text-accent-bright" />
             {content.badge}
           </div>
         </Reveal>
 
-        <Reveal delayMs={100}>
+        <Reveal delayMs={100} blur>
           <h1 className="text-balance font-[family-name:var(--font-display)] text-[clamp(3.8rem,8vw,6.8rem)] font-extrabold leading-[0.92] tracking-tight text-ink">
             {content.heading}
           </h1>
         </Reveal>
 
-        <Reveal delayMs={220}>
+        <Reveal delayMs={220} blur>
           <p className="mx-auto mt-8 max-w-3xl text-balance text-base text-ink-dim md:text-lg">
             {content.paragraph}
           </p>
         </Reveal>
 
-        <Reveal delayMs={340}>
+        <Reveal delayMs={340} blur>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#contact"
@@ -95,7 +95,7 @@ export default function Hero({ language }: HeroProps) {
           </div>
         </Reveal>
 
-        <Reveal delayMs={460}>
+        <Reveal delayMs={460} blur>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-sm text-ink-dim">
             {content.bullets.map((bullet) => (
               <div
