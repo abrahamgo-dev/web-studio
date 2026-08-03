@@ -24,14 +24,10 @@ export default function Hero({ language }: HeroProps) {
             </span>
           ),
           paragraph:
-            "Creamos páginas web elegantes, rápidas y enfocadas en resultados para negocios que quieren captar clientes, ganar confianza y cerrar más oportunidades sin complicaciones.",
-          primary: "Ver proyectos",
-          secondary: "Reservar una llamada",
-          bullets: [
-            "Diseño premium y claro",
-            "Optimizado para móvil",
-            "Mantenimiento continuo",
-          ],
+            "Creamos sitios web elegantes, rápidos y enfocados en resultados para negocios que quieren captar clientes, generar confianza y cerrar más oportunidades.",
+          primary: "Cuéntanos sobre tu proyecto",
+          secondary: "Ver proyectos",
+          bullets: ["Diseño personalizado", "SEO", "Optimización móvil"],
         }
       : {
           badge: "Opening space for new projects",
@@ -45,14 +41,10 @@ export default function Hero({ language }: HeroProps) {
             </span>
           ),
           paragraph:
-            "We create elegant, fast, conversion-focused websites for businesses that want to attract clients, build trust, and close more opportunities without the usual complexity.",
-          primary: "See projects",
-          secondary: "Book a call",
-          bullets: [
-            "Premium, clear design",
-            "Mobile optimized",
-            "Ongoing care",
-          ],
+            "We create elegant, fast, results-driven websites for businesses that want to attract clients, build trust, and close more opportunities.",
+          primary: "Tell us about your project",
+          secondary: "See projects",
+          bullets: ["Custom design", "SEO", "Mobile optimization"],
         };
 
   return (
@@ -88,17 +80,17 @@ export default function Hero({ language }: HeroProps) {
         <Reveal delayMs={340}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="#work"
-              className="w-full rounded-full border border-[color:var(--line)] bg-transparent px-7 py-4 text-sm font-medium text-ink transition hover:bg-white/5 sm:w-auto"
-            >
-              {content.primary}
-            </a>
-            <a
               href="#contact"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-7 py-4 text-sm font-bold text-white shadow-[0_18px_55px_rgba(255,106,46,0.3)] transition hover:bg-accent/90 sm:w-auto"
             >
-              {content.secondary}
+              {content.primary}
               <ArrowUpRight className="h-4 w-4" />
+            </a>
+            <a
+              href="#work"
+              className="w-full rounded-full border border-[color:var(--line)] bg-transparent px-7 py-4 text-sm font-medium text-ink transition hover:bg-white/5 sm:w-auto"
+            >
+              {content.secondary}
             </a>
           </div>
         </Reveal>
